@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results>
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\ADN\adn_denCaliper.c" line="358" id="uninitvar" severity="error" msg="Uninitialized variable: mw_gcc" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\ADN\adn_neutron.c" line="1743" id="uninitvar" severity="error" msg="Uninitialized variable: bad_factor" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\MDOI_Sigma\NLOpt\f77funcs.h" line="51" id="memleak" severity="error" msg="Memory leak: dc" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\MDOI_Sigma\NLOpt\bobyqa.c" line="1150" id="uninitvar" severity="error" msg="Uninitialized variable: csave" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\MDOI_Sigma\NLOpt\bobyqa.c" line="1317" id="uninitvar" severity="error" msg="Uninitialized variable: gredsq" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\MDOI_Sigma\NLOpt\bobyqa.c" line="1898" id="uninitvar" severity="error" msg="Uninitialized variable: stepa" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\MDOI_Sigma\NLOpt\bobyqa.c" line="1900" id="uninitvar" severity="error" msg="Uninitialized variable: stepa" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\MDOI_Sigma\NLOpt\bobyqa.c" line="1901" id="uninitvar" severity="error" msg="Uninitialized variable: stepa" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\MDOI_Sigma\NLOpt\bobyqa.c" line="1907" id="uninitvar" severity="error" msg="Uninitialized variable: stepa" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\MDOI_Sigma\NLOpt\bobyqa.c" line="1909" id="uninitvar" severity="error" msg="Uninitialized variable: stepa" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\MDOI_Sigma\NLOpt\bobyqa.c" line="1910" id="uninitvar" severity="error" msg="Uninitialized variable: stepa" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\MDOI_Sigma\NLOpt\bobyqa.c" line="1906" id="uninitvar" severity="error" msg="Uninitialized variable: stepb" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\MDOI_Sigma\NLOpt\bobyqa.c" line="1907" id="uninitvar" severity="error" msg="Uninitialized variable: stepb" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\MDOI_Sigma\NLOpt\bobyqa.c" line="1909" id="uninitvar" severity="error" msg="Uninitialized variable: stepb" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\MDOI_Sigma\NLOpt\bobyqa.c" line="1910" id="uninitvar" severity="error" msg="Uninitialized variable: stepb" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\MDOI_Sigma\NLOpt\options.c" line="368" id="memleak" severity="error" msg="Memory leak: tolcopy" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\MDOI_Sigma\NLOpt\optimize.c" line="259" id="memleak" severity="error" msg="Memory leak: x" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\SNGD\UnitTest\NGD_main_UnitTest.cpp" line="208" id="bufferAccessOutOfBounds" severity="error" msg="Buffer is accessed out of bounds: listOfVariables" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\SNGD\UnitTest\NGD_main_UnitTest.cpp" line="263" id="bufferAccessOutOfBounds" severity="error" msg="Buffer is accessed out of bounds: listOfRefVariables" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\SNGD\UnitTest\NGD_QC_UnitTest.cpp" line="194" id="bufferAccessOutOfBounds" severity="error" msg="Buffer is accessed out of bounds: listOfVariables" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\SNGD\UnitTest\NGD_QC_UnitTest.cpp" line="260" id="bufferAccessOutOfBounds" severity="error" msg="Buffer is accessed out of bounds: listOfRefVariables" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\MDOI_Sigma\NLOpt\optimize.c" line="300" id="memleak" severity="error" msg="Memory leak: x" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\ecoscope_density_kernel.cpp" line="1105" id="uninitvar" severity="error" msg="Uninitialized variable: mw_gcc" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\ecoscope_spectroProc.c" line="428" id="memleak" severity="error" msg="Memory leak: VarNcspSum" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\ecoscope_spectroProc.c" line="428" id="memleak" severity="error" msg="Memory leak: spectro_lbl_marquardt_context.pfNewYields" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\ecoscope_spectroLith.c" line="1563" id="memleak" severity="error" msg="Memory leak: cfeu_filt" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\ecoscope_spectroLith.c" line="1563" id="memleak" severity="error" msg="Memory leak: csuu_filt" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\ecoscope_spectroLith.c" line="2473" id="memleak" severity="error" msg="Memory leak: avgCapTime" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\ecoscope_spectroLith.c" line="2473" id="memleak" severity="error" msg="Memory leak: avgBakTime" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\EcoScope\ecoscope_spectroLith.c" line="2747" id="uninitvar" severity="error" msg="Uninitialized variable: status" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\LWD\lwd_density.cpp" line="2201" id="memleak" severity="error" msg="Memory leak: x2" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\LWD\lwd_density.cpp" line="2201" id="memleak" severity="error" msg="Memory leak: y2" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\LWD\lwd_density.cpp" line="1303" id="memleak" severity="error" msg="Memory leak: my" />
+<error file="T:\MetricsSystem\Maxwell\Main\AppCore\LWD\lwd_density.cpp" line="711" id="uninitvar" severity="error" msg="Uninitialized variable: theta_path" />
+<error file="T:\MetricsSystem\Maxwell\Main\Build\Scripts\Cloud\Metrics\GoldenImage\Common\DexUtils2.cpp" line="911" id="doubleFree" severity="error" msg="Memory pointed to by 'compr' is freed twice." />
+<error file="T:\MetricsSystem\Maxwell\Main\Build\Scripts\Production\Metrics\GoldenImage\Common\DexUtils2.cpp" line="911" id="doubleFree" severity="error" msg="Memory pointed to by 'compr' is freed twice." />
+<error file="T:\MetricsSystem\Maxwell\Main\CI\Production\Metrics\GoldenImage\Common\DexUtils2.cpp" line="911" id="doubleFree" severity="error" msg="Memory pointed to by 'compr' is freed twice." />
+<error file="T:\MetricsSystem\Maxwell\Main\CI\Staging\Metrics\GoldenImage\Common\DexUtils2.cpp" line="911" id="doubleFree" severity="error" msg="Memory pointed to by 'compr' is freed twice." />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddAnneal.c" line="255" id="memleak" severity="error" msg="Memory leak: BestOrder" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddApa.c" line="546" id="memleak" severity="error" msg="Memory leak: work" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddApa.c" line="546" id="memleak" severity="error" msg="Memory leak: decimal" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddApa.c" line="606" id="memleak" severity="error" msg="Memory leak: work" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddApa.c" line="606" id="memleak" severity="error" msg="Memory leak: decimal" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddApa.c" line="651" id="memleak" severity="error" msg="Memory leak: max" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddAPI.c" line="560" id="memleak" severity="error" msg="Memory leak: vmask" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddAPI.c" line="568" id="memleak" severity="error" msg="Memory leak: lmask" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddGroup.c" line="1694" id="uninitvar" severity="error" msg="Uninitialized variable: end_move" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddExact.c" line="446" id="memleak" severity="error" msg="Memory leak: matrix" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddExact.c" line="297" id="memleak" severity="error" msg="Memory leak: mask" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddExact.c" line="309" id="memleak" severity="error" msg="Memory leak: newCost" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddExact.c" line="309" id="memleak" severity="error" msg="Memory leak: oldCost" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddExact.c" line="297" id="memleak" severity="error" msg="Memory leak: bestOrder" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddExact.c" line="362" id="memleak" severity="error" msg="Memory leak: numerator" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddCompose.c" line="279" id="memleak" severity="error" msg="Memory leak: permut" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddCompose.c" line="460" id="memleak" severity="error" msg="Memory leak: permut" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddCompose.c" line="507" id="memleak" severity="error" msg="Memory leak: permut" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddCompose.c" line="1589" id="memleak" severity="error" msg="Memory leak: vect1" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddCompose.c" line="1589" id="memleak" severity="error" msg="Memory leak: vect0" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddGenetic.c" line="457" id="memleak" severity="error" msg="Memory leak: used" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddGenetic.c" line="856" id="memleak" severity="error" msg="Memory leak: inv1" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddGenetic.c" line="856" id="memleak" severity="error" msg="Memory leak: inv2" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddGenetic.c" line="918" id="memleak" severity="error" msg="Memory leak: wheel" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddHarwell.c" line="334" id="memleak" severity="error" msg="Memory leak: colptr" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddHarwell.c" line="342" id="memleak" severity="error" msg="Memory leak: rowind" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddGenCof.c" line="326" id="memleak" severity="error" msg="Memory leak: decomp" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddGenCof.c" line="468" id="memleak" severity="error" msg="Memory leak: vect" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddDecomp.c" line="993" id="memleak" severity="error" msg="Memory leak: factors" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddDecomp.c" line="1008" id="memleak" severity="error" msg="Memory leak: factors" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddDecomp.c" line="1018" id="memleak" severity="error" msg="Memory leak: factors" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddDecomp.c" line="1028" id="memleak" severity="error" msg="Memory leak: factors" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddDecomp.c" line="1685" id="memleak" severity="error" msg="Memory leak: factors" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddDecomp.c" line="1753" id="memleak" severity="error" msg="Memory leak: factors" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddDecomp.c" line="1124" id="memleak" severity="error" msg="Memory leak: factors" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddDecomp.c" line="1240" id="memleak" severity="error" msg="Memory leak: factors" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddDecomp.c" line="1740" id="memleak" severity="error" msg="Memory leak: factors" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddExport.c" line="189" id="memleak" severity="error" msg="Memory leak: sorted" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddExport.c" line="553" id="memleak" severity="error" msg="Memory leak: sorted" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddExport.c" line="828" id="memleak" severity="error" msg="Memory leak: sorted" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddInteract.c" line="263" id="memleak" severity="error" msg="Memory leak: support" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddMatMult.c" line="130" id="memleak" severity="error" msg="Memory leak: vars" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddMatMult.c" line="245" id="memleak" severity="error" msg="Memory leak: vars" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddGroup.c" line="845" id="memleak" severity="error" msg="Memory leak: var" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddGroup.c" line="845" id="memleak" severity="error" msg="Memory leak: sifted" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddLinear.c" line="306" id="memleak" severity="error" msg="Memory leak: var" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddSign.c" line="246" id="memleak" severity="error" msg="Memory leak: values" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddSign.c" line="248" id="memleak" severity="error" msg="Memory leak: values" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddSplit.c" line="147" id="memleak" severity="error" msg="Memory leak: varSeen" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddReorder.c" line="537" id="memleak" severity="error" msg="Memory leak: var" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddReorder.c" line="1260" id="memleak" severity="error" msg="Memory leak: invperm" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddSubsetSP.c" line="447" id="memleak" severity="error" msg="Memory leak: excess" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddSubsetSP.c" line="365" id="memleak" severity="error" msg="Memory leak: info" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddSubsetHB.c" line="421" id="memleak" severity="error" msg="Memory leak: size" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddSymmetry.c" line="372" id="memleak" severity="error" msg="Memory leak: var" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddSymmetry.c" line="544" id="memleak" severity="error" msg="Memory leak: var" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddWindow.c" line="311" id="memleak" severity="error" msg="Memory leak: events" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddWindow.c" line="553" id="memleak" severity="error" msg="Memory leak: events" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddWindow.c" line="996" id="memleak" severity="error" msg="Memory leak: events" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddZddLin.c" line="190" id="memleak" severity="error" msg="Memory leak: var" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddZddGroup.c" line="707" id="memleak" severity="error" msg="Memory leak: var" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddZddGroup.c" line="707" id="memleak" severity="error" msg="Memory leak: sifted" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddUtil.c" line="191" id="memleak" severity="error" msg="Memory leak: list" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddUtil.c" line="311" id="memleak" severity="error" msg="Memory leak: array" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddUtil.c" line="752" id="memleak" severity="error" msg="Memory leak: support" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddUtil.c" line="841" id="memleak" severity="error" msg="Memory leak: support" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddUtil.c" line="1062" id="memleak" severity="error" msg="Memory leak: supportF" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddUtil.c" line="1130" id="memleak" severity="error" msg="Memory leak: supportG" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddUtil.c" line="1266" id="memleak" severity="error" msg="Memory leak: string" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddUtil.c" line="1277" id="memleak" severity="error" msg="Memory leak: indices" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddUtil.c" line="1380" id="memleak" severity="error" msg="Memory leak: string" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddUtil.c" line="1404" id="memleak" severity="error" msg="Memory leak: indices" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddUtil.c" line="1424" id="memleak" severity="error" msg="Memory leak: old" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddUtil.c" line="1601" id="memleak" severity="error" msg="Memory leak: weight" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddUtil.c" line="1607" id="memleak" severity="error" msg="Memory leak: string" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddUtil.c" line="1630" id="memleak" severity="error" msg="Memory leak: indices" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddUtil.c" line="1619" id="memleak" severity="error" msg="Memory leak: mask" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddUtil.c" line="1779" id="memleak" severity="error" msg="Memory leak: gen" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddUtil.c" line="2192" id="memleak" severity="error" msg="Memory leak: gen" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\st.c" line="58" id="memleak" severity="error" msg="Memory leak: newt" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\st.c" line="340" id="memleak" severity="error" msg="Memory leak: new_table" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\st.c" line="57" id="memleak" severity="error" msg="Memory leak: newt.bins" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\st.c" line="339" id="memleak" severity="error" msg="Memory leak: new_table.bins" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddTable.c" line="2261" id="memleak" severity="error" msg="Memory leak: newsubtables" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddTable.c" line="2266" id="memleak" severity="error" msg="Memory leak: newsubtables" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddTable.c" line="2266" id="memleak" severity="error" msg="Memory leak: newperm" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddTable.c" line="2275" id="memleak" severity="error" msg="Memory leak: newsubtables" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddTable.c" line="2275" id="memleak" severity="error" msg="Memory leak: newperm" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddTable.c" line="2275" id="memleak" severity="error" msg="Memory leak: newinvperm" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddTable.c" line="1855" id="memleak" severity="error" msg="Memory leak: newsubtables" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddTable.c" line="1862" id="memleak" severity="error" msg="Memory leak: newvars" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddTable.c" line="1870" id="memleak" severity="error" msg="Memory leak: newperm" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddTable.c" line="1880" id="memleak" severity="error" msg="Memory leak: newinvperm" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddTable.c" line="1928" id="memleak" severity="error" msg="Memory leak: newmap" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddTable.c" line="2565" id="memleak" severity="error" msg="Memory leak: newsubtables" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddTable.c" line="2572" id="memleak" severity="error" msg="Memory leak: newvars" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddTable.c" line="2580" id="memleak" severity="error" msg="Memory leak: newperm" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddTable.c" line="2590" id="memleak" severity="error" msg="Memory leak: newinvperm" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddTable.c" line="2608" id="memleak" severity="error" msg="Memory leak: newmap" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddTable.c" line="367" id="memleak" severity="error" msg="Memory leak: unique.subtables" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddTable.c" line="372" id="memleak" severity="error" msg="Memory leak: unique.subtableZ" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddTable.c" line="377" id="memleak" severity="error" msg="Memory leak: unique.perm" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddTable.c" line="382" id="memleak" severity="error" msg="Memory leak: unique.invperm" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddTable.c" line="387" id="memleak" severity="error" msg="Memory leak: unique.permZ" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddTable.c" line="393" id="memleak" severity="error" msg="Memory leak: unique.invpermZ" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddTable.c" line="402" id="memleak" severity="error" msg="Memory leak: unique.stack" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddTable.c" line="426" id="memleak" severity="error" msg="Memory leak: unique.deathRow" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\RP66\rp66a\e66_repcodes.cc" line="1589" id="syntaxError" severity="error" msg="syntax error" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddZddUtil.c" line="116" id="memleak" severity="error" msg="Memory leak: list" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddZddUtil.c" line="151" id="memleak" severity="error" msg="Memory leak: list" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddZddUtil.c" line="274" id="memleak" severity="error" msg="Memory leak: gen" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddZddUtil.c" line="756" id="memleak" severity="error" msg="Memory leak: sorted" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddZddReord.c" line="364" id="memleak" severity="error" msg="Memory leak: invpermZ" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddZddReord.c" line="901" id="memleak" severity="error" msg="Memory leak: var" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddZddSymm.c" line="357" id="memleak" severity="error" msg="Memory leak: var" />
+<error file="T:\MetricsSystem\Maxwell\Main\ExternalSource\CUDD\cuddZddSymm.c" line="538" id="memleak" severity="error" msg="Memory leak: var" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzApplications\Curie\SGEngine\sg_global.cpp" line="71" id="arrayIndexOutOfBounds" severity="error" msg="Array 'MINIMUMS[3]' accessed at index 3, which is out of bounds." />
+<error file="T:\MetricsSystem\Maxwell\Main\HzApplications\Curie\SGEngine\sg_test.cpp" line="544" id="resourceLeak" severity="error" msg="Resource leak: init_file" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzApplications\PTI\Acquisition\ZencusSerialPort.cpp" line="501" id="uninitStructMember" severity="error" msg="Uninitialized struct member: data.i" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzApplications\SLDT\Calibration\QLDT_CaliTask_CalibrationReport.h" line="10" id="noQuoteCharPair" severity="error" msg="No pair for character (&quot;). Can't process file. File is either invalid or unicode, which is currently not supported." />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\SlbHzPrtDrvInstallServer\stdafx.h" line="51" id="syntaxError" severity="error" msg="syntax error" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\jaws2.4\buildvc\slbjawsint\slbjawsint.cpp" line="22" id="syntaxError" severity="error" msg="syntax error" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\jaws2.4\buildvc\slbjawspkg\xmlutil.cpp" line="21" id="syntaxError" severity="error" msg="syntax error" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\SlbHzPrint\PrintPsPdf.cpp" line="215" id="uninitvar" severity="error" msg="Uninitialized variable: hPageCountSemaphore" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\SlbHzPrint\PrintSlbMixed.cpp" line="1271" id="memleak" severity="error" msg="Memory leak: pPsPdfOpt" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\SlbHzPrint\PrintSlbMixed.cpp" line="1271" id="memleak" severity="error" msg="Memory leak: pThreadParm" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\SlbHzPrint\PrintSlbMixed.cpp" line="1634" id="memleak" severity="error" msg="Memory leak: pPsPdfOpt" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\SlbHzPrint\PrintSlbMixed.cpp" line="1634" id="memleak" severity="error" msg="Memory leak: pThreadParm" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\SlbHzPrint\raw.cpp" line="373" id="uninitvar" severity="error" msg="Uninitialized variable: len" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\clipui\debug.cpp" line="121" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\clipui\debug.cpp" line="132" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\clipui\debug.cpp" line="190" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbepsonui\debug.cpp" line="128" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbepsonui\debug.cpp" line="139" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbepsonui\debug.cpp" line="197" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbhpdjui\debug.cpp" line="128" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbhpdjui\debug.cpp" line="139" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbhpdjui\debug.cpp" line="197" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbiEliteui\debug.cpp" line="128" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbiEliteui\debug.cpp" line="139" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbiEliteui\debug.cpp" line="197" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbiLiteui\debug.cpp" line="128" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbiLiteui\debug.cpp" line="139" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbiLiteui\debug.cpp" line="197" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbprtx820gui\debug.cpp" line="128" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbprtx820gui\debug.cpp" line="139" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbprtx820gui\debug.cpp" line="197" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbprtx820gui\intrface.cpp" line="15" id="noQuoteCharPair" severity="error" msg="No pair for character ('). Can't process file. File is either invalid or unicode, which is currently not supported." />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbprtx820ui\debug.cpp" line="128" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbprtx820ui\debug.cpp" line="139" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbprtx820ui\debug.cpp" line="197" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbprtx820ui\intrface.cpp" line="15" id="noQuoteCharPair" severity="error" msg="No pair for character ('). Can't process file. File is either invalid or unicode, which is currently not supported." />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbprtx840gui\debug.cpp" line="128" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbprtx840gui\debug.cpp" line="139" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbprtx840gui\debug.cpp" line="197" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbprtx840gui\intrface.cpp" line="15" id="noQuoteCharPair" severity="error" msg="No pair for character ('). Can't process file. File is either invalid or unicode, which is currently not supported." />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbprtx840ui\debug.cpp" line="128" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbprtx840ui\debug.cpp" line="139" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbprtx840ui\debug.cpp" line="197" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbprtx840ui\intrface.cpp" line="15" id="noQuoteCharPair" severity="error" msg="No pair for character ('). Can't process file. File is either invalid or unicode, which is currently not supported." />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbprtx843gui\debug.cpp" line="128" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbprtx843gui\debug.cpp" line="139" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbprtx843gui\debug.cpp" line="197" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbprtx843gui\intrface.cpp" line="15" id="noQuoteCharPair" severity="error" msg="No pair for character ('). Can't process file. File is either invalid or unicode, which is currently not supported." />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbprtx843ui\debug.cpp" line="128" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbprtx843ui\debug.cpp" line="139" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbprtx843ui\debug.cpp" line="197" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbprtx843ui\intrface.cpp" line="15" id="noQuoteCharPair" severity="error" msg="No pair for character ('). Can't process file. File is either invalid or unicode, which is currently not supported." />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbps\debug.cpp" line="124" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbps\debug.cpp" line="135" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\slbps\debug.cpp" line="193" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\tgipui\debug.cpp" line="121" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\tgipui\debug.cpp" line="132" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\tgipui\debug.cpp" line="190" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\tgrpdui\debug.cpp" line="121" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\tgrpdui\debug.cpp" line="132" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\tgrpdui\debug.cpp" line="190" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\tgrpui\debug.cpp" line="121" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\tgrpui\debug.cpp" line="132" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\HzFwkUtils\HzDrivers\oemdll\tgrpui\debug.cpp" line="190" id="mismatchAllocDealloc" severity="error" msg="Mismatching allocation and deallocation: lpszMsgBuf" />
+<error file="T:\MetricsSystem\Maxwell\Main\ThirdParty\thrift\thrift\concurrency\TimerManager.cpp" line="167" id="exceptThrowInDestructor" severity="error" msg="Exception thrown in destructor." />
+<error file="T:\MetricsSystem\Maxwell\Main\ThirdParty\thrift\thrift\concurrency\ThreadManager.cpp" line="451" id="eraseDereference" severity="error" msg="Iterator 'ix' used after element has been erased." />
+</results>

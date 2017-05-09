@@ -1,0 +1,3 @@
+T:\MetricsSystem\Maxwell\Main\HzAPI\BaseImpl\EnsembleImpl.cpp,726#,if (SessionType == SESSION_UNKNOWN)
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\JobSpecComponents\JobSpecViewer\Helper\JobSpecXmlHelper.cs,65#,return toolElementGuid == null || toolElementCollection == null || sourceJobWorkflow == SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\ContextManagerHelper.cs,620#,if (mSessionType == SessionType_t.SESSION_UNKNOWN)

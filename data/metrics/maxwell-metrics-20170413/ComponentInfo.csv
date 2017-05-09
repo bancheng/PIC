@@ -1,0 +1,2030 @@
+Component,SubComponent,Team,Type,CO,Stable,Maturity,ProjectType,Segment,MarketingNames,DeploymentRestrictions,Parallelizable,Folder,TFSAreaPath,ToolCode,Maturity,Parallelizable,MarketingNames,Segment,ProjectType
+Undefined,,Undefined,,,,,,,,,,
+Shared utilities,,T-Primer,,LI Ziming,,,,,,,,
+,SharedLibrary,,,LI Ziming,true,,,,,,,
+,ComImporter,,,LI Ziming,true,,,,,,,
+,Generic Routines,,,LI Ziming,,,,,,,,
+,ProcessHandler,,,LI Ziming,true,,,,,,,
+,XmlLiteHelper,,,LI Ziming,true,,,,,,,
+,FwkToolkit,,,LI Ziming,true,,,,,,,
+,UnitSystem,,,LI Ziming,true,,,,,,,
+,Configuration,,,ZHANG Peng,true,,,,,,,
+ThirdParty,,T-Primer,,LI Ziming,,,,,,,,
+,VLD,,,LI Ziming,true,,,,,,,
+,Expat,,,LI Ziming,true,,,,,,,
+,MxBulkData,,,LI Ziming,true,,,,,,,
+,Zlib,,,LI Ziming,true,,,,,,,
+,Python,,,ZHANG Peng,true,,,,,,,
+,SlbLicense,,,LI Ziming,true,,,,,,,
+,TBB,,,HUANG Xin,true,,,,,,,
+rp66,,Digital Deliverable,,Jiang ZHAO,true,Obsolete,,,,,,
+,rp66a,,,,,,,,,,,
+,rp66lib,,,,,,,,,,,
+,rww,,,,,,,,,,,
+Other Graphical Components,,Display,,Zhang Hui,false,,,,,,,
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\IntegrationSummary
+,,,,,,,,,,,,,HzFramework\Utilities\MsTest\FwkUtilities_MsTest\Properties
+,,,,,,,,,,,,,HzFramework\Utilities\MsTest\FwkUtilities_MsTest
+,,,,,,,,,,,,,HzFramework\Utilities\PDF2TIFF
+,,,,,,,,,,,,,HzFwkUtils\MaxWellGraphicalComponentViewer
+,,,,,,,,,,,,,HzFwkUtils\PDFAutoCompare
+,,,,,,,,,,,,,HzFramework\Dex\Common\OsddConverter
+,,,,,,,,,,,,,HzFwkUtils\Temp\PDFUtility
+,,,,,,,,,,,,,HzFwkUtils\MwResourceMonitor
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\BoreHoleSizeCasingRecord
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\ComplexComponentViewer
+,,,,,,,,,,,,,HzProducts\GenericComponents\SlbGrid2
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\GCTableOfContents
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\GCGroupLabel
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\GraphicalStandAlonePrintHeader
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\SurveyRecord
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\CompositeSummary
+,,,,,,,,,,,,,HzProducts\GenericComponents\ParameterZoningMediator
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\JobEventSummary
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\RemarksEquipSummary
+,,,,,,,,,,,,,HzProducts\utilities\HeaderTypeProperty
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\BoreholeFluids
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\Tail
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\Disclaimer
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\OperationRunSummary
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\SoftwareVersionRpt
+,,,,,,,,,,,,,HzProducts\Viewers\SummaryRecordViewer
+,,,,,,,,,,,,,HzProducts\Viewers\WitnessRemoteClientCodeSigner
+,,,,,,,,,,,,,HzFramework\Utilities\Formatting
+,,,,,,,,,,,,,HzAPI\Interface
+FLCN Feature,,Workflow,,Zhang Jie,,,,,,,,
+,SelfIdentification,,,,,,,,,,,
+,,,,,,,,,,,,,HzAPI\BaseImpl
+,,,,,,,,,,,,,HzAPI\Interface
+,,,,,,,,,,,,,HzAPI\Include
+,,,,,,,,,,,,,HzAPI\Contracts
+,,,,,,,,,,,,,HzFramework\SelfIdentification
+,,,,,,,,,,,,,HzSysApps\Ensembles\PlaceHolder
+WL Acq Cracking,,Workflow,,Xu Dawei,,,,,,,,
+,WL Acq Cracking,,,,,,,,,,,
+,,,,,,,,,,,,,hzAPI
+,,,,,,,,,,,,,hzAPI\Interface
+,,,,,,,,,,,,,hzAPI\Mock
+,,,,,,,,,,,,,HzFramework\Acquisition\CmdHandler
+,,,,,,,,,,,,,HzFramework\Acquisition\Common
+,,,,,,,,,,,,,HzFramework\Acquisition\DataPump
+,,,,,,,,,,,,,HzFramework\Acquisition\DataPumpMediator
+,,,,,,,,,,,,,HzFramework\Acquisition\GTest
+,,,,,,,,,,,,,HzFramework\Acquisition\ToolCtrlManager
+,,,,,,,,,,,,,HzFramework\Acquisition\WirelinePowerManager
+,,,,,,,,,,,,,HzFramework\Acquisition\Wireline
+,,,,,,,,,,,,,HzFramework\Mock\Acquisition
+,,,,,,,,,,,,,HzProducts\controls\Wafe\UI
+,,,,,,,,,,,,,HzProducts\UIServers
+,,,,,,,,,,,,,HzProducts\Editors\StableInterval
+,WL Acq Cracking Base,,,,,,,,,,,
+,,,,,,,,,,,,,hzAPI
+,,,,,,,,,,,,,HzFramework
+,,,,,,,,,,,,,hzAPI\BaseImpl\gtest
+,,,,,,,,,,,,,hzAPI\Interface
+Parameter,,Workflow,,Chenhui Zhang,,,,,,,,
+,ParameterBase,,,,,,,,,,,
+,,,,,,,,,,,,,HzAPI\BaseImpl
+,,,,,,,,,,,,,HzAPI\Include
+,,,,,,,,,,,,,HzAPI\Interface
+,,,,,,,,,,,,,HzAPI\BaseImpl\GTest\BaseImpl_GTest
+DnM RT Acquisition,,Workflow,,Chenhui Zhang,,,,,,,,
+,DnM RT Acquisition Base,,,,,,,,,,,
+,,,,,,,,,,,,,HzAPI\BaseImpl
+,,,,,,,,,,,,,HzAPI\Include
+,,,,,,,,,,,,,HzAPI\Interface
+,,,,,,,,,,,,,HzProducts\Managers\GenericChannelManager
+,,,,,,,,,,,,,hzFramework\Acquisition\AcquisitionHelper
+,DnM RT Acquisition Connection,,,,,,,,,,,
+,,,,,,,,,,,,,HzProducts\controls\HSPM
+,DnM RT Acquisition Monitors,,,,,,,,,,,
+,,,,,,,,,,,,,HzProducts\Viewers\DepthMonitor
+,,,,,,,,,,,,,HzProducts\Viewers\FrameDecoderStatusMonitor
+,,,,,,,,,,,,,HzProducts\Viewers\HSPMStatusMonitor
+,,,,,,,,,,,,,HzProducts\Viewers\HSPMTelemetryMonitor
+,,,,,,,,,,,,,HzProducts\Viewers\ToolfaceMonitorViewer
+,DnM RT Acquisition,,,,,,,,,,,
+,,,,,,,,,,,,,HzProducts\Managers\GenericChannelManager
+,,,,,,,,,,,,,HzFramework\Execution\FrameworkTasks\AcqTasks
+,DnM Data Pump,,,,,,,,,,,
+,,,,,,,,,,,,,hzFramework\Acquisition\DataPump
+,DnM RT Acquisition Test,,,,,,,,,,,
+,,,,,,,,,,,,,HzAPI\Mock
+,,,,,,,,,,,,,HzFramework\Mock\Acquisition
+,,,,,,,,,,,,,hzFramework\Acquisition\GTest
+,,,,,,,,,,,,,HzFramework\Acquisition\AutoTest\Acquisition_AutoTest
+,,,,,,,,,,,,,HzFramework\Acquisition\AutoTest\Acquisition_AutoTest\Planck
+,Planck,,,,,,,,,,,
+,,,,,,,,,,,,,HzFramework\Acquisition\Planck
+,,,,,,,,,,,,,HzProducts\Controls\PlanckPanelControl
+DnI_Survey,,Workflow,,Chenhui Zhang,,,,,,,,
+,Survey,,,,,,,,,,,
+,,,,,,,,,,,,,HzAPI\BaseImpl
+,,,,,,,,,,,,,HzAPI\Include
+,,,,,,,,,,,,,HzAPI\Interface
+,,,,,,,,,,,,,HzFramework\Common\Survey
+,,,,,,,,,,,,,HzFwkUtils\DMAG
+,,,,,,,,,,,,,HzProducts\Viewers\SurveyMonitor
+,,,,,,,,,,,,,HzProducts\GenericComponents\ElevationDiagram
+,,,,,,,,,,,,,HzProducts\GenericComponents\SurveyUnitConverter
+,,,,,,,,,,,,,HzProducts\Managers\DnIInits
+,,,,,,,,,,,,,HzProducts\Managers\SurveyMgr
+,,,,,,,,,,,,,HzProducts\Ensembles\DnMSession
+,,,,,,,,,,,,,HzProducts\Ensembles\Survey
+,,,,,,,,,,,,,HzProducts\UIServers
+Equipment,,Workflow,,Chenhui Zhang,,,,,,,,
+,EquipmentBase,,,,,,,,,,,
+,,,,,,,,,,,,,HzAPI\BaseImpl
+,,,,,,,,,,,,,HzAPI\Include
+,,,,,,,,,,,,,HzAPI\Interface
+,,,,,,,,,,,,,HzAPI\BaseImpl\GTest\BaseImpl_GTest
+,,,,,,,,,,,,,HzFramework\Mock\ToolStringHandler
+,ToolStringHandler,,,,,,,,,,,
+,,,,,,,,,,,,,HzFramework\Common\ToolString
+,Equipment and RunSetup,,,,,,,,,,,
+,,,,,,,,,,,,,HzProducts\UIServers
+,EquipmentApp,,,,true,Obsolete,,,,,,
+,,,,,,,,,,,,,HzSysApps\Ensembles\AuxiliaryEquipment
+,EquipmentUtility,,,,true,Obsolete,,,,,,
+,,,,,,,,,,,,,HzTestTools\Tools\EquipmentTester
+,,,,,,,,,,,,,HzTestTools\Tools\MeasurePointLocator
+DnM RM Processing,,Workflow,,Felix Rao,,,,,,,,
+,,,,,,,,,,,,,HzAPI\BaseImpl
+,,,,,,,,,,,,,HzAPI\BaseImpl\GTest\BaseImpl_GTest
+,,,,,,,,,,,,,HzAPI\Include
+,,,,,,,,,,,,,HzAPI\Interface
+,,,,,,,,,,,,,HzAPI\Mock
+,,,,,,,,,,,,,HzFramework\Acquisition\Samples\TestTFFReader
+,,,,,,,,,,,,,HzFramework\Acquisition\TimeFrameFile
+,,,,,,,,,,,,,HzProducts\Editors\RecordedMode
+,,,,,,,,,,,,,HzFramework\Acquisition\AutoTest\Acquisition_AutoTest
+,,,,,,,,,,,,,HzFramework\Execution\FrameworkTasks\AcqTasks
+,,,,,,,,,,,,,HzFramework\Acquisition\GTest
+WL Calibration,,Workflow,,Xu Dawei,,,,,,,,
+,,,,,,,,,,,,,hzAPI
+,,,,,,,,,,,,,hzAPI\Interface
+,,,,,,,,,,,,,HzFramework\DataStore\Clients\CalibrationPackage
+,,,,,,,,,,,,,HzFramework\DataStore\Clients\CalibrationCollector
+,,,,,,,,,,,,,HzProducts\Managers\CalibrationManager
+Coiled Tubing,,Workflow,,Xu Dawei,,,,,,,,
+,,,,,,,,,,,,,hzAPI
+,,,,,,,,,,,,,HzSysApps\Digital\ACTS
+Tasking,,Workflow,,Xu Dawei,,,,,,,,
+,,,,,,,,,,,,,hzAPI
+,,,,,,,,,,,,,hzAPI\Interface
+,,,,,,,,,,,,,HzFramework\Execution\FrameworkTasks\AcqTasks
+,,,,,,,,,,,,,HzFramework\Execution\TaskRunManagers
+,,,,,,,,,,,,,HzProducts\controls\GenericTaskUIP
+,,,,,,,,,,,,,HzProducts\controls\WorkflowUIP\SlbHzWorkflowUI
+,,,,,,,,,,,,,HzProducts\GenericComponents\TaskList\UI
+,,,,,,,,,,,,,HzProducts\Tasks
+Simulation - Application Test,,Workflow,,Xu Dawei,,,,,,,,
+,,,,,,,,,,,,,hzAPI
+,,,,,,,,,,,,,hzAPI\BaseImpl\gtest
+,,,,,,,,,,,,,HzFramework\Acquisition\Samples
+,,,,,,,,,,,,,HzFramework\Acquisition\SimGeoModels
+,,,,,,,,,,,,,HzProductsAPI\NewSimModuleUIImpl
+,,,,,,,,,,,,,HzProducts\Tools\WL_Simulator
+APIBaseImpl,,Workflow,,Xu Dawei,,,,,,,,
+,,,,,,,,,,,,,hzAPI
+WL BaseImpl,,Workflow,,Xu Dawei,,,,,,,,
+,,,,,,,,,,,,,HzAPI\BaseImpl\AutoTest2\BaseImpl2_AutoTest
+,,,,,,,,,,,,,HzAPI\BaseImpl\GTest\BaseImpl_GTest
+,,,,,,,,,,,,,HzAPI\Include
+,,,,,,,,,,,,,HzAPI\BaseImpl
+FrontEndService,,Workflow,,Wang Zhen,,,,,,,,
+,,,,,,,,,,,,,HzAPI
+,,,,,,,,,,,,,HzSysApps\Ensembles\WLSurface
+,,,,,,,,,,,,,HzWafe\FrontEnd
+,,,,,,,,,,,,,HzFramework\Utilities\CatchUpProgressForm
+Tool Control,,Workflow,,Xu Dawei,,,,,,,,
+,,,,,,,,,,,,,hzAPI
+,,,,,,,,,,,,,HzFramework\Acquisition\FwkToolControlModules
+TnD,,Workflow,,Xu Dawei,,,,,,,,
+,,,,,,,,,,,,,hzAPI
+,,,,,,,,,,,,,HzProducts\Managers\TnDTestResultUIP
+Creep Computation,,Workflow,,Zhang Jie,true,Obsolete,,,,,,
+,,,,,,,,,,,,,hzAPI
+Pass Manager,,Workflow,,Wang Qing,,,,,,,,
+,,,,,,,,,,,,,hzAPI
+,,,,,,,,,,,,,HzProducts\GenericComponents\PassPlanSupport
+,,,,,,,,,,,,,HzProducts\Managers\PassManager\PassManagerUI
+Computation,,T-Primer,,ZHU Yu,false,,,,,,,
+,,,,,,,,,,,,,HzAPI\BaseImpl
+,,,,,,,,,,,,,HzAPI\BaseImpl\GTest\BaseImpl_GTest
+,,,,,,,,,,,,,HzAPI\Include
+,,,,,,,,,,,,,HzAPI\Interface
+,,,,,,,,,,,,,HzAPI\Mock
+,,,,,,,,,,,,,HzFramework\Computation
+,,,,,,,,,,,,,HzFramework\Mock\Computation
+Run_Well setup,,Workflow,,Chenhui Zhang,,,,,,,,
+,,,,,,,,,,,,,hzapi\interface
+,,,,,,,,,,,,,HzSysApps\Ensembles\WSD
+,,,,,,,,,,,,,HzSysApps\Ensembles\Completion
+,,,,,,,,,,,,,HzProducts\Managers\RunManager
+,,,,,,,,,,,,,HzProducts\GenericComponents\SetupConsoleMediator
+,,,,,,,,,,,,,HzProducts\GenericComponents\WellSketchControl
+,,,,,,,,,,,,,HzProducts\GenericComponents\WellSketchHelper
+,,,,,,,,,,,,,HzProducts\Editors\WellboreEditor
+,,,,,,,,,,,,,HzProducts\Editors\WellboreSketch
+,,,,,,,,,,,,,HzProducts\Editors\AutoTest\WellboreEditorAutoTest
+,,,,,,,,,,,,,HzProducts\Editors\AutoTest\WellSketchTabularEditor_AutoTest
+WL Thrubit Support,,Workflow,,Chen Yinghua,,,,,,,,
+,,,,,,,,,,,,,HzAPI\Interface
+,,,,,,,,,,,,,HzFramework\Execution\FrameworkTasks\AcqTasks
+,,,,,,,,,,,,,HzFramework\Execution\FrameworkTasks\AcqTasks\gTest\AcqTasks_GTest
+,,,,,,,,,,,,,HzFramework\Execution\FrameworkTasks\AcqTasks\AutoTest\AcqTasks_AutoTest
+,,,,,,,,,,,,,HzProducts\Controls\WLDataLoadUIP
+,,,,,,,,,,,,,HzProducts\Editors\GraphicPassManager
+,,,,,,,,,,,,,HzProducts\Managers\PassManager\PassManagerUI
+,,,,,,,,,,,,,HzProducts\Managers\PassManager\PassManagerUI\PassManager_MsTest
+,,,,,,,,,,,,,HzProducts\UIServers
+,,,,,,,,,,,,,HzSysApps\Ensembles\WLSurface
+,,,,,,,,,,,,,HzSysApps\Ensembles\UIs\Wireline
+,,,,,,,,,,,,,HzSysApps\Ensembles\UIs\WirelineRM
+Event Dispatcher,,T-Primer,,LI Ziming,true,,,,,,,
+,,,,,,,,,,,,,HzAPI\Interface\Events
+,,,,,,,,,,,,,HzFramework\Common\EventDispatcher
+,,,,,,,,,,,,,HzFramework\Common\EventHostPublisher
+,,,,,,,,,,,,,HzFramework\Common\EventHostSubscriber
+RigTimeZone,,Workflow,,Li Rao,,,,,,,,
+,,,,,,,,,,,,,HzAPI\RigTimeZoneUtility
+,,,,,,,,,,,,,HzFramework\Common\RigTimeZone
+System Monitor,,T-Primer,,ZHANG Peng,false,,,,,,,
+,,,,,,,,,,,,,HzAPI\SystemMonitorInterfaces
+,,,,,,,,,,,,,HzFramework\Utilities\RuntimeInformationCollect
+,,,,,,,,,,,,,HzFramework\Utilities\SystemMonitor
+Test and scripting,,T-Primer,,KANG Lei,,,,,,,,
+,MaxShell,,,KANG Lei,false,,,,,,,
+,HzAutoTestUtil,,,ZHU Yu,,,,,,,,
+,CFT,,,LI Ziming,true,,,,,,,
+,Core shield,,,ZHANG Yanhua,false,,,,,,,
+DTS,,SKK,ApplicationFamily,Naoki Watauchi,,,Sustaining,Wireline-ES,,,,
+,,,,,,,,,,,,,Maxwell\Application\SKK\DTC
+,,,,,,,,,,,,,,DTC-A,Commercial,TRUE,,,
+,,,,,,,,,,,,,,DTC-H,Commercial,TRUE,,,
+,,,,,,,,,,,,,,DTPC-A,Commercial,TRUE,,,
+,DTC,SKK,,Naoki Watauchi,,,,,,,,
+EDTA,,SKK,ApplicationFamily,Naoki Watauchi,,,Sustaining,Wireline-ES,,,,
+,,,,,,,,,,,,,Maxwell\Application\SKK\EDTA
+,,,,,,,,,,,,,,EDTA-A,Commercial,TRUE,,,
+EDTS,,SKK,ApplicationFamily,Naoki Watauchi,,,Sustaining,Wireline-ES,,,,
+,,,,,,,,,,,,,Maxwell\Application\SKK\EDTC-B
+,,,,,,,,,,,,,,EDTC-A,Commercial,TRUE,,,
+,,,,,,,,,,,,,,EDTC-B,Commercial,TRUE,,,
+,EDTC,SKK,,Naoki Watauchi,,,,,,,,
+FFP,,Workflow,ApplicationFamily,Xu Dawei,,,,Wireline,,,,
+CIOther,,Environment,,Yan Chenghua,,,,,,,,
+,,,,,,,,,,,,,HzAutoTest\ConfigureTestParser
+,,,,,,,,,,,,,HzFramework\Utilities\AutoTestLibrary
+,,,,,,,,,,,,,hzautotest\laa_mstest
+,,,,,,,,,,,,,hzframework\interopcreator
+,,,,,,,,,,,,,hzframework\utilities\disablecmosdst
+,,,,,,,,,,,,,hzframework\utilities\hzinstaller
+,,,,,,,,,,,,,hzframework\utilities\hzpatchreporter
+,,,,,,,,,,,,,hzframework\utilities\osddcatloader
+,,,,,,,,,,,,,HzFramework\Utilities\ServiceLauncher
+,,,,,,,,,,,,,HzFwkUtils\LongPathSupport\LongPathSupport
+,,,,,,,,,,,,,hzfwkutils\patchutils
+,,,,,,,,,,,,,hzfwkutils\thirdparty\google
+,,,,,,,,,,,,,hzfwkutils\tools\codemetrics
+,,,,,,,,,,,,,hzfwkutils\tools\timecount
+,,,,,,,,,,,,,hzfwkutils\tools\unittestcppwizard
+,,,,,,,,,,,,,hzfwkutils\xsltheaderremover
+,,,,,,,,,,,,,hzhelp\hzhelpprovider
+,,,,,,,,,,,,,hzproducts\interopcreator
+,,,,,,,,,,,,,hztesttools\tools\hzparsingtoolkit
+Printing,,Display,,Zhang Hui,false,,,,,,,
+,,,,,,,,,,,,,HzProducts\Managers\Deliverables\Printing
+,,,,,,,,,,,,,HzProducts\Managers\Deliverables\WCFFramework
+,,,,,,,,,,,,,HzProducts\GenericComponents\Print
+,,,,,,,,,,,,,HzProducts\GenericComponents\PDFSupport
+,,,,,,,,,,,,,HzFwkUtils\PDFUtility
+Depth Shift,,T-Primer,,ZHANG Peng,false,,,,,,,
+,,,,,,,,,,,,,HzAutoTest\SimpleDepthShiftAutoTest
+,,,,,,,,,,,,,HzFramework\Execution\TaskRunManagers\SimpleDepthShift
+,,,,,,,,,,,,,HzProducts\Editors\AutoTest\EditorsAutoTest\DepthShift
+,,,,,,,,,,,,,HzProducts\Editors\DepthShift
+WL Test,,Workflow,,Xu Dawei,true,Obsolete,,,,,,
+,,,,,,,,,,,,,hzAPI\baseimpl\gtest
+,,,,,,,,,,,,,hzAPI\BaseImpl\AutoTest2
+,,,,,,,,,,,,,hzframework\execution\samples
+,,,,,,,,,,,,,hzframework\acquisition\autotest
+,,,,,,,,,,,,,hzframework\execution
+,,,,,,,,,,,,,hzAPI\BaseImpl\gtest
+,,,,,,,,,,,,,HzFramework\Execution\ExeInterface
+,,,,,,,,,,,,,HzFramework\Mock\Execution
+Casper,,T-Primer,,ZHANG Peng,false,,,,,,,
+,,,,,,,,,,,,,HzFramework\Common
+,,,,,,,,,,,,,HzFramework\Utilities\HzCrashReporter
+,,,,,,,,,,,,,HzFwkUtils\Casper
+Local Computation,,T-Primer,,ZHANG Peng,true,,,,,,,
+,,,,,,,,,,,,,HzFramework\Common\LocalComputationService
+,,,,,,,,,,,,,HzFwkUtils\PythonWrapper
+,,,,,,,,,,,,,HzProducts\Managers\LocalComputationManager
+Database,,T-Primer,,LI Ziming,false,,,,,,,
+,,,,,,,,,,,,,HzFramework\DataModel
+,,,,,,,,,,,,,HzFramework\Utilities\DataStore
+,,,,,,,,,,,,,HzFramework\Utilities\DBBuilder
+,,,,,,,,,,,,,HzFramework\Utilities\DbStateCheck
+,,,,,,,,,,,,,HzFramework\Utilities\EnsembleRegistrar
+,,,,,,,,,,,,,HzFwkUtils\DataStore
+,,,,,,,,,,,,,HzFwkUtils\Tools\DBAccess
+,,,,,,,,,,,,,HzFwkUtils\Tools\DBAccess_MsTest
+,,,,,,,,,,,,,ThirdParty\PrebuiltBinaries\HzDB
+Recomputation,,T-Primer,,ZHANG Yanhua,false,,,,,,,
+,,,,,,,,,,,,,HzFramework\Execution\TaskRunManagers
+,,,,,,,,,,,,,HzFramework\Mock\Execution
+,,,,,,,,,,,,,HzProducts\Editors\AutoTest\EditorsAutoTest\Recomputation
+,,,,,,,,,,,,,HzProducts\Editors\Recomputation
+,,,,,,,,,,,,,HzProducts\GenericComponents\ProductsCommon
+,,,,,,,,,,,,,HzProducts\Include
+Tools,,T-Primer,,ZHANG Yanhua,,,,,,,,
+,Bulk Data Viewer,,,ZHANG Yanhua,true,,,,,,,
+,Network Viewer,,,ZHANG Yanhua,true,,,,,,,
+,MaxWell DB Explorer,,,LI Ziming,true,,,,,,,
+,SQL Data Comparer,,,LI Ziming,true,Obsolete,,,,,,
+,Recompute Robot,,,HUANG Xin,true,Obsolete,,,,,,
+,MiniDump,,,ZHANG Peng,,,,,,,,
+DigitalUtility,,Digital Deliverable,,ChenQuan LI,,,,,,,,
+,WitsmlUploader,,,,true,Obsolete,,,,,,
+,WitsmlViewer,,,,true,Obsolete,,,,,,
+,WitsmlCompare,,,,true,Obsolete,,,,,,
+,DLISToWellCADConvertor,,,,true,,,,,,,
+,DlisEditor,,,,false,,,,,,,
+,DLISCompare,,,,false,,,,,,,
+,ConvertedChannelDictionary,,,,false,,,,,,,
+,OspreyConnect,,,,true,,,,,,,
+,OsddMapping,,,,true,Obsolete,,,,,,
+,DLISBrowser,,,,true,,,,,,,
+,DexTestTools,,,,true,Obsolete,,,,,,
+,DCStartupAssistant,,,,true,Obsolete,,,,,,
+Messaging,,Display,,Zhang Hui,false,,,,,,,
+,,,,,,,,,,,,,HzProducts\GenericComponents\Messaging\MessageLoggingTester
+,,,,,,,,,,,,,HzFramework\Utilities\MessageMMFReader
+,,,,,,,,,,,,,HzProducts\GenericComponents\Messaging\MessageViewer
+,,,,,,,,,,,,,HzProducts\GenericComponents\Messaging\MessageViewerBase
+,,,,,,,,,,,,,HzProducts\GenericComponents\Messaging\MessagingTestApplication
+,,,,,,,,,,,,,HzProducts\GenericComponents\Messaging\MessagingTestApplication\LoggerTester\LoggerTester
+,,,,,,,,,,,,,HzProducts\GenericComponents\Messaging\MessagingTestApplication\MessageLoggerTester
+,,,,,,,,,,,,,HzProducts\GenericComponents\Messaging\MiniMessageViewer
+,,,,,,,,,,,,,HzFwkUtils\Tools\MessageExplorer
+RT Backup Restore,,T-Primer,,ZHANG Peng,false,,,,,,,
+,,,,,,,,,,,,,HzFramework\Utilities\RTBackupRestore
+,,,,,,,,,,,,,HzFwkUtils\Utilities
+Telemetry Tools,,Workflow,,Liang Nan,,,,,,,,
+,,,,,,,,,,,,,HzFwkUtils\BaseImplUtilities
+,,,,,,,,,,,,,HzSysApps
+,DTS,,,,,,,,,,,
+,,,,,,,,,,,,,HzSysApps\Digital\DTS\Common
+,,,,,,,,,,,,,HzSysApps\Digital\DTS\AutoTest
+,EDTS,,,,,,,,,,,
+,,,,,,,,,,,,,HzSysApps\Digital\EDTS\Common
+,,,,,,,,,,,,,HzSysApps\Digital\EDTS\gtest
+,,,,,,,,,,,,,HzSysApps\Digital\EDTS\AutoTest
+,MTS,,,,,,,,,,,
+,,,,,,,,,,,,,HzSysApps\Digital\MTS
+,,,,,,,,,,,,,HzSysApps\Digital\MTS\gTest\HzMTS_GTest
+,EDTS2G,,,,,,,,,,,
+,,,,,,,,,,,,,HzSysApps\Digital\EDTS2G
+GraphicalUtility,,Display,,CUI Xu Guang,false,,,,,,,
+,,,,,,,,,,,,,HzFwkUtils\Tools\DiskMonitor
+,,,,,,,,,,,,,HzFwkUtils\Tools\DiskMonitor\Properties
+,,,,,,,,,,,,,HzFwkUtils\Utilities\Formatting
+,,,,,,,,,,,,,HzFwkUtils\Utilities\Forms
+,,,,,,,,,,,,,HzFwkUtils\Utilities\Properties
+,,,,,,,,,,,,,HzFwkUtils\Utilities\SafeWrappers
+,,,,,,,,,,,,,HzFwkUtils\Utilities\Threading
+,,,,,,,,,,,,,HzFwkUtils\Utilities\Validation
+,,,,,,,,,,,,,HzFwkUtils\Utilities\Win32
+,,,,,,,,,,,,,HzFwkUtils\Utilities\Win32\SafeHandles
+Workflow Utilities,,Workflow,,Xu Dawei,true,Obsolete,,,,,,
+,,,,,,,,,,,,,HzFwkUtils\DotNetZip
+,,,,,,,,,,,,,HzFwkUtils\Tools\WirelinePowerEditor
+,,,,,,,,,,,,,HzProducts\Viewers\CmdHandlerViewer
+,,,,,,,,,,,,,HzTestTools\Tools\TelemetryMessageMonitor
+ConsoleMgr,,Display,,Zhang Hui,false,,,,,,,
+,,,,,,,,,,,,,HzProducts\GenericComponents\ConsoleMgr
+,,,,,,,,,,,,,HzFwkUtils\Win32Native
+Graphical Deliverables,,Display,,Zhang Hui,,,,,,,,
+,Header,,,,false,Obsolete,,,,,,
+,,,,,,,,,,,,,HzProducts\utilities\HeaderTypeProperty
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\CoverPage
+,IntegrationSummary,,,,true,Obsolete,,,,,,
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\IntegrationSummary
+,BoreHoleSizeCasingRecord,,,,false,Obsolete,,,,,,
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\BoreHoleSizeCasingRecord
+,CalibrationReport,,,,true,Obsolete,,,,,,
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\CalibrationRpt
+,ComplexComponentViewer,,,,false,Obsolete,,,,,,
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\ComplexComponentViewer
+,CompositeSummary,,,,false,Obsolete,,,,,,
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\CompositeSummary
+,Disclaimer,,,,true,Obsolete,,,,,,
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\Disclaimer
+,ExternalImage,,,,true,Obsolete,,,,,,
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\ExternalImage
+,GroupLabel,,,,true,Obsolete,,,,,,
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\GCGroupLabel
+,TableOfContents,,,,true,Obsolete,,,,,,
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\GCTableOfContents
+,PrintHeader,,,,true,Obsolete,,,,,,
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\GraphicalStandAlonePrintHeader
+,SurveyRecord,,,,true,Obsolete,,,,,,
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\SurveyRecord
+,JobEventSummary,,,,false,Obsolete,,,,,,
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\JobEventSummary
+,RemarksEquipSummary,,,,true,Obsolete,,,,,,
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\RemarksEquipSummary
+,BoreholeFluids,,,,false,Obsolete,,,,,,
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\BoreholeFluids
+,Tail,,,,true,Obsolete,,,,,,
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\Tail
+,OperationRunSummary,,,,false,Obsolete,,,,,,
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\OperationRunSummary
+,ParameterListing,,,,false,Obsolete,,,,,,
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\SlbParameterListing
+,SoftwareVersionReport,,,,false,Obsolete,,,,,,
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\SoftwareVersionRpt
+,WellSketch,,,,false,Obsolete,,,,,,
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\WellSketch
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\WellSketchHost
+DataExchange,,Digital Deliverable,,Jixi SHAN,,,,,,,,
+,TimelapseWriter,,,,false,,,,,,,
+,DexInterface,,,,true,,,,,,,
+,ToolSpecificLasWriterBase,,,,true,,,,,,,
+LTSTelemetry,,HCS,,Kevin Wu,,,,,,,,
+,LTS,,,,,,,,,,,
+,,,,,,,,,,,,,HzSysApps\Digital\LTS
+Analytics,,T-Primer,,ZHANG Peng,,,,,,,,Analytics\SystemBehavior
+CodeAnalysisPlatform,,T-Primer,,ZHANG Peng,,,,,,,,Analytics\SystemSource
+,,,,,,,,,,,,,Analytics\SystemSource
+AppCore,,ApplicationsIE,Common,,,,Sustaining,,,,,AppCore
+HFE_AppCore,,ApplicationsIE,Common,,,,Sustaining,,,,,AppCore
+,ADN,,,,,,,,,,,
+,APS,,,,,,,,,,,
+,AUL,,,,,,,,,,,
+,ECS,,,,,,,,,,,
+,HNGS,,,,,,,,,,,
+,HzDecisionXpress,,,,,,,,,,,
+,LDS,,,,,,,,,,,
+,NEXT,,,,,,,,,,,
+,RST,,,,,,,,,,,
+,SLDT,,,,,,,,,,,
+,Include,,,,,,,,,,,
+,IPLT,,,,,,,,,,,
+,MRX,,,,,,,,,,,
+,NMR,,,,,,,,,,,
+,Physics,,,,,,,,,,,
+SRFE_AppCore,,ApplicationsIE,Common,,,,Sustaining,,,,,AppCore
+,Ecoscope,,,,,,,,,,,
+,fsi_ip_processing,,,,,,,,,,,
+,Interpolation_Spline3d,,,,,,,,,,,
+,Interpolation_Spline2d,,,,,,,,,,,
+,PEX_HGNS,,,,,,,,,,,
+,SPRINT,,,,,,,,,,,
+,EmitLib,,,,,,,,,,,
+SKK_AppCore,,ApplicationsIE,Common,Jiaping Li,,,Sustaining,,,,,AppCore\Sonic\cs_sonic
+,cs_sonic,,,,,,,,,,,
+Automation,,Automation,,,,,,,,,,AutoUATest
+,,,,,,,,,,,,,AutoUATest
+TestAutomationWebAPI,,UIDVAuto,,Liying Li,,,,,,,,AutoUATest\AutomationTestWebAPI
+,,,,,,,,,,,,,AutoUATest\AutomationTestWebAPI
+UIATTestCaseHub,,UIDVAuto,,Weiqin Ma,,,,,,,,AutoUATest\TCWeb
+,,,,,,,,,,,,,AutoUATest\TCWeb
+UIATTestResult,,UIDVAuto,,Liying Li,,,,,,,,AutoUATest\UIATWeb
+,,,,,,,,,,,,,AutoUATest\UIATWeb
+DVUtility,,UIDVAuto,,Peihu Wang,,,,,,,,AutoUATest\Utility
+,,,,,,,,,,,,,AutoUATest\Utility
+ToolExecludeWebService,,UIDVAuto,,Peihu Wang,,,,,,,,AutoUATest\WebService
+,,,,,,,,,,,,,AutoUATest\WebService
+OldCI,,ORPHANED,,Yan Chenghua,,,,,,,,Build
+,,,,,,,,,,,,,Build
+CIProduction,,Environment,,Gao Xinghua,,,,,,,,CI\Production
+,,,,,,,,,,,,,CI\Production
+CIStaging,,Environment,,Dan ZHOU(Maxwell),,,,,,,,CI\Staging
+,,,,,,,,,,,,,CI\Staging
+CITools,,Environment,,Yan Chenghua,,,,,,,,CI\Tool
+,,,,,,,,,,,,,CI\Tool
+CUDD,,T-Primer,,LI Ziming,true,,,,,,,ExternalSource\CUDD
+,,,,,,,,,,,,,ExternalSource\CUDD
+DotNotZip,,ThirdParty,,LI Ziming,,,,,,,,ExternalSource\DotNetZip
+,,,,,,,,,,,,,\HzFwkUtils\DotNetZip
+WitnessConsole,,Display,,Zhang Hui,false,Obsolete,,,,,,ExternalSource\Witness\WitnessRemoteClient
+,,,,,,,,,,,,,HzProducts\Viewers\WitnessRemoteClient
+Services,,T-Primer,,ZHU Yu,true,,,,,,,HzAPI\BaseImpl
+,,,,,,,,,,,,,HzAPI\BaseImpl
+ApplicationCommon,,Undefined,Common,,,,,,,,,HzApplications
+,,,,,,,,,,,,,Maxwell\Application
+,AIDE,SRFE,,Francois Besse,,,,,,,,
+,AplUtil,HFE,,Dave Garrett,,,3RP,,,,,
+,AplFlowline,HFE,,Tao Zhang,,,3RP,Wireline,,,,
+,DlisCustomCnv,Digital Deliverable,,,,,,,,,,
+,LogGraphics,SRFE,,Bo Ding,,,,,,,,
+,SharedUIComp,HFE,,Dave Garrett,,,3RP,,,,,
+,PerfoUIComponents,RPS,,Amiya Aloke,,,Sustaining,Wireline,,,,
+,AplPresentationCore,RPS,,Amiya Aloke,,,NPD,Wireline,,,,
+,AplTestLibrary,RPS,,Amiya Aloke,,,NPD,Wireline,,,,
+,UnitTest,HFE,,Steven McCluney,,,,,,,,
+,Tools,Environment,,Difei Zhao,,,,,,,,
+,WaveformViewer,SKK,,Erhan Deger,,,,,,,,
+,WvPanelController,SKK,,Erhan Deger,,,,,,,,
+,XyZPlot,SHTC,,Kenzo Hara,,,,,,,,
+,FE_Computations,HFE,,Hung K. Huynh,,,,,,,,
+,FEWL_Computations,HFE,,Hung K. Huynh,,,,Wireline,,,,
+ADT,,SRFE,ApplicationFamily,,,,,Wireline-ES,Dielectric Scanner,,,HzApplications
+,,,,,,,,,,,,,Maxwell\Application\SRFE\ADT
+,ADT-C,,,,,,,,,,,
+,,,,,,,,,,,,,,ADT-C,Commercial,TRUE,,,
+,,,,,,,,,,,,,,ADT-CAB,Commercial,TRUE,,,
+,,,,,,,,,,,,,,ADT-CB,Commercial,TRUE,,,
+MDT,,HFE,ApplicationFamily,,,Commercial,3RP,Wireline-ES,,,,HzApplications
+,,,,,,,,,,,,,Maxwell\Application\HFE\MDT
+,,,,,,,,,,,,,,MRFJ-A,,TRUE,,,
+,,,,,,,,,,,,,,MRFJ-NA,,TRUE,,,
+,Common,HFE,,Tao Zhang,,,,,,,,
+,,,,,,,,,,,,,,MRBA-A,,TRUE,,,
+,,,,,,,,,,,,,,MRBA-NA,,TRUE,,,
+,,,,,,,,,,,,,,MDT-BN,,TRUE,,,
+,MRFA,SKK,,Hidenori Tsuboi,,,Sustaining,,,,,
+,,,,,,,,,,,,,,MRFA-E,,TRUE,LFA,,
+,,,,,,,,,,,,,,MRFA-F,,TRUE,LFA-pH,,
+,,,,,,,,,,,,,,MRFA-G,,TRUE,CFA,,
+,,,,,,,,,,,,,,MRFA-NE,,TRUE,LFA,,
+,,,,,,,,,,,,,,MRFA-NF,,TRUE,LFA-pH,,
+,,,,,,,,,,,,,,MRFA-NG,,TRUE,CFA,,
+,,,,,,,,,,,,,,MRFA-NPB,,TRUE,LFA,,
+,,,,,,,,,,,,,,MRFA-NPG,,TRUE,CFA,,
+,,,,,,,,,,,,,,MRFA-NSA,,TRUE,LFA,,
+,,,,,,,,,,,,,,MRFA-NSF,,TRUE,LFA-pH,,
+,,,,,,,,,,,,,,MRFA-PB,,TRUE,LFA,,
+,,,,,,,,,,,,,,MRFA-PG,,TRUE,CFA,,
+,,,,,,,,,,,,,,MRFA-SA,,TRUE,LFA,,
+,MIFA,SKK,,Hidenori Tsuboi,,,Sustaining,,,,,
+,,,,,,,,,,,,,,MIFA-ND,,TRUE,IFA,,
+,,,,,,,,,,,,,,MIFA-NSA,,TRUE,IFA,,
+,,,,,,,,,,,,,,MIFA-NX,,TRUE,IFA,,
+,H2S,SKK,,Katsuhiro Kitano,,FieldIntro,NPD,,,,,
+,MPVT,SKK,,Jun Kogami,,Alpha,NPD,,,,,
+,,,,,,,,,,,,,,MPVT-NA,Alpha,TRUE,,,
+,Chambers,HFE,,Tao Zhang,,,,,,,,
+,,,,,,,,,,,,,,MRMS-B,,TRUE,,,
+,,,,,,,,,,,,,,MRMS-C,,TRUE,,,
+,,,,,,,,,,,,,,MRMS-HXC,,TRUE,,,
+,,,,,,,,,,,,,,MRMS-NP,,TRUE,,,
+,,,,,,,,,,,,,,MRMS-NC,,TRUE,,,
+,,,,,,,,,,,,,,MRMS-NB,,TRUE,,,
+,,,,,,,,,,,,,,MRMS-P,,TRUE,,,
+,,,,,,,,,,,,,,MRMS-XC,,TRUE,,,
+,,,,,,,,,,,,,,MRMS-XP,,TRUE,,,
+,,,,,,,,,,,,,,MRSC-A,,TRUE,,,
+,,,,,,,,,,,,,,MRSC-B,,TRUE,,,
+,,,,,,,,,,,,,,MRSC-C,,TRUE,,,
+,,,,,,,,,,,,,,MRSC-D,,TRUE,,,
+,,,,,,,,,,,,,,MRSC-E,,TRUE,,,
+,,,,,,,,,,,,,,MRSC-F,,TRUE,,,
+,,,,,,,,,,,,,,MRSC-G,,TRUE,,,
+,,,,,,,,,,,,,,MRSC-H,,TRUE,,,
+,,,,,,,,,,,,,,MRSC-HXG,,TRUE,,,
+,,,,,,,,,,,,,,MRSC-J,,TRUE,,,
+,,,,,,,,,,,,,,MRSC-NA,,TRUE,,,
+,,,,,,,,,,,,,,MRSC-NB,,TRUE,,,
+,,,,,,,,,,,,,,MRSC-NC,,TRUE,,,
+,,,,,,,,,,,,,,MRSC-ND,,TRUE,,,
+,,,,,,,,,,,,,,MRSC-NE,,TRUE,,,
+,,,,,,,,,,,,,,MRSC-NF,,TRUE,,,
+,,,,,,,,,,,,,,MRSC-NG,,TRUE,,,
+,,,,,,,,,,,,,,MRSC-NH,,TRUE,,,
+,,,,,,,,,,,,,,MRSC-NJ,,TRUE,,,
+,,,,,,,,,,,,,,MRSC-NP,,TRUE,,,
+,,,,,,,,,,,,,,MRSC-NS,,TRUE,,,
+,,,,,,,,,,,,,,MRSC-P,,TRUE,,,
+,,,,,,,,,,,,,,MRSC-XG,,TRUE,,,
+,,,,,,,,,,,,,,MRSC-XJ,,TRUE,,,
+,,,,,,,,,,,,,,MRSC-XP,,TRUE,,,
+,Devices,HFE,,Tao Zhang,,,,,,,,
+,Hydraulic,HFE,,Tao Zhang,,,,,,,,
+,,,,,,,,,,,,,,MRHY-A,,TRUE,,,
+,,,,,,,,,,,,,,MRHY-B,,TRUE,,,
+,,,,,,,,,,,,,,MRHY-HXB,,TRUE,,,
+,,,,,,,,,,,,,,MRHY-NA,,TRUE,,,
+,,,,,,,,,,,,,,MRHY-NP,,TRUE,,,
+,,,,,,,,,,,,,,MRHY-NS,,TRUE,,,
+,,,,,,,,,,,,,,MRHY-NB,,TRUE,,,
+,,,,,,,,,,,,,,MRHY-P,,TRUE,,,
+,,,,,,,,,,,,,,MRHY-S,,TRUE,,,
+,,,,,,,,,,,,,,MRHY-XB,,TRUE,,,
+,,,,,,,,,,,,,,MRHY-XP,,TRUE,,,
+,,,,,,,,,,,,,,MRHY-XS,,TRUE,,,
+,,,,,,,,,,,,,,MRPO-B,,TRUE,,,
+,,,,,,,,,,,,,,MRPO-C,,TRUE,,,
+,,,,,,,,,,,,,,MRPO-NB,,TRUE,,,
+,,,,,,,,,,,,,,MRPO-NC,,TRUE,,,
+,,,,,,,,,,,,,,MRPO-NP,,TRUE,,,
+,,,,,,,,,,,,,,MRPO-NS,,TRUE,,,
+,,,,,,,,,,,,,,MRPO-P,,TRUE,,,
+,,,,,,,,,,,,,,MRPO-S,,TRUE,,,
+,,,,,,,,,,,,,,MRPO-XC,,TRUE,,,
+,,,,,,,,,,,,,,MRPO-XP,,TRUE,,,
+,,,,,,,,,,,,,,MRPO-XS,,TRUE,,,
+,PackersCommon,HFE,,Tao Zhang,,,,,,,,
+,MRPA,HFE,,Tao Zhang,,,,,,,,
+,,,,,,,,,,,,,,MRPA-C,,TRUE,,,
+,,,,,,,,,,,,,,MRPA-E,,TRUE,,,
+,,,,,,,,,,,,,,MRPA-NC,,TRUE,,,
+,,,,,,,,,,,,,,MRPA-NE,,TRUE,,,
+,,,,,,,,,,,,,,MRPA-XE,,TRUE,,,
+,MRSR,HFE,,Tao Zhang,,,,,,,,
+,,,,,,,,,,,,,,MRSR-NA,,TRUE,Saturn,,
+,MRSF,HFE,,Tao Zhang,,,,,,,,
+,,,,,,,,,,,,,,MRSF-NA,FieldIntro,TRUE,Sleeve Fracture,,
+,Probes,HFE,,Tao Zhang,,,,,,,,
+,,,,,,,,,,,,,,MRPS-B,,TRUE,,,
+,,,,,,,,,,,,,,MRPS-D,,TRUE,,,
+,,,,,,,,,,,,,,MRPS-NB,,TRUE,,,
+,,,,,,,,,,,,,,MRPS-ND,,TRUE,,,
+,,,,,,,,,,,,,,MRPS-NP,,TRUE,,,
+,,,,,,,,,,,,,,MRPS-NU,,TRUE,,,
+,,,,,,,,,,,,,,MRPS-P,,TRUE,,,
+,,,,,,,,,,,,,,MRPS-U,,TRUE,,,
+,,,,,,,,,,,,,,MRPS-XD,,TRUE,,,
+,,,,,,,,,,,,,,MRPQ-D,,TRUE,Quicksilver Probe,,
+,,,,,,,,,,,,,,MRPQ-HXD,,TRUE,Quicksilver Probe,,
+,,,,,,,,,,,,,,MRPQ-ND,,TRUE,Quicksilver Probe,,
+,,,,,,,,,,,,,,MRPQ-NP,,TRUE,Quicksilver Probe,,
+,,,,,,,,,,,,,,MRPQ-P,,TRUE,Quicksilver Probe,,
+,,,,,,,,,,,,,,MRPQ-XD,,TRUE,Quicksilver Probe,,
+,,,,,,,,,,,,,,MRPQ-XP,,TRUE,Quicksilver Probe,,
+,,,,,,,,,,,,,,MRPQ-XS,,TRUE,Quicksilver Probe,,
+,MRPC,HFE,,Tao Zhang,,,,,,,,
+,,,,,,,,,,,,,,MRPC-B,,TRUE,,,
+,,,,,,,,,,,,,,MRPC-C,,TRUE,,,
+,,,,,,,,,,,,,,MRPC-D,,TRUE,,,
+,,,,,,,,,,,,,,MRPC-HXD,,TRUE,,,
+,,,,,,,,,,,,,,MRPC-NB,,TRUE,,,
+,,,,,,,,,,,,,,MRPC-NC,,TRUE,,,
+,,,,,,,,,,,,,,MRPC-ND,,TRUE,,,
+,,,,,,,,,,,,,,MRPC-NP,,TRUE,,,
+,,,,,,,,,,,,,,MRPC-NT,,TRUE,,,
+,,,,,,,,,,,,,,MRPC-P,,TRUE,,,
+,,,,,,,,,,,,,,MRPC-T,,TRUE,,,
+,,,,,,,,,,,,,,MRPC-XD,,TRUE,,,
+,,,,,,,,,,,,,,MRPC-XP,,TRUE,,,
+,,,,,,,,,,,,,,MRPC-XT,,TRUE,,,
+,MRPP,HFE,,Tao Zhang,,,,,,,,
+,MdtRcm,HFE,,Tao Zhang,,,,,,,,
+,,,,,,,,,,,,,Maxwell\Application\HFE\MDT\RCM
+,MdtFlowline,HFE,,Tao Zhang,,,,,,,,
+,,,,,,,,,,,,,Maxwell\Application\HFE\MDT\MdtFlowline
+,MDPC,HFE,,,,,,,,,,
+,,,,,,,,,,,,,Maxwell\Application\HFE\MDT
+,,,,,,,,,,,,,,MDPC-BB,PreAlpha,TRUE,,,
+,MDCP,HFE,,,,,,,,,,
+,,,,,,,,,,,,,Maxwell\Application\HFE\MDT
+,,,,,,,,,,,,,,MDCP-BA,PreAlpha,TRUE,,,
+,MDCC,HFE,,,,,,,,,,
+,,,,,,,,,,,,,Maxwell\Application\HFE\MDT
+,,,,,,,,,,,,,,MDCC-DA,PreAlpha,TRUE,,,
+,ChdtUI,HFE,,,,PreAlpha,,,,,,
+,,,,,,,,,,,,,Maxwell\Application\HFE\MDT
+MAST,,SKK,ApplicationFamily,Jiaping Li,,,3RP,Wireline-ES,SonicScanner,,,HzApplications
+,,,,,,,,,,,,,Maxwell\Application\SKK\MAST
+,,,,,,,,,,,,,,MAST-B,Commercial,TRUE,,,
+,,,,,,,,,,,,,,MAST-H,Commercial,TRUE,,,
+SRFE_IE,,ApplicationsIE,Common,,,,Sustaining,,,,,HzApplications
+,USIT_Processing,,,,,,,,,,,
+,NGICalibrationCheck,,,,,,,,,,,
+,EmitComputationCpp,,,,,,,,,,,
+,EmitComputationCppTest,,,,,,,,,,,
+,armadilloEmit,,,,,,,,,,,
+,matlibEmit,,,,,,,,,,,
+TALN,,ORPHANED,ApplicationFamily,,,,Orphaned,Wireline-ES,,,,HzApplications
+,,,,,,,,,,,,,Maxwell\Application\HFE\TALN
+,,,,,,,,,,,,,,FTDT-A,,FALSE,,,
+,,,,,,,,,,,,,,FTPC-B,,FALSE,,,
+,,,,,,,,,,,,,,FTPO-A,,FALSE,,,
+,,,,,,,,,,,,,,FTTA-A,,FALSE,,,
+,,,,,,,,,,,,,,FTTC-A,,FALSE,,,
+,,,,,,,,,,,,,,FTTC-B,,FALSE,,,
+,,,,,,,,,,,,,,TNPC-C,,FALSE,,,
+,Common,,,Tao Zhang,,,,,,,,
+,Obsolete_SPI,,,,,,,,,,,
+,FTWT,,,Tao Zhang,,,,,,,,
+,Obsolete_SOI,,,,,,,,,,,
+,TNPC,,,Tao Zhang,,,,,,,,
+,Obsolete_DVRod,,,,,,,,,,,
+,Obsolete_FTQP,,,,,,,,,,,
+ACTiveCT,,HCS,ApplicationFamily,Ben Thomas,,PreCommercial,NPD,CoiledTubing,ACTiveCT;iMax,,,HzApplications\ACTiveCT
+,,,,,,,,,,,,,Maxwell\Application\HCS\ACTiveCT
+,DFLO,,,,,PreCommercial,,,DFLO,,,
+,,,,,,,,,,,,,Maxwell\Application\HCS\ACTiveCT\DFLO
+,,,,,,,,,,,,,,PTC-DFLO_MAIN,,TRUE,,,
+,,,,,,,,,,,,,,PTC-DFLO_LOWER,,TRUE,,,
+,iControl,,,,,PreCommercial,,,iControl;OptiFire,,,
+,,,,,,,,,,,,,Maxwell\Application\HCS\ACTiveCT\iControl
+,,,,,,,,,,,,,,PTC-OptiFIRE,,TRUE,,,
+,ACTiveCT_Common,,,,,PreCommercial,,,,,,
+,,,,,,,,,,,,,Maxwell\Application\HCS\ACTiveCT\Common
+,PTC-Rugged,,,,,PreCommercial,,,PTC-Rugged,,,
+,,,,,,,,,,,,,Maxwell\Application\HCS\ACTiveCT\ACTR
+,,,,,,,,,,,,,,ACTR-DCM,,TRUE,,,
+,,,,,,,,,,,,,,ACTR-PT,,TRUE,,,
+,,,,,,,,,,,,,,ACTR-TC,,TRUE,,,
+,iFC_Power,,,,,PreCommercial,,,iFC Power,,,
+,,,,,,,,,,,,,Maxwell\Application\HCS\ACTiveCT\iFC_Power
+,,,,,,,,,,,,,,ACTR-MHA-PWR,,TRUE,,,
+ACTivePS,,SKK,ApplicationFamily,Naoki Watauchi,,,Sustaining,CoiledTubing,,,,HzApplications\ACTivePS
+,IOLA,,,,,,,,,,,
+,,,,,,,,,,,,,Maxwell\Application\SKK\ACTivePS\IOLA
+,,,,,,,,,,,,,,IOLA-CA,Commercial,TRUE,,,
+,IOLR,,,,,,,,,,,
+,,,,,,,,,,,,,Maxwell\Application\SKK\ACTivePS\IOLR
+,,,,,,,,,,,,,,IOLR-A,Commercial,TRUE,,,
+ADN,,HFE,ApplicationFamily,Steven McCluney,,Commercial,Sustaining,DnM,ADN;adnVISION,,,HzApplications\ADN
+,,,,,,,,,,,,,Maxwell\Application\HFE\ADN
+,,,,,,,,,,,,,,ADN4,Commercial,TRUE,,,
+,,,,,,,,,,,,,,ADN6C,Commercial,TRUE,,,
+,,,,,,,,,,,,,,ADN8,Commercial,TRUE,,,
+,,,,,,,,,,,,,,ADN8D,Commercial,TRUE,,,
+,,,,,,,,,,,,,,SADN8,Commercial,TRUE,,,
+AIM,,SHTC,ApplicationFamily,Kenzo Hara,,Obsolete,Sustaining,DnM,,,,HzApplications\AIM
+,,,,,,,,,,,,,Maxwell\Application\SHTC\AIM
+AIT,,HFE,ApplicationFamily,Rick Brunson,,Commercial,3RP,Wireline-ES,AIT;Array Induction Tool;RT Scanner;3D Scanner,,,HzApplications\AIT
+,,,,,,,,,,,,,Maxwell\Application\HFE\AIT
+,,,,,,,,,,,,,Maxwell\Application\HFE\ZAIT
+,,,,,,,,,,,,,,AIT-C,,TRUE,,,
+,,,,,,,,,,,,,,AIT-D,,TRUE,,,
+,,,,,,,,,,,,,,AIT-H,,TRUE,,,
+,,,,,,,,,,,,,,AIT-M,,TRUE,,,
+,,,,,,,,,,,,,,QAIT-A,,TRUE,,,
+,,,,,,,,,,,,,,SAIT-A,,TRUE,,,
+,,,,,,,,,,,,,,ZAIT-C,,TRUE,,,
+,,,,,,,,,,,,,,ZAIT-D,,TRUE,,,
+,,,,,,,,,,,,,,ZAIT-E,,TRUE,,,
+,,,,,,,,,,,,,,ZAIT-F,,TRUE,,,
+,,,,,,,,,,,,,,ZAIT-H,,TRUE,,,
+,AIT_Sub,,,,,,,,,,,
+,AIT_TnD,,,,,,,,,,,
+,ZAIT_Sub,,,,,,,,,,,
+PGGT-UPCT,,HFE,ApplicationFamily,Bill Sass,,,Sustaining,Wireline-PS,PGGT;Powered Gun Gamma Ray Tool;UPCT;Universal Perforating and Correlation Tool,,,HzApplications\Analog_Correlation
+,,,,,,,,,,,,,Maxwell\Application\HFE\PGGT-UPCT
+,,,,,,,,,,,,,,PGGT-CC,Commercial,TRUE,,,
+,,,,,,,,,,,,,,PGGT-D,Commercial,TRUE,,,
+,,,,,,,,,,,,,,PGGT-E,Alpha,TRUE,,,
+,,,,,,,,,,,,,,UPCT-A,Commercial,TRUE,,,
+APS,,HFE,ApplicationFamily,Bill Sass,,Commercial,Sustaining,Wireline-ES,APS,,,HzApplications\APS
+,,,,,,,,,,,,,Maxwell\Application\HFE\APS
+,,,,,,,,,,,,,,APS-C,,TRUE,,,
+,,,,,,,,,,,,,,APS-C30,,TRUE,,,
+,,,,,,,,,,,,,,HAPS-C,,TRUE,,,
+,,,,,,,,,,,,,,APS-C-EFTB,,TRUE,,,
+,,,,,,,,,,,,,,APS-C30-EFTB,,TRUE,,,
+,,,,,,,,,,,,,,HAPS-C-EFTB,,TRUE,,,
+ARC,,HFE,ApplicationFamily,Steven McCluney,,Commercial,3RP,DnM,ARC;arcVISION,,,HzApplications\ARC
+,,,,,,,,,,,,,Maxwell\Application\HFE\ARC
+,,,,,,,,,,,,,,ARC3,Commercial,TRUE,,,
+,,,,,,,,,,,,,,ARC5,Commercial,TRUE,,,
+,,,,,,,,,,,,,,ARC6,Commercial,TRUE,,,
+,,,,,,,,,,,,,,ARC8,Commercial,TRUE,,,
+,,,,,,,,,,,,,,ARC9,Commercial,TRUE,,,
+ARX,,ORPHANED,ApplicationFamily,Steven McCluney,,Alpha,Orphaned,DnM,ARX;Venus-R,,,HzApplications\ARX
+,,,,,,,,,,,,,Maxwell\Application\HFE\ARX
+,,,,,,,,,,,,,,ARX4,Alpha,TRUE,,,
+,,,,,,,,,,,,,,ARX6,Alpha,TRUE,,,
+BasicLoggingEqpt,,HCS,ApplicationFamily,Kevin Wu,,Commercial,Sustaining,Wireline,,,,HzApplications\BasicLoggingEqpt
+,HeadsWithSensors,HCS,,,,,,,,,,
+,,,,,,,,,,,,,Maxwell\Application\HCS\Basic and Critical Eqpt\Sensor Heads and Subs
+,,,,,,,,,,,,,,ACTS-B,,TRUE,ACTS-B,Wireline-ES,
+,,,,,,,,,,,,,,DWCH-HA,,TRUE,DWCH-HA,Wireline-ES,
+,,,,,,,,,,,,,,ETCS-AA,,TRUE,ETCS-AA,Wireline-ES,
+,,,,,,,,,,,,,,ETCS-JA,,TRUE,ETCS-JA,Wireline-ES,
+,,,,,,,,,,,,,,FTWC-A,,TRUE,FTWC-A,Wireline-ES,
+,,,,,,,,,,,,,,HTCS-A,,TRUE,HTCS-A,Wireline-ES,
+,,,,,,,,,,,,,,LEH-AA,,TRUE,LEH-AA,Wireline,
+,,,,,,,,,,,,,,LEH-HT,,TRUE,LEH-HT,Wireline,
+,,,,,,,,,,,,,,LEH-MT,,TRUE,LEH-MT,Wireline,
+,,,,,,,,,,,,,,LEH-OE,,TRUE,LEH-OE,Wireline,
+,,,,,,,,,,,,,,LEH-PT,,TRUE,LEH-PT,Wireline,
+,,,,,,,,,,,,,,LEH-QT,,TRUE,LEH-QT,Wireline,
+,,,,,,,,,,,,,,LEH-ST,,TRUE,LEH-ST,Wireline,
+,,,,,,,,,,,,,,STCS-BA,,TRUE,STCS-BA,Wireline,
+,,,,,,,,,,,,,,TTSA-B,,TRUE,TTSA-B,Wireline,
+,,,,,,,,,,,,,,XHUH,,TRUE,XHUH,Wireline,
+,ReleaseSubs,HCS,,,,,,,,,,
+,,,,,,,,,,,,,Maxwell\Application\HCS\Basic and Critical Eqpt\Release Devices
+,,,,,,,,,,,,,,ECRD-E,,TRUE,ECRD-E,Wireline-ES,
+,,,,,,,,,,,,,,ECRD-F,,TRUE,ECRD-F,Wireline-ES,
+,,,,,,,,,,,,,,ECRD-G,,TRUE,ECRD-G,Wireline-ES,
+,,,,,,,,,,,,,,ECRD-H,,TRUE,ECRD-H,Wireline-ES,
+,,,,,,,,,,,,,,ERS-A,,TRUE,ERS-A,Wireline-PS,
+,,,,,,,,,,,,,,ERS-E,,TRUE,ERS-E,Wireline-PS,
+FlcnHead,,HCS,ApplicationFamily,Kevin Wu,,Alpha,NPD,Wireline-ES,,,,HzApplications\BasicLoggingEqpt\FlcnHead
+,,,,,,,,,,,,,Maxwell\Application\HCS\Logging Eqpt\FLCN Head
+,FlcnHead_GTest,,Test,,,,,,,,,
+,LEH-FAA,HCS,,,,Alpha,NPD,,,,,
+,,,,,,,,,,,,,,LEH-FAA,,TRUE,,,
+,LEH-FPA,HCS,,,,Alpha,NPD,,,,,
+,,,,,,,,,,,,,,LEH-FPA,,TRUE,,,
+SlimHead,,HCS,ApplicationFamily,Kevin Wu,,Alpha,NPD,Wireline-PS,,,,HzApplications\BasicLoggingEqpt\SlimHead
+,,,,,,,,,,,,,Maxwell\Application\HCS\Logging Eqpt\Slim Head
+,SlimHead_GTest,,Test,,,,,,,,,
+,PEH-SAA,HCS,,,,Alpha,NPD,,,,,
+,,,,,,,,,,,,,,PEH-SAA,,TRUE,,,
+,SAH-SAA,HCS,,,,Alpha,NPD,,,,,
+,,,,,,,,,,,,,,SAH-SAA,,TRUE,,,
+,TTSA-SAA,HCS,,,,Alpha,NPD,,,,,
+,,,,,,,,,,,,,,TTSA-SAA,,TRUE,,,
+BORDIP,,SRFE,ApplicationFamily,,,,,Wireline,,,,HzApplications\BORDIP
+,,,,,,,,,,,,,Maxwell\Application\SRFE\BORDIP
+BORDYN,,SRFE,ApplicationFamily,,,,,Wireline,,,,HzApplications\BORDYN
+,,,,,,,,,,,,,Maxwell\Application\SRFE\BORDYN
+CCL,,SRFE,ApplicationFamily,,,Commercial,Sustaining,Wireline-PS,,,,HzApplications\CCL
+,,,,,,,,,,,,,Maxwell\Application\SRFE\CAL CCL
+,,,,,,,,,,,,,,CAL-B,,TRUE,,,
+,,,,,,,,,,,,,,CAL-O,,TRUE,,,
+,,,,,,,,,,,,,,CAL-X,,TRUE,,,
+,,,,,,,,,,,,,,CAL-YA,,TRUE,,,
+,,,,,,,,,,,,,,CAL-YB,,TRUE,,,
+,,,,,,,,,,,,,,CCL-L,,TRUE,,,
+,,,,,,,,,,,,,,CCL-LB,,TRUE,,,
+,,,,,,,,,,,,,,CCL-N,,TRUE,,,
+,,,,,,,,,,,,,,CCL-NB,,TRUE,,,
+,PWCH,HCS,,,,,,,,,,
+,,,,,,,,,,,,,,PWCH-HA,,TRUE,,,
+,,,,,,,,,,,,,,PWCH-JA,,TRUE,,,
+CEMENTATION,,SRFE,ApplicationFamily,,,,,Wireline,,,,HzApplications\CEMENTATION
+CLink,,SHTC,ApplicationFamily,Kenzo Hara,,Commercial,Sustaining,DnM,,,,HzApplications\CLink
+,,,,,,,,,,,,,Maxwell\Application\SHTC\CLink
+,,,,,,,,,,,,,,CLPS475,,TRUE,CLPS Receiver,,
+,,,,,,,,,,,,,,CLPS675,,TRUE,CLPS Receiver,,
+,,,,,,,,,,,,,,CLNK475,,TRUE,CLink Receiver,,
+,,,,,,,,,,,,,,CLNK675,,TRUE,CLink Receiver,,
+,,,,,,,,,,,,,,CLNK825,,TRUE,CLink Receiver,,
+,,,,,,,,,,,,,,CLNKL675,,TRUE,CLink Transmitter,,
+,,,,,,,,,,,,,,CLNKL825,,TRUE,CLink Transmitter,,
+,,,,,,,,,,,,,,WESTON900,,TRUE,Weston Receiver,,
+CMR,,HFE,ApplicationFamily,Hisayo Tauchi,,,3RP,Wireline-ES,CMR;CMR Plus,,,HzApplications\CMRTB
+,,,,,,,,,,,,,Maxwell\Application\HFE\CMR
+,,,,,,,,,,,,,Maxwell\Application\HFE\CMRTF
+,,,,,,,,,,,,,,CMRT-B,Commercial,TRUE,,,
+,,,,,,,,,,,,,,CMRT-F,Commercial,TRUE,,,
+CNT,,HFE,ApplicationFamily,Bill Sass,,,Sustaining,Wireline-ES,CNT,,,HzApplications\CNT
+,,,,,,,,,,,,,Maxwell\Application\HFE\CNTS-QCNT
+,,,,,,,,,,,,,,CNT-S,Commercial,TRUE,,,
+,,,,,,,,,,,,,,QCNT,Commercial,TRUE,,,
+,,,,,,,,,,,,,,CNT-K,Commercial,TRUE,,,
+,CNTK,,,,,,,,,,,
+ETS,,HCS,ApplicationFamily,Scott Cook,,,,Wireline,,,,HzApplications\Common\ETS
+Coordination,,HFE,Common,,,,,,,,,HzApplications\Coordination
+Corrosion,,SRFE,Common,,,,,Wireline,,,,HzApplications\Corrosion
+,,,,,,,,,,,,,Maxwell\Application\SRFE\CSR
+CQG,,HFE,ApplicationFamily,Lina Xu,,,Orphaned,Wireline,,,,HzApplications\CQG
+,Obsolete_CQG,,,,,,,,,,,
+CSC,,HFE,ApplicationFamily,Bill Sass,,Commercial,Sustaining,Wireline-ES,CSC;LDSC;HNGC;HNCC,,,HzApplications\CSC
+,,,,,,,,,,,,,Maxwell\Application\HFE\LDSC-HNGC
+,,,,,,,,,,,,,,LDSC-A,,TRUE,,,
+,,,,,,,,,,,,,,LDSC-B,,TRUE,,,
+,,,,,,,,,,,,,,HNCC,,TRUE,,,
+,,,,,,,,,,,,,,HNGC-A,,TRUE,,,
+,,,,,,,,,,,,,,HNGC-B,,TRUE,,,
+,,,,,,,,,,,,,,LDSC-A-EFTB,,TRUE,,,
+,,,,,,,,,,,,,,LDSC-B-EFTB,,TRUE,,,
+,,,,,,,,,,,,,,HNGC-A-EFTB,,TRUE,,,
+,,,,,,,,,,,,,,HNGC-B-EFTB,,TRUE,,,
+CSR,,SRFE,ApplicationFamily,,,,,Wireline,,,,HzApplications\CSR
+,,,,,,,,,,,,,Maxwell\Application\SRFE\CSR
+CST,,SRFE,ApplicationFamily,,,,,Wireline-ES,,,,HzApplications\CST
+,,,,,,,,,,,,,Maxwell\Application\SRFE\CST
+,,,,,,,,,,,,,,CST-A,Commercial,TRUE,,,
+,,,,,,,,,,,,,,CST-C,Commercial,TRUE,,,
+,,,,,,,,,,,,,,CST-G,Commercial,TRUE,,,
+,,,,,,,,,,,,,,CST-U,Commercial,TRUE,,,
+,,,,,,,,,,,,,,CST-V,Commercial,TRUE,,,
+,,,,,,,,,,,,,,CST-W,Commercial,TRUE,,,
+,,,,,,,,,,,,,,CST-Y,Commercial,TRUE,,,
+,,,,,,,,,,,,,,CST-Z,Commercial,TRUE,,,
+Curie,,KTC,ApplicationFamily,Mauricio Tejada,,PreAlpha,NPD,DnM,,,,HzApplications\Curie
+,,,,,,,,,,,,,Maxwell\Application\KTC
+,,,,,,,,,,,,,,Curie675,PreAlpha,TRUE,,,
+DDRB,,HFE,ApplicationFamily,Hong Ye,,,,DnM,DDRB,,,HzApplications\DDR_B
+,,,,,,,,,,,,,Maxwell\Application\HFE\DDR-B
+,UD1T,,,,,,,,,,,
+,,,,,,,,,,,,,,UD1T_475,Alpha,TRUE,,,
+,,,,,,,,,,,,,,UD1T_675,Commercial,TRUE,,,
+,,,,,,,,,,,,,,UD1T_825,Commercial,TRUE,,,
+,DDRBCommon,,,,,,,,,,,
+,UD3R,,,,,,,,,,,
+,,,,,,,,,,,,,,UD3R_1_475,Alpha,TRUE,,,
+,,,,,,,,,,,,,,UD3R_1_675,Commercial,TRUE,,,
+,,,,,,,,,,,,,,UD3R_1_825,Commercial,TRUE,,,
+,,,,,,,,,,,,,,UD3R_2_475,Alpha,TRUE,,,
+,,,,,,,,,,,,,,UD3R_2_675,Commercial,TRUE,,,
+,,,,,,,,,,,,,,UD3R_2_825,Commercial,TRUE,,,
+,,,,,,,,,,,,,,UD3R_3_475,Alpha,TRUE,,,
+,,,,,,,,,,,,,,UD3R_3_675,Commercial,TRUE,,,
+,,,,,,,,,,,,,,UD3R_3_825,Commercial,TRUE,,,
+,EMLA,,,,,,,,,,,
+,,,,,,,,,,,,,,EMLA_825,Orphaned,TRUE,,,
+DecisionXpress,,HFE,ApplicationFamily,Bill Sass,,Commercial,Sustaining,Wireline,,,,HzApplications\DecisionXpress
+DLT,,SRFE,ApplicationFamily,,,,,Wireline-ES,,,,HzApplications\DLT
+,,,,,,,,,,,,,Maxwell\Application\SRFE\DLT
+,,,,,,,,,,,,,,DLT-E,Commercial,TRUE,,,
+DMM,,SHTC,ApplicationFamily,Hua RUAN,,Commercial,Sustaining,DnM,,,,HzApplications\DMM
+,,,,,,,,,,,,,Maxwell\Application\SHTC\DMM
+,,,,,,,,,,,,,,DMM1_675,,TRUE,Drilling Mechanics Module,,
+,,,,,,,,,,,,,,DMM1_900,,TRUE,Drilling Mechanics Module,,
+,,,,,,,,,,,,,,DMM2_675,,TRUE,Drilling Mechanics Module,,
+,,,,,,,,,,,,,,DMM2_900,,TRUE,Drilling Mechanics Module,,
+DnM_Common,,SHTC,Common,Kenzo Hara,,,,DnM,,,,HzApplications\DnM_Common
+,ARC_Common,HFE,,Steven McCluney,,Commercial,3RP,,,,,
+,ARCWizard,HFE,,Hong Ye,,Commercial,3RP,,,,,
+,,,,,,,,,,,,,Maxwell\Application\HFE\ARCWizard
+,NMR_Common,HFE,,Steven McCluney,,Commercial,Sustaining,,,,,
+,ParameterUtilities,SHTC,,Kenzo Hara,,Commercial,Sustaining,,,,,
+DSLT,,SKK,ApplicationFamily,Erhan Deger,,,Sustaining,Wireline-ES,DSLT,,,HzApplications\DSLT
+,,,,,,,,,,,,,Maxwell\Application\SKK\DSLT
+,,,,,,,,,,,,,,DSLT-BB,Commercial,TRUE,,,
+,,,,,,,,,,,,,,DSLT-H,Commercial,TRUE,,,
+,,,,,,,,,,,,,,HSLT-A,Commercial,TRUE,,,
+DSST,,SKK,ApplicationFamily,Jiaping Li,,,Sustaining,Wireline-ES,DSI,,,HzApplications\DSST
+,,,,,,,,,,,,,Maxwell\Application\SKK\DSST
+,,,,,,,,,,,,,,DSST-B,Commercial,TRUE,,,
+,,,,,,,,,,,,,,DSST-H,Commercial,TRUE,,,
+,,,,,,,,,,,,,,DSST-HB,PreAlpha,TRUE,,,
+DVDXT,,SRFE,ApplicationFamily,,,Commercial,,DnM,DigiScope,,,HzApplications\DVDXT
+,,,,,,,,,,,,,Maxwell\Application\SRFE\DVDxT150
+,,,,,,,,,,,,,,DVDXT475-APWD,,TRUE,,,
+,,,,,,,,,,,,,,DVDXT475-ROP,,TRUE,,,
+,,,,,,,,,,,,,,DVDXT475-SLICK,,TRUE,,,
+DVDxT200,,SRFE,ApplicationFamily,,,Commercial,,DnM,,,,HzApplications\DVDxT200
+,,,,,,,,,,,,,Maxwell\Application\SRFE\DVDxT200
+,,,,,,,,,,,,,,DVDXT200-475,,TRUE,,,
+,,,,,,,,,,,,,,DVDXT200-675,,TRUE,,,
+,,,,,,,,,,,,,,DVDXT200-675DNI,,TRUE,,,
+,,,,,,,,,,,,,,TeleScopeICE-475,,TRUE,,,
+,,,,,,,,,,,,,,TeleScopeICE-675,,TRUE,,,
+DVDxTCommon,,SRFE,ApplicationFamily,,,,,DnM,,,,HzApplications\DVDxTCommon
+ECO,,SRFE,ApplicationFamily,,,,,DnM,,,,HzApplications\ECO
+,,,,,,,,,,,,,Maxwell\Application\SRFE\Ecoscope
+,,,,,,,,,,,,,,DV6MT,Commercial,TRUE,EcoScope,,
+,,,,,,,,,,,,,,DV6MTN,Commercial,TRUE,NeoScope,,
+ECS,,HFE,ApplicationFamily,Bill Sass,,Commercial,Sustaining,Wireline,ECS,,,HzApplications\ECS
+,,,,,,,,,,,,,Maxwell\Application\HFE\ECS
+,,,,,,,,,,,,,,ECS-A,,TRUE,,,
+,,,,,,,,,,,,,,ECS-H30,,TRUE,,,
+,,,,,,,,,,,,,,ECS-HP,,TRUE,,,
+EDTS2G,,SKK,ApplicationFamily,Naoki Watauchi,,,3RP,Wireline-ES,,,,HzApplications\EDTS2G
+,Common,,,,,,,,,,,
+,EDTCH,,,,,,,,,,,
+,,,,,,,,,,,,,Maxwell\Application\SKK\EDTC-H
+,,,,,,,,,,,,,,EDTC-H,Commercial,TRUE,,,
+EFTB2G_TE,,SKK,ApplicationFamily,Naoki Watauchi,,PreAlpha,,Wireline-ES,,,,HzApplications\EFTB2G_TE
+,,,,,,,,,,,,,Maxwell\Application\SKK\EFTB2G_TE
+,,,,,,,,,,,,,,EFTB2G-Tool-Emulator,,TRUE,,,
+EGDT,,SRFE,ApplicationFamily,,,,,Wireline-ES,,,,HzApplications\EGDT
+,,,,,,,,,,,,,Maxwell\Application\SRFE\EGDT
+,,,,,,,,,,,,,,EGDT-A,Commercial,TRUE,,,
+EMS,,SKK,ApplicationFamily,Naoki Watauchi,,,Sustaining,Wireline-ES,,,,HzApplications\EMS
+,,,,,,,,,,,,,Maxwell\Application\SKK\EMS
+,,,,,,,,,,,,,,EMS-B,Commercial,TRUE,,,
+EPulse,,SHTC,ApplicationFamily,Kenzo Hara,,Commercial,Sustaining,DnM,,,,HzApplications\EPulse
+,,,,,,,,,,,,,Maxwell\Application\SHTC\EPulse
+,,,,,,,,,,,,,,EPULSE_475,,TRUE,EPulse,,
+,,,,,,,,,,,,,,EPULSE_650,,TRUE,EPulse,,
+,,,,,,,,,,,,,,EPULSEXR475,,TRUE,EPulseXR,,
+,,,,,,,,,,,,,,EPULSEXR650,,TRUE,EPulseXR,,
+ESDA,,ORPHANED,ApplicationFamily,,,,Orphaned,Wireline-ES,,,,HzApplications\ESDA
+,,,,,,,,,,,,,,ESDA-A,,TRUE,,,
+,,,,,,,,,,,,,,ESDA-B,,TRUE,,,
+Extreme,,SHTC,ApplicationFamily,Kenzo Hara,,Commercial,Sustaining,DnM,,,,HzApplications\Extreme
+,,,,,,,,,,,,,Maxwell\Application\SHTC\Extreme
+,,,,,,,,,,,,,,XEM475,,TRUE,Extreme,,
+,,,,,,,,,,,,,,XEM650,,TRUE,Extreme,,
+,,,,,,,,,,,,,,XEM800,,TRUE,Extreme,,
+,,,,,,,,,,,,,,XPULSE475,,TRUE,Extreme with XPulse,,
+,,,,,,,,,,,,,,XPULSE650,,TRUE,Extreme with XPulse,,
+,,,,,,,,,,,,,,XPULSE800,,TRUE,Extreme with XPulse,,
+FBST,,SRFE,ApplicationFamily,,,,,Wireline-ES,,,,HzApplications\FBST
+,,,,,,,,,,,,,Maxwell\Application\SRFE\FBST
+,,,,,,,,,,,,,Maxwell\Application\SRFE\FBST-E
+,,,,,,,,,,,,,Maxwell\Application\SRFE\MEST
+,FBST,,,,,,,,,,,
+,,,,,,,,,,,,,,FBST-A,Commercial,TRUE,,,
+,,,,,,,,,,,,,,FBST-B,Commercial,TRUE,,,
+,FBST-E,,,,,,,,,,,
+,,,,,,,,,,,,,,FBST-E,Commercial,TRUE,,,
+,MEST,,,,,,,,,,,
+,,,,,,,,,,,,,,MEST-D,Commercial,TRUE,,,
+,,,,,,,,,,,,,,MEST-E,Commercial,TRUE,,,
+FLCN,,HFE,ApplicationFamily,,,FieldIntro,NPD,Wireline-ES,,Secret,,HzApplications\FLCN
+,,,,,,,,,,,,,,FNIN-A,,TRUE,,,
+,,,,,,,,,,,,,,FNIN-Z,,TRUE,,,
+,,,,,,,,,,,,,,FNXU,,TRUE,,,
+,,,,,,,,,,,,,,FNXL,,TRUE,,,
+,,,,,,,,,,,,,,FBNS,,TRUE,,,
+,AcqBoard,,,,,,,,,,,
+,AcqBoard_UI,,,,,,,,,,,
+,Axton,SKK,,,,,,,,,,
+,Common,,,,,,,,,,,
+,FISO,SKK,,,,,,,,,,
+,,,,,,,,,,,,,,FISO,,TRUE,,,
+,FNMS,,,,,,,,,,,
+,,,,,,,,,,,,,,FSCM,,TRUE,,,
+,FNMS_UI,,,,,,,,,,,
+,FNPA,,,,,,,,,,,
+,,,,,,,,,,,,,,FCRF,,TRUE,,,
+,,,,,,,,,,,,,,FCRS,,TRUE,,,
+,FNPA_UI,,,,,,,,,,,
+,FNPC,,,,,,,,,,,
+,,,,,,,,,,,,,,FNPC,,TRUE,,,
+,FNPO,,,,,,,,,,,
+,,,,,,,,,,,,,,FNFM,,TRUE,,,
+,FNPS,,,,,,,,,,,
+,,,,,,,,,,,,,,FNPS,,TRUE,,,
+,FNPQ,,,,,,,,,,,
+,,,,,,,,,,,,,,FCAF,,TRUE,,,
+,,,,,,,,,,,,,,FCAS,,TRUE,,,
+,,,,,,,,,,,,,,FCAD,,TRUE,,,
+,FNPO_UI,,,,,,,,,,,
+,MasterController,,,,,,,,,,,
+,MotorController,,,,,,,,,,,
+,Slaves,,,,,,,,,,,
+,UICommon,,,,,,,,,,,
+,Valve,,,,,,,,,,,
+,Valve_UI,,,,,,,,,,,
+,FLCN_Flowline,,,,,,,,,,,
+,IST,,,,,,,,,,,
+,IST_UI,,,,,,,,,,,
+,FNPQ_UI,,,,,,,,,,,
+FPIT,,SKK,ApplicationFamily,Naoki Watauchi,,,Conversion,Wireline,FPIT,,,HzApplications\FPIT
+,,,,,,,,,,,,,Maxwell\Application\SKK\FPIT
+,,,,,,,,,,,,,,FPIT-A,Commercial,TRUE,,,
+,,,,,,,,,,,,,,FPIT-D,Commercial,TRUE,,,
+,,,,,,,,,,,,,,FPIT-EA,Commercial,TRUE,,,
+,,,,,,,,,,,,,,FPIT-EB,Commercial,TRUE,,,
+GDI,,SKK,ApplicationFamily,Junko Fujikawa,,,NPD,DnM,,,,HzApplications\GDI
+,,,,,,,,,,,,,Maxwell\Application\SKK\GDIS
+,,,,,,,,,,,,,,GDIS825,FieldIntro,TRUE,,,
+,,,,,,,,,,,,,,GDIS900,FieldIntro,TRUE,,,
+,,,,,,,,,,,,,,GDIS950,FieldIntro,TRUE,,,
+GPIT,,SRFE,ApplicationFamily,,,,,Wireline-ES,,,,HzApplications\GPIT
+,,,,,,,,,,,,,Maxwell\Application\SRFE\GPIT
+,,,,,,,,,,,,,,GPIT-C,Commercial,TRUE,,,
+,,,,,,,,,,,,,,GPIT-F,Commercial,TRUE,,,
+GRPI,,SHTC,ApplicationFamily,Kenzo Hara,,PreCommercial,Orphaned,DnM,,,,HzApplications\GRPI
+,,,,,,,,,,,,,Maxwell\Application\SHTC\GRPI
+,,,,,,,,,,,,,,GRPI675,,TRUE,Grand Prideco Interface Sub,,
+,,,,,,,,,,,,,,GRPI825,,TRUE,Grand Prideco Interface Sub,,
+GSP,,HFE,ApplicationFamily,Bill Sass,,Commercial,Sustaining,Wireline,,,,HzApplications\GSP
+GyroPulse,,SHTC,ApplicationFamily,Kenzo Hara,,Commercial,Sustaining,DnM,,,,HzApplications\GyroPulse
+,,,,,,,,,,,,,Maxwell\Application\SHTC\GyroPulse
+,,,,,,,,,,,,,,GYRO675,,TRUE,GyroPulse,,
+,,,,,,,,,,,,,,GYRO825,,TRUE,GyroPulse,,
+,,,,,,,,,,,,,,GYRO900,,TRUE,GyroPulse,,
+,,,,,,,,,,,,,,GYRO950,,TRUE,GyroPulse,,
+,,,,,,,,,,,,,,GYROSDI675,,TRUE,GyroPulse,,
+,,,,,,,,,,,,,,GYROSDI825,,TRUE,GyroPulse,,
+,,,,,,,,,,,,,,GYROSDI900,,TRUE,GyroPulse,,
+,,,,,,,,,,,,,,GYROSDI950,,TRUE,GyroPulse,,
+HALS,,SRFE,ApplicationFamily,,,,,Wireline-ES,,,,HzApplications\HALS
+,,,,,,,,,,,,,Maxwell\Application\SRFE\HALS
+,,,,,,,,,,,,,,HALS-B,Commercial,TRUE,,,
+HDS1,,KDSC,ApplicationFamily,,,PreAlpha,Conversion,DnM,,,,HzApplications\HDS1
+HNGS,,HFE,ApplicationFamily,Bill Sass,,Commercial,Sustaining,Wireline-ES,HNGS;Hostile Environment Natural Gamma Ray spectroscopy Sonde,,,HzApplications\HNGS
+,,,,,,,,,,,,,Maxwell\Application\HFE\HNGS
+,,,,,,,,,,,,,,HNGS-BA,,TRUE,,,
+,,,,,,,,,,,,,,HNGS-VA,,TRUE,,,
+HRLT,,SRFE,ApplicationFamily,,,Commercial,,Wireline-ES,,,,HzApplications\HRLT
+,,,,,,,,,,,,,Maxwell\Application\SRFE\HRLT
+,HRLT-B,,,,,,,,,,,
+,,,,,,,,,,,,,,HRLT-B,,TRUE,,,
+,HRLT-C,SRFE_RR,,,,,RapidResponse,,,,,
+,,,,,,,,,,,,,,HRLT-C,Alpha,TRUE,,,
+IMPulse,,HFE,ApplicationFamily,Steven McCluney,,Commercial,Sustaining,DnM,IMPulse,,,HzApplications\IMPulse
+,,,,,,,,,,,,,Maxwell\Application\HFE\IMPulse
+,,,,,,,,,,,,,,IMP_475,,TRUE,,,
+,,,,,,,,,,,,,,SHORT475,,TRUE,,,
+ISONIC,,SKK,ApplicationFamily,Shogo Goda,,,Sustaining,DnM,,,,HzApplications\Isonic
+,,,,,,,,,,,,,Maxwell\Application\SKK\sonicVISION
+,,,,,,,,,,,,,,SONICVISION6,Commercial,TRUE,sonicVISION 675,,
+,,,,,,,,,,,,,,SONICVISION8,Commercial,TRUE,sonicVISION 825,,
+,,,,,,,,,,,,,,SONICVISION9,Commercial,TRUE,sonicVISION 900,,
+JPG,,HFE,ApplicationFamily,Steven McCluney,,FieldIntro,NPD,DnM,,,,HzApplications\JPG
+,,,,,,,,,,,,,Maxwell\Application\HFE\JPG
+,JPGCommon,,,,,,,,,,,
+,HYDRA,,,,,,,,FSWD Probe Module 675,,,
+,,,,,,,,,,,,,,HYDRA,,TRUE,,,
+,POM,,,,,,,,FSWD Pump-Out Module 675,,,
+,,,,,,,,,,,,,,POM,,TRUE,,,
+,PVS,,,,,,,,FSWD Passive Valve Sub 675,,,
+,,,,,,,,,,,,,,PVS,,TRUE,,,
+,SCM,,,,,,,,FSWD Sample Chamber Module 675,,,
+,,,,,,,,,,,,,,SCM,,TRUE,,,
+KAI,,SKK,ApplicationFamily,Shogo Goda,,,NPD,DnM,,,,HzApplications\KAI
+,,,,,,,,,,,,,Maxwell\Application\SKK\KAI
+,,,,,,,,,,,,,,KAI6,Alpha,TRUE,,,
+Laterologs,,SRFE,ApplicationFamily,,,,,Wireline,,,,HzApplications\Laterologs
+LDS,,HFE,ApplicationFamily,Hui Tian,,Commercial,Sustaining,Wireline-ES,LDS;Litho-Density Sonde,,,HzApplications\LDS
+,,,,,,,,,,,,,Maxwell\Application\HFE\LDS-HLDS
+,,,,,,,,,,,,,,HLDS-D,,TRUE,,,
+,,,,,,,,,,,,,,LDS-C,,TRUE,,,
+MARS,,HFE,ApplicationFamily,Hisayo Tauchi,,Alpha,NPD,DnM,MARS,,,HzApplications\MARS
+,,,,,,,,,,,,,Maxwell\Application\HFE\MARS
+,,,,,,,,,,,,,,MARS4,Alpha,TRUE,,,
+MCR,,HFE,ApplicationFamily,Steven McCluney,,Commercial,Sustaining,DnM,MCR;mcrVISION,,,HzApplications\MCR
+,,,,,,,,,,,,,Maxwell\Application\HFE\MCR
+,,,,,,,,,,,,,,MCR475,Commercial,TRUE,,,
+,,,,,,,,,,,,,,MCR650,Commercial,TRUE,,,
+,,,,,,,,,,,,,,MCR675,Commercial,TRUE,,,
+,,,,,,,,,,,,,,MCR825,Commercial,TRUE,,,
+MLT,,HFE,ApplicationFamily,Bill Sass,,Commercial,Sustaining,Wireline-ES,Microlog Tool,,,HzApplications\MLT
+,,,,,,,,,,,,,Maxwell\Application\HFE\MLT
+,,,,,,,,,,,,,,MLT-B,,TRUE,,,
+MP3,,SKK,ApplicationFamily,Junko Fujikawa,,,,DnM,,,,HzApplications\MP3
+,MP4,SKK,,,,,3RP,,,,,
+,,,,,,,,,,,,,Maxwell\Application\SKK\MP3\SW
+,,,,,,,,,,,,,,SONICSCOPE4,Commercial,TRUE,SonicScope 475,,
+,MP8,SKK,,,,,3RP,,,,,
+,,,,,,,,,,,,,Maxwell\Application\SKK\MP3\SW
+,,,,,,,,,,,,,,SONICSCOPE8,Commercial,TRUE,SonicScope 825,,
+,MP6,SKK,,,,,3RP,,,,,
+,,,,,,,,,,,,,Maxwell\Application\SKK\MP3\SW
+,,,,,,,,,,,,,,SONICSCOPE6,CMZCloseOut,TRUE,SonicScope 675,,
+,MP9,SKK,,,,,NPD,,,,,
+,,,,,,,,,,,,,Maxwell\Application\SKK\MP3\SW
+,,,,,,,,,,,,,,SONICSCOPE9,PreCommercial,TRUE,SonicScope 900,,
+,Common,SKK,,,,,3RP,,,,,
+,,,,,,,,,,,,,Maxwell\Application\SKK\MP3\SW
+MRT,,HFE,ApplicationFamily,Steven McCluney,,Commercial,Sustaining,DnM,MRT;proVISION Plus,,,HzApplications\MRT
+,,,,,,,,,,,,,Maxwell\Application\HFE\proVISION
+,,,,,,,,,,,,,,MRT6B,Commercial,TRUE,,,
+,,,,,,,,,,,,,,MRT8,Commercial,TRUE,,,
+MRX,,HFE,ApplicationFamily,Hisayo Tauchi,,Commercial,Sustaining,Wireline-ES,MRX;MR Scanner,,,HzApplications\MRX
+,,,,,,,,,,,,,Maxwell\Application\HFE\MRX
+,,,,,,,,,,,,,,MRX-C,,TRUE,,,
+MSCT,,HCS,ApplicationFamily,Brenda Martis,,Commercial,Sustaining,Wireline-ES,,,,HzApplications\MSCT
+,,,,,,,,,,,,,Maxwell\Application\HCS\MSCT
+,,,,,,,,,,,,,,MCIM-A,Commercial,TRUE,,,Sustaining
+,MsctCommon,,,,,,,,,,,
+,MsctGTest,,Test,,,,,,,,,
+,MSCT-B,,,,,,,,MSCT,,,
+,,,,,,,,,,,,,,MSCT-B,,TRUE,,,
+,MSCT-D,,,,,Orphaned,,,,,,
+,,,,,,,,,,,,,,MSCT-D,,TRUE,,,
+,MSCT-E,,,,,,,,XL-Rock,,,
+,,,,,,,,,,,,,,MSCT-E,,TRUE,,,
+,MSCT-F,,,,,PreCommercial,NPD,,XL-Rock,,,
+,,,,,,,,,,,,,,MSCT-F,,TRUE,,,
+,Computation,,,,,PreCommercial,NPD,,XL-Rock,,,
+,,,,,,,,,,,,,,MSCT-F,,TRUE,,,
+MSPT,,HCS,ApplicationFamily,Jisheng Li,,Commercial,Sustaining,Wireline-PS,ReSOLVE,,,HzApplications\MSPT
+,,,,,,,,,,,,,Maxwell\Application\HCS\ReSOLVE
+,MSPTCommon,,,,,,,,,,,
+,,,,,,,,,,,,,,Shifting_Adaptor,,TRUE,,,
+,MSPTBase,,,,,,,,,,,
+,MSPTStandalone,,,,,,,,,,,
+,MSPTTest,,,,,,3RP,,,,,
+,MSPS,,,,,,,,,,,
+,,,,,,,,,,,,,Maxwell\Application\HCS\ReSOLVE\MSPS Selective Shifting Tool
+,,,,,,,,,,,,,,MSPS-AA,,TRUE,ReSOLVE Universal Shifting Tool,,
+,,,,,,,,,,,,,,MSPSG-AA,PreCommercial,TRUE,ReSOLVE Selective Shifting Tool,,
+,MSPR,,,,,,,,ReSOLVE Milling Tool,,,
+,,,,,,,,,,,,,Maxwell\Application\HCS\ReSOLVE\MSPR Milling
+,,,,,,,,,,,,,,MSPR-AA,,TRUE,,,
+,,,,,,,,,,,,,,MSPR-BA,,TRUE,,,
+,MSPC,,,,,,,,,,,
+,,,,,,,,,,,,,,MSPC-BA,,TRUE,,,
+,,,,,,,,,,,,,,MSPC-BB,,TRUE,,,
+,,,,,,,,,,,,,,MSPC-CA,,TRUE,,,
+,,,,,,,,,,,,,,MSPC-CB,,TRUE,,,
+,MSPY,,,,,,,,,,,
+,,,,,,,,,,,,,,MSPY-BA,,TRUE,,,
+,,,,,,,,,,,,,,MSPY-BB,,TRUE,,,
+,,,,,,,,,,,,,,MSPY-CA,Alpha,TRUE,,,
+,MSHCS,,,,,,,,,,,
+,,,,,,,,,,,,,,MSHCS-AA,Alpha,TRUE,ReSOLVE Hydraulic Control Sub,,
+,MSHTS,,,,,,,,,,,
+,,,,,,,,,,,,,,MSHTS-AA,Alpha,TRUE,ReSOLVE Hydraulic Tank Tool,,
+,,,,,,,,,,,,,,MSHTS-BA,Alpha,TRUE,ReSOLVE Hydraulic Tank Tool,,
+,MSPKS,,,,,,,,,,,
+,,,,,,,,,,,,,,MSPKS-AA,Alpha,TRUE,ReSOLVE Packer Tool,,
+,,,,,,,,,,,,,,MSPKS-BA,Alpha,TRUE,ReSOLVE Packer Tool,,
+,MSPA,,,,,,,,ReSOLVE Anchor Tool,,,
+,,,,,,,,,,,,,,MSPA-BA,,TRUE,,,
+,,,,,,,,,,,,,,MSPA-BB,,TRUE,,,
+,MSPL,,,,,,,,ReSOLVE Linear Actuator Tool,,,
+,,,,,,,,,,,,,,MSPL-BA,,TRUE,,,
+,,,,,,,,,,,,,,MSPL-BB,,TRUE,,,
+,,,,,,,,,,,,,,MSPLH-AA,PreCommercial,TRUE,,,
+,MSPP,,,,,,,,ReSOLVE Nonexplosive Setting Tool,,,
+,,,,,,,,,,,,,,MSPP-BA,,TRUE,,,
+,,,,,,,,,,,,,,MSPP-BB,,TRUE,,,
+,,,,,,,,,,,,,,MSPP-CA,,TRUE,,,
+,,,,,,,,,,,,,,MSPP-DA,,TRUE,,,
+,MSPD,,,,,PreCommercial,,,ReSOLVE Debirs Removal Tool,,,
+,,,,,,,,,,,,,Maxwell\Application\HCS\ReSOLVE\MSPD Debris Removal
+,,,,,,,,,,,,,,MSPD-AA,,TRUE,,,
+,,,,,,,,,,,,,,MSPD-BA,,TRUE,,,
+NEXT,,HFE,ApplicationFamily,Mike Hackbart,,,NPD,Wireline-ES,NEXT;Litho Scanner;Stingray,,,HzApplications\NEXT
+,,,,,,,,,,,,,Maxwell\Application\HFE\NEXT
+,,,,,,,,,,,,,,NEXT-A,Commercial,TRUE,,,
+,,,,,,,,,,,,,,NEXT-C,Commercial,TRUE,,,
+,,,,,,,,,,,,,,NEXT-VA,Commercial,TRUE,,,
+NGI,,SRFE,ApplicationFamily,,,,,Wireline-ES,,,,HzApplications\NGI
+,,,,,,,,,,,,,Maxwell\Application\SRFE\NGI
+,,,,,,,,,,,,,,NGIT-A,Commercial,TRUE,,,
+,,,,,,,,,,,,,,NGIT-AB,Commercial,TRUE,,,
+,,,,,,,,,,,,,,NGIT-BA,Commercial,TRUE,,,
+,,,,,,,,,,,,,,NGIT-BB,Commercial,TRUE,,,
+NMR,,HFE,ApplicationFamily,Hisayo Tauchi,,Commercial,Sustaining,,NMR,,,HzApplications\NMR
+OBMT,,SRFE,ApplicationFamily,,,,,Wireline-ES,,,,HzApplications\OBMT
+,,,,,,,,,,,,,Maxwell\Application\SRFE\OBMI
+,,,,,,,,,,,,,,OBMT-B,Commercial,TRUE,,,
+,,,,,,,,,,,,,,OBMT-D,Commercial,TRUE,,,
+,,,,,,,,,,,,,,OBMT-E,Commercial,TRUE,,,
+,,,,,,,,,,,,,,OBMT-F,Commercial,TRUE,,,
+,,,,,,,,,,,,,,OBMT-H,Commercial,TRUE,,,
+,,,,,,,,,,,,,,OBMT-J,Commercial,TRUE,,,
+AS_ERS,,RPS,ApplicationFamily,Amiya Aloke,,Commercial,Sustaining,Wireline-PS,AS-ERS,,,HzApplications\PERFO\AS_ERS
+,,,,,,,,,,,,,Maxwell\Application\RPS\AS-ERS
+,,,,,,,,,,,,,,AS-ERS,Commercial,TRUE,AS-ERS,,
+PerfoCommon,,RPS,ApplicationFamily,Amiya Aloke,,Commercial,Sustaining,Wireline-PS,PERFO,,,HzApplications\PERFO\Common
+MPBT,,RPS,ApplicationFamily,Amiya Aloke,,Commercial,Sustaining,Wireline-PS,MPBT,,,HzApplications\PERFO\MPBT
+,,,,,,,,,,,,,Maxwell\Application\RPS\MPBT
+,,,,,,,,,,,,,,MPBT,Commercial,TRUE,MPBT,,
+PerfoTools,,RPS,ApplicationFamily,Amiya Aloke,,Commercial,Sustaining,Wireline-PS,Perfo Guns;Plugs,,,HzApplications\PERFO\PerfoTools
+,,,,,,,,,,,,,Maxwell\Application\RPS\Perfo
+,,,,,,,,,,,,,,ASGS,Commercial,TRUE,ASGS,,
+,,,,,,,,,,,,,,ENERJET,Commercial,TRUE,ENERJET,,
+,,,,,,,,,,,,,,HEGS,Commercial,TRUE,HEGS,,
+,,,,,,,,,,,,,,HSD,Commercial,TRUE,HSD,,
+,,,,,,,,,,,,,,HYPERDOME,Commercial,TRUE,HYPERDOME,,
+,,,,,,,,,,,,,,PPG,Commercial,TRUE,PPG,,
+,,,,,,,,,,,,,,PUNCHER,Commercial,TRUE,PUNCHER,,
+,,,,,,,,,,,,,,SPSE,Commercial,TRUE,SPSE,,
+,,,,,,,,,,,,,,TTDG,Commercial,TRUE,TTDG,,
+,,,,,,,,,,,,,,ATPS,Commercial,TRUE,ATPS,,
+,,,,,,,,,,,,,,BACKOFF,Commercial,TRUE,BACKOFF,,
+,,,,,,,,,,,,,,CUTTER,Commercial,TRUE,CUTTER,,
+,,,,,,,,,,,,,,DUMPBAILER,Commercial,TRUE,DUMPBAILER,,
+,,,,,,,,,,,,,,JUNKBASKET,Commercial,TRUE,JUNKBASKET,,
+,,,,,,,,,,,,,,SAFE,Commercial,TRUE,SAFE,,
+,,,,,,,,,,,,,,PLUG,Commercial,TRUE,PLUG,,
+,Fractal,RPS,ApplicationFamily,Amiya Aloke,,FieldIntro,NPD,Wireline-PS,FRACTAL,,,
+,,,,,,,,,,,,,Maxwell\Application\RPS\Fractal
+,,,,,,,,,,,,,,FRACTAL-M,FieldIntro,TRUE,FRACTAL MODULE,,
+,,,,,,,,,,,,,,FRACTAL-S,FieldIntro,TRUE,FRACTAL SECURE,,
+,,,,,,,,,,,,,,FRACTAL-P,FieldIntro,TRUE,FRACTAL SELECT,,
+PerfoExpress,,RPS,ApplicationFamily,Amiya Aloke,,Commercial,Sustaining,Wireline-PS,Perfo Express,,,HzApplications\PERFO\PerfoTools\PerfoUIP\PerfoExpress
+,,,,,,,,,,,,,Maxwell\Application\RPS\PerfoExpress
+SafetyBarrier,,RPS,NPD,Amiya Aloke,,Alpha,NPD,Wireline-PS,Safety Barrier,,,HzApplications\PERFO\SafetyBarrier
+,,,,,,,,,,,,,Maxwell\Application\RPS\Viceroy
+,,,,,,,,,,,,,,SAFETYBARRIER,Alpha,TRUE,SafetyBarrier,,
+SlimVICEROY,,RPS,ApplicationFamily,Amiya Aloke,,Alpha,NPD,Wireline-PS,SPCCL;SPGCC,,,HzApplications\PERFO\SlimViceroy
+,,,,,,,,,,,,,Maxwell\Application\RPS\Slim Viceroy
+,,,,,,,,,,,,,,SPCCL-AA,Alpha,TRUE,SPCCL-AA,,
+,,,,,,,,,,,,,,SPGCC-AA,Alpha,TRUE,SPGCC-AA,,
+VICEROY,,RPS,NPD,Amiya Aloke,,Alpha,NPD,Wireline-PS,APCT;APGT,,,HzApplications\PERFO\Viceroy
+,,,,,,,,,,,,,Maxwell\Application\RPS\VICEROY
+,,,,,,,,,,,,,,APCT-AA,Alpha,TRUE,APCT-AA,,
+,,,,,,,,,,,,,,APGT-AA,Alpha,TRUE,APGT-AA,,
+WPIT,,RPS,ApplicationFamily,Amiya Aloke,,Commercial,Sustaining,Wireline-PS,WPIT;WOPT;Gyro,,,HzApplications\PERFO\WPIT
+,,,,,,,,,,,,,Maxwell\Application\RPS\WPIT-Gyro
+,,,,,,,,,,,,,,WPIT-AC,Commercial,TRUE,WPIT;WOPT,,
+,,,,,,,,,,,,,,GDCT-AA,Commercial,TRUE,Gyro,,
+WPP,,RPS,ApplicationFamily,Amiya Aloke,,FieldIntro,Conversion,Wireline-PS,WPP,,,HzApplications\PERFO\WPP
+,,,,,,,,,,,,,Maxwell\Application\RPS\WPP
+,WPST,,,,,,,,,,,
+,,,,,,,,,,,,,Maxwell\Application\RPS\WPP\WPST
+,,,,,,,,,,,,,,WPST-AE,FieldIntro,TRUE,WPST,,
+PeriScope,,HFE,ApplicationFamily,Steven McCluney,,Commercial,Sustaining,DnM,PeriScope,,,HzApplications\PeriScope15
+,,,,,,,,,,,,,Maxwell\Application\HFE\PeriScope
+,,,,,,,,,,,,,,PERISCOPE_475,,TRUE,,,
+,,,,,,,,,,,,,,PERISCOPE_675,,TRUE,,,
+,,,,,,,,,,,,,,PERISCOPE_675D,,TRUE,,,
+,,,,,,,,,,,,,,PERISCOPE_825,,TRUE,,,
+PEX,,SRFE,ApplicationFamily,,,,,Wireline-ES,Platform Express,,,HzApplications\PEX
+,,,,,,,,,,,,,Maxwell\Application\SRFE\PEX
+,HGNS,,,,,,,,,,,
+,,,,,,,,,,,,,,HGNS-B,Commercial,TRUE,,,
+,,,,,,,,,,,,,,HGNS-H,Commercial,TRUE,,,
+,HDRS,,,,,,,,,,,
+,,,,,,,,,,,,,,HDRS-B,Commercial,TRUE,,,
+,,,,,,,,,,,,,,HDRS-H,Commercial,TRUE,,,
+,HTBC,,,,,,,,,,,
+,,,,,,,,,,,,,,HTBC-A,Commercial,TRUE,,,
+,,,,,,,,,,,,,,HTBC-H,Commercial,TRUE,,,
+,TnD,,,,,,,,,,,
+PL,,SRFE,ApplicationFamily,,,,,Wireline,,,,HzApplications\PL
+,,,,,,,,,,,,,Maxwell\Application\SRFE\PL Express
+PNX,,HFE,ApplicationFamily,Susan Tang,,,NPD,Wireline-PS,PNX,,,HzApplications\PNX
+,,,,,,,,,,,,,Maxwell\Application\HFE\PNX
+,,,,,,,,,,,,,,PNX-A,FieldIntro,TRUE,,,
+PowerDrive,,SHTC,ApplicationFamily,Kenzo Hara,,,,DnM,,,,HzApplications\PowerDrive
+,PowerDrive Archer,,,Kenzo Hara,,Commercial,Sustaining,,,,,
+,,,,,,,,,,,,,Maxwell\Application\SHTC\PowerDrive Archer
+,,,,,,,,,,,,,,PDARCHER_475,,TRUE,PowerDrive Archer Rotary Steerable System,,
+,,,,,,,,,,,,,,PDARCHER_675,,TRUE,PowerDrive Archer Rotary Steerable System,,
+,PowerDrive Xtra,,,Kenzo Hara,,Commercial,Sustaining,,,,,
+,,,,,,,,,,,,,Maxwell\Application\SHTC\PowerDrive Xtra
+,,,,,,,,,,,,,,PDXTRA_475,,TRUE,PowerDrive Xtra Rotary Steerable System,,
+,,,,,,,,,,,,,,PDXTRA_675,,TRUE,PowerDrive Xtra Rotary Steerable System,,
+,,,,,,,,,,,,,,PDXTRA_825,,TRUE,PowerDrive Xtra Rotary Steerable System,,
+,,,,,,,,,,,,,,PDXTRA_900,,TRUE,PowerDrive Xtra Rotary Steerable System,,
+,,,,,,,,,,,,,,PDXTRA_1100,,TRUE,PowerDrive Xtra Rotary Steerable System,,
+,PowerDrive X5,,,Kenzo Hara,,Commercial,Sustaining,,,,,
+,,,,,,,,,,,,,Maxwell\Application\SHTC\PowerDrive X5
+,,,,,,,,,,,,,,PDX5_475,,TRUE,PowerDrive X6 Rotary Steerable System,,
+,,,,,,,,,,,,,,PDX5_675,,TRUE,PowerDrive X6 Rotary Steerable System,,
+,,,,,,,,,,,,,,PDX5_825,,TRUE,PowerDrive X6 Rotary Steerable System,,
+,,,,,,,,,,,,,,PDX5_900,,TRUE,PowerDrive X6 Rotary Steerable System,,
+,,,,,,,,,,,,,,PDX5_1100,,TRUE,PowerDrive X6 Rotary Steerable System,,
+,,,,,,,,,,,,,,PDEX5_825,,TRUE,PowerDrive X6 Rotary Steerable System with EMLA,,
+,PowerDrive Orbit,,,Kenzo Hara,,Commercial,Sustaining,,,,,
+,,,,,,,,,,,,,Maxwell\Application\SHTC\PowerDrive Orbit
+,,,,,,,,,,,,,,PDORBIT_475,,TRUE,PowerDrive Orbit Rotary Steerable System,,
+,,,,,,,,,,,,,,PDORBIT_675,,TRUE,PowerDrive Orbit Rotary Steerable System,,
+,,,,,,,,,,,,,,PDORBIT_900,,TRUE,PowerDrive Orbit Rotary Steerable System,,
+,PDHRT,,,Hua RUAN,,PreCommercial,Sustaining,,,,,
+,,,,,,,,,,,,,Maxwell\Application\SHTC\HPHT RSS
+,,,,,,,,,,,,,,PDHRT_675,,TRUE,PowerDrive ICE Rotary Steerable System,,
+,PDXCEED,SHTC,,Kenzo Hara,,Commercial,Sustaining,,,,,
+,,,,,,,,,,,,,Maxwell\Application\SHTC\PowerDrive Xceed
+,,,,,,,,,,,,,,PDXCEED_675,,TRUE,PowerDrive Xceed Rotary Steerable System,,
+,,,,,,,,,,,,,,PDXCEED_900,,TRUE,PowerDrive Xceed Rotary Steerable System,,
+,Common,SHTC,,Kenzo Hara,,Commercial,Sustaining,,,,,
+,,,,,,,,,,,,,Maxwell\Application\SHTC\PowerDrive Orbit
+PowerPulse,,SHTC,ApplicationFamily,Kenzo Hara,,,,DnM,,,,HzApplications\PowerPulse
+,PowerPulse,,,,,Commercial,Sustaining,,,,,
+,,,,,,,,,,,,,Maxwell\Application\SHTC\PowerPulse
+,,,,,,,,,,,,,,M10675,,TRUE,PowerPulse Measurement While Drilling,,
+,,,,,,,,,,,,,,M10675-IWOB,,TRUE,PowerPulse Measurement While Drilling with IWOB,,
+,,,,,,,,,,,,,,M10825,,TRUE,PowerPulse Measurement While Drilling,,
+,,,,,,,,,,,,,,M10825-IWOB,,TRUE,PowerPulse Measurement While Drilling with IWOB,,
+,,,,,,,,,,,,,,M10900,,TRUE,PowerPulse Measurement While Drilling,,
+,,,,,,,,,,,,,,M10900-IWOB,,TRUE,PowerPulse Measurement While Drilling with IWOB,,
+,,,,,,,,,,,,,,M10950,,TRUE,PowerPulse Measurement While Drilling,,
+,,,,,,,,,,,,,,M10950-IWOB,,TRUE,PowerPulse Measurement While Drilling with IWOB,,
+,TeleScope,,,,,Commercial,Sustaining,,,,,
+,,,,,,,,,,,,,Maxwell\Application\SHTC\TeleScope
+,,,,,,,,,,,,,,TELE675,,TRUE,TeleScope Measurement While Drilling,,
+,,,,,,,,,,,,,,TELE675-IWOB,,TRUE,TeleScope Measurement While Drilling with IWOB,,
+,,,,,,,,,,,,,,TELE825,,TRUE,TeleScope Measurement While Drilling,,
+,,,,,,,,,,,,,,TELE825-IWOB,,TRUE,TeleScope Measurement While Drilling with IWOB,,
+,,,,,,,,,,,,,,TELE900,,TRUE,TeleScope Measurement While Drilling,,
+,,,,,,,,,,,,,,TELE900-IWOB,,TRUE,TeleScope Measurement While Drilling with IWOB,,
+,,,,,,,,,,,,,,TELE950,,TRUE,TeleScope Measurement While Drillinge,,
+,,,,,,,,,,,,,,TELE950-IWOB,,TRUE,TeleScope Measurement While Drilling with IWOB,,
+,Rhossili,,,,,PreAlpha,NPD,,,,,
+,,,,,,,,,,,,,Maxwell\Application\SHTC\Rhossili
+,,,,,,,,,,,,,,ROS675,,TRUE,Rhossili Measurement While Drilling,,
+,,,,,,,,,,,,,,ROS675-IWOB,,TRUE,Rhossili Measurement While Drilling with IWOB,,
+,,,,,,,,,,,,,,ROS825,,TRUE,Rhossili Measurement While Drilling,,
+,,,,,,,,,,,,,,ROS825-IWOB,,TRUE,Rhossili Measurement While Drilling with IWOB,,
+,,,,,,,,,,,,,,ROS900,,TRUE,Rhossili Measurement While Drilling,,
+,,,,,,,,,,,,,,ROS900-IWOB,,TRUE,Rhossili Measurement While Drilling with IWOB,,
+,,,,,,,,,,,,,,ROS950,,TRUE,Rhossili Measurement While Drillinge,,
+,,,,,,,,,,,,,,ROS950-IWOB,,TRUE,Rhossili Measurement While Drilling with IWOB,,
+PPC,,SKK,ApplicationFamily,Naoki Watauchi,,,Sustaining,Wireline-ES,,,,HzApplications\PPC
+,,,,,,,,,,,,,Maxwell\Application\SKK\PPC
+,,,,,,,,,,,,,,PPC-B,Commercial,TRUE,,,
+,,,,,,,,,,,,,,PPC-B30,Commercial,TRUE,,,
+,,,,,,,,,,,,,,PPC-HA,Commercial,TRUE,,,
+PSP,,SRFE,ApplicationFamily,,,Commercial,,Wireline-PS,,,,HzApplications\PSP_PL
+,,,,,,,,,,,,,Maxwell\Application\SRFE\PSP Platform
+,CFS,SRFE,ApplicationFamily,,,,,Wireline-PS,,,,
+,,,,,,,,,,,,,Maxwell\Application\SRFE\PILS
+,,,,,,,,,,,,,,CFS-R,,TRUE,,,
+,,,,,,,,,,,,,,CFS-S,,TRUE,,,
+,,,,,,,,,,,,,,CFS-T,,TRUE,,,
+,,,,,,,,,,,,,,CFS-X,,TRUE,,,
+,,,,,,,,,,,,,,HCFS-B,,TRUE,,,
+,DEFT,SRFE,ApplicationFamily,,,,,Wireline-PS,,,,
+,,,,,,,,,,,,,Maxwell\Application\SRFE\DEFT
+,,,,,,,,,,,,,,DEFT-C,,TRUE,,,
+,GHOST,SRFE,ApplicationFamily,,,,,Wireline-PS,,,,
+,,,,,,,,,,,,,Maxwell\Application\SRFE\GHOST
+,,,,,,,,,,,,,,GHOST-A,,TRUE,,,
+,PFCS,SRFE,ApplicationFamily,,,,,Wireline-PS,,,,
+,,,,,,,,,,,,,Maxwell\Application\SRFE\PFCS
+,,,,,,,,,,,,,,PFCS-A,,TRUE,,,
+,PILS,SRFE,ApplicationFamily,,,,,Wireline-PS,,,,
+,,,,,,,,,,,,,Maxwell\Application\SRFE\PILS
+,,,,,,,,,,,,,,PILS-A,,TRUE,,,
+,HBMS,SRFE,ApplicationFamily,,,,,Wireline-PS,,,,
+,,,,,,,,,,,,,Maxwell\Application\SRFE\PBMS
+,,,,,,,,,,,,,,HBMS-B,,TRUE,,,
+,HGFT,SRFE,ApplicationFamily,,,,,Wireline-PS,,,,
+,,,,,,,,,,,,,Maxwell\Application\SRFE\PSP Platform
+,,,,,,,,,,,,,,HGFT-A,,TRUE,,,
+,PBMS,SRFE,ApplicationFamily,,,,,Wireline-PS,,,,
+,,,,,,,,,,,,,Maxwell\Application\SRFE\PBMS
+,,,,,,,,,,,,,,PBMST-A,,TRUE,,,
+,,,,,,,,,,,,,,PBMST-B,,TRUE,,,
+,,,,,,,,,,,,,,PBMST-E,,TRUE,,,
+,PCMS,SRFE,ApplicationFamily,,,,,Wireline-PS,,,,
+,,,,,,,,,,,,,Maxwell\Application\SRFE\PCMS
+,,,,,,,,,,,,,,PCMS-A,,TRUE,,,
+,PGMC,SRFE,ApplicationFamily,,,,,Wireline-PS,,,,
+,,,,,,,,,,,,,Maxwell\Application\SRFE\PGMC
+,,,,,,,,,,,,,,PGMC-A,,TRUE,,,
+,,,,,,,,,,,,,,PGMC-B,,TRUE,,,
+,PSPT,SRFE,ApplicationFamily,,,,,Wireline-PS,,,,
+,,,,,,,,,,,,,Maxwell\Application\SRFE\PSPT - PSTC
+,,,,,,,,,,,,,,PSTP-A,,TRUE,,,
+,,,,,,,,,,,,,,PSTP-B,,TRUE,,,
+,,,,,,,,,,,,,,PSTP-E,,TRUE,,,
+,PSTC,SRFE,ApplicationFamily,,,,,Wireline-PS,,,,
+,,,,,,,,,,,,,Maxwell\Application\SRFE\PSPT - PSTC
+,PUCS,SRFE,ApplicationFamily,,,,,Wireline-PS,,,,
+,,,,,,,,,,,,,Maxwell\Application\SRFE\PUCS
+,,,,,,,,,,,,,,PUCS-A,,TRUE,,,
+EMIT,,SRFE,ApplicationFamily,,,Commercial,,Wireline-PS,,,,HzApplications\PSP_PL
+,,,,,,,,,,,,,Maxwell\Application\SRFE\EMIT
+,EMIT-A,,,,,,,,,,,
+,,,,,,,,,,,,,Maxwell\Application\SRFE\EMIT
+,,,,,,,,,,,,,,EMIT-A,,TRUE,,,
+,EMITProcessing,,,,,,,,,,,
+,,,,,,,,,,,,,Maxwell\Application\SRFE\EMIT
+,EMIT-B,SRFE_RR,,,,,RapidResponse,,,,,
+,,,,,,,,,,,,,Maxwell\Application\SRFE\EMIT
+,,,,,,,,,,,,,,EMIT-B,,TRUE,,,
+,EMIT-XL,,,,,,,,,,,
+,,,,,,,,,,,,,Maxwell\Application\SRFE\EMIT-XL
+,,,,,,,,,,,,,,EMIT-XL,,TRUE,,,
+EMITB,,SRFE_RR,ApplicationFamily,,,,,Wireline,,,,HzApplications\PSP_PL\EMITB
+,,,,,,,,,,,,,Maxwell\Application\SRFE\PSP Platform
+FSIT,,SRFE,ApplicationFamily,,,,,Wireline-PS,,,,HzApplications\PSP_PL\FSIT
+,,,,,,,,,,,,,Maxwell\Application\SRFE\FSI
+,,,,,,,,,,,,,,FSIT-B,Commercial,TRUE,,,
+HBMT,,SRFE_RR,ApplicationFamily,,,,,Wireline,,,,HzApplications\PSP_PL\HBMT
+,,,,,,,,,,,,,Maxwell\Application\SRFE\PSP Platform
+PMIT,,SRFE,ApplicationFamily,,,,,Wireline-PS,,,,HzApplications\PSP_PL\PMIT
+,,,,,,,,,,,,,Maxwell\Application\SRFE\PMIT
+,,,,,,,,,,,,,,PMIT-A,Commercial,TRUE,,,
+,,,,,,,,,,,,,,PMIT-B,Commercial,TRUE,,,
+,,,,,,,,,,,,,,PMIT-C,Commercial,TRUE,,,
+,,,,,,,,,,,,,,PMIT-E,Commercial,TRUE,,,
+,,,,,,,,,,,,,,PMIT-EB,Commercial,TRUE,,,
+,,,,,,,,,,,,,,PMIT-F,Commercial,TRUE,,,
+,,,,,,,,,,,,,,PMIT-FB,Commercial,TRUE,,,
+,,,,,,,,,,,,,,PMIT-G,Commercial,TRUE,,,
+,,,,,,,,,,,,,,PMIT-GB,Commercial,TRUE,,,
+,PMIT-M,SRFE_RR,,,,,RapidResponse,,,,,
+,,,,,,,,,,,,,,PMIT-M,Alpha,TRUE,,,
+POST,,SRFE,ApplicationFamily,,,,,Wireline-PS,,,,HzApplications\PSP_PL\POST
+,,,,,,,,,,,,,Maxwell\Application\SRFE\POST
+,,,,,,,,,,,,,,POST-A,Commercial,TRUE,,,
+,,,,,,,,,,,,,,POST-B,Commercial,TRUE,,,
+PRMC,,SRFE,ApplicationFamily,,,,,Wireline,,,,HzApplications\PSP_PL\PRMC
+,,,,,,,,,,,,,Maxwell\Application\SRFE\PSP Recorder
+PSRP,,SRFE,ApplicationFamily,,,,,Wireline-PS,,,,HzApplications\PSP_PL\PSRP
+,,,,,,,,,,,,,Maxwell\Application\SRFE\PSP Recorder
+,,,,,,,,,,,,,,PSRP-A,Commercial,TRUE,,,
+,,,,,,,,,,,,,,PSRP-B,Commercial,TRUE,,,
+,,,,,,,,,,,,,,PSRP-E,Commercial,TRUE,,,
+SCMT,,SKK,ApplicationFamily,Jiaping Li,,,Sustaining,Wireline-PS,SCMT,,,HzApplications\PSP_PL\SCMT
+,,,,,,,,,,,,,Maxwell\Application\SKK\SCMT
+,,,,,,,,,,,,,,SCMT-BB,Commercial,TRUE,,,
+,,,,,,,,,,,,,,SCMT-CA,Commercial,TRUE,,,
+,,,,,,,,,,,,,,SCMT-CB,Commercial,TRUE,,,
+,,,,,,,,,,,,,,SCMT-HB,Commercial,TRUE,,,
+,,,,,,,,,,,,,,SCMT-HC,Commercial,TRUE,,,
+,,,,,,,,,,,,,,SCMT-HD,Commercial,TRUE,,,
+PSUD_A,,ORPHANED,ApplicationFamily,Hong Ye,,Commercial,Orphaned,DnM,PSUD_A;DDRA,,,HzApplications\PSUD_A
+,,,,,,,,,,,,,Maxwell\Application\HFE\DDR-A
+,,,,,,,,,,,,,,UDT1_675,,TRUE,,,
+,,,,,,,,,,,,,,UDT1_825,,TRUE,,,
+,,,,,,,,,,,,,,UDT2_675,,TRUE,,,
+,,,,,,,,,,,,,,UDT2_825,,TRUE,,,
+,,,,,,,,,,,,,,UDT3_675,,TRUE,,,
+,,,,,,,,,,,,,,UDT3_825,,TRUE,,,
+PTI,,SRFE_RR,ApplicationFamily,,,Commercial,RapidResponse,Wireline-PS,,ApplicationKitOnly,,HzApplications\PTI
+PZIG_DNM,,SHTC,ApplicationFamily,Kenzo Hara,,PreAlpha,Orphaned,DnM,,,,HzApplications\PZIG_DNM
+,,,,,,,,,,,,,Maxwell\Application\SHTC\PZIG_DNM
+,,,,,,,,,,,,,,PZIG_DNM,,TRUE,At-Bit Inclination and Gamma (DnM),,
+,,,,,,,,,,,,,,PZIG_DNM825,,TRUE,At-Bit Inclination and Gamma (DnM),,
+GVR,,HFE,ApplicationFamily,Steven McCluney,,Commercial,Sustaining,DnM,RAB;geoVISION;GVR,,,HzApplications\RAB
+,,,,,,,,,,,,,Maxwell\Application\HFE\GVR
+,GVR6,,,,,,,,,,,
+,,,,,,,,,,,,,,RAB6,,TRUE,,,
+,GVR8,,,,,,,,,,,
+,,,,,,,,,,,,,,RAB8,,TRUE,,,
+,GVRCommon,,,,,,,,,,,
+,GVRConversionModule,,,,,,,,,,,
+,GVRGraphicsModule,,,,,,,,,,,
+GVR4,,SRFE,ApplicationFamily,,,Commercial,,DnM,MicroScope,,,HzApplications\RAB
+,,,,,,,,,,,,,Maxwell\Application\SRFE\Microscope
+,,,,,,,,,,,,,,MicroScope,,TRUE,,,
+,UHRI,SRFE,ApplicationFamily,,,Commercial,,DnM,MicroScope HD,,,
+,MicroScope_Common,SRFE,,,,Commercial,Sustaining,,,,,
+MI6,,SRFE,ApplicationFamily,,,Alpha,NPD,DnM,MicroScope6,,,HzApplications\RAB\MI6
+,,,,,,,,,,,,,Maxwell\Application\SRFE\MI6
+,,,,,,,,,,,,,,MicroScope6,,TRUE,,,
+RST,,HFE,ApplicationFamily,Hui Tian,,Commercial,Sustaining,Wireline-PS,RST;Reservoir Saturation Tool,,,HzApplications\RST
+,,,,,,,,,,,,,Maxwell\Application\HFE\RST
+,,,,,,,,,,,,,,RST-C,,TRUE,,,
+,,,,,,,,,,,,,,RST-D,,TRUE,,,
+,TestPhase,,,,,,,,,,,
+Seismic,,SKK_Seismic,ApplicationFamily,Masahiro Hoshi,,,3RP,Wireline-ES,,,,HzApplications\Seismic
+,,,,,,,,,,,,,Maxwell\Application\SKK\VSI
+,,,,,,,,,,,,,,VSIT-CA,Commercial,TRUE,,,
+,,,,,,,,,,,,,,VSIT-D,Commercial,TRUE,,,
+,,,,,,,,,,,,,,VSIT-FA,Commercial,TRUE,,,
+,,,,,,,,,,,,,,VSIT-GA,Commercial,TRUE,,,
+,,,,,,,,,,,,,,VSIT-H,Commercial,TRUE,,,
+,,,,,,,,,,,,,,VSIT-I,Commercial,TRUE,,,
+,,,,,,,,,,,,,,VSIT-PA,Commercial,TRUE,,,
+,,,,,,,,,,,,,,VSIT-Q,Commercial,TRUE,,,
+,,,,,,,,,,,,,,QVSIT-A,Commercial,TRUE,,,
+,,,,,,,,,,,,,,VSIT-XGA,Commercial,TRUE,,,
+,,,,,,,,,,,,,,VSIT-XI,Commercial,TRUE,,,
+,BHSeismic,SKK_Seismic,,,,,,,,,,
+,GpsClient,SKK_Seismic,,,,,,,,,,
+,GraphicalComponents,SKK_Seismic,,,,,,,,,,
+,Shared,SKK_Seismic,,,,,,,,,,
+,SibLibrary,SKK_Seismic,,,,,,,,,,
+,SwingsSimulator,SKK_Seismic,,,,,,,,,,
+,TrisorLibrary,SKK_Seismic,,,,,,,,,,
+,VSI,SKK_Seismic,,,,,,,,,,
+SGTAnalog,,HFE,ApplicationFamily,Tao Zhang,,Commercial,Sustaining,Wireline-ES,,,,HzApplications\SGTAnalog
+,,,,,,,,,,,,,Maxwell\Application\HFE\SGT
+,,,,,,,,,,,,,,SGT-E,,TRUE,,,
+,,,,,,,,,,,,,,SGT-P,,TRUE,,,
+,SGTAnalogGTest,,,,,,,,,,,
+SGTN,,HFE,ApplicationFamily,Bill Sass,,Commercial,Sustaining,Wireline-ES,SGT-N;Scintillation Gamma Ray Tool - N,,,HzApplications\SGTN
+,,,,,,,,,,,,,Maxwell\Application\HFE\SGT
+,,,,,,,,,,,,,,SGT-N,,TRUE,,,
+SLDT,,HFE,ApplicationFamily,Hui Tian,,Commercial,Sustaining,Wireline-ES,SLDT;QLDT;SlimHot Litho-Density Tool,,,HzApplications\SLDT
+,,,,,,,,,,,,,Maxwell\Application\HFE\QLDT-SLDT
+,,,,,,,,,,,,,,QLDT-A,,TRUE,,,
+,,,,,,,,,,,,,,QLDT-B,,TRUE,,,
+,,,,,,,,,,,,,,SLDT-A,,TRUE,,,
+SLIM,,HCS,ApplicationFamily,Jianwen Wang,,Alpha,NPD,Wireline-PS,,,,HzApplications\SLIM
+,,,,,,,,,,,,,Maxwell\Application\HCS\SLIM
+,SLIMCommon,HCS,Common,,,FieldIntro,,,,,,
+,SLIMCommonUI,HCS,Common,,,FieldIntro,,,,,,
+,SPANS,HCS,,,,,NPD,,,,,
+,,,,,,,,,,,,,,SPANS-AA,,TRUE,SLIM PLATFORM ANCHOR SONDE,,
+,SPLAS,HCS,,,,,NPD,,,,,
+,,,,,,,,,,,,,,SPLAS-AA,,TRUE,SLIM PLATFORM LINEAR ACTUATOR SONDE,,
+,SPSFS,HCS,,,,,NPD,,,,,
+,,,,,,,,,,,,,,SPSFS-AA,,TRUE,SLIM PLATFORM SELECTIVE SHIFTING SONDE,,
+,SPSHS,HCS,,,,,NPD,,,,,
+,,,,,,,,,,,,,,SPSHS-AA,,TRUE,SLIM PLATFORM SHIFTING SERVICE HYDRAULIC SONDE,,
+,SPSCS,HCS,,,,,NPD,,,,,
+,,,,,,,,,,,,,,SPSCS-AA,,TRUE,SLIM PLATFORM SHIFTING SERVICE COMPENSATOR SONDE,,
+,SPCPS,HCS,,,,FieldIntro,NPD,,,,,
+,,,,,,,,,,,,,,SPCPS-AA,,TRUE,SLIM PLATFORM COMPENSATOR SONDE,,
+,SPRCC,HCS,,,,FieldIntro,NPD,,,,,
+,,,,,,,,,,,,,,SPRCC-AA,,TRUE,SLIM PLATFORM ROTARY COMPENSATOR CARTRIDGE,,
+,SPRCS,HCS,,,,FieldIntro,NPD,,,,,
+,,,,,,,,,,,,,,SPRCS-AA,,TRUE,SLIM PLATFORM ROTARY COMPENSATOR SONDE,,
+,SPDRS,HCS,,,,FieldIntro,NPD,,,,,
+,,,,,,,,,,,,,,SPDRS-AA,,TRUE,SLIM PLATFORM TRACTOR DRIVE SONDE,,
+,SPEPC,HCS,,,,FieldIntro,NPD,,,,,
+,,,,,,,,,,,,,,SPEPC-AA,,TRUE,SLIM PLATFORM ELECTRONICS POWER CARTRIDGE,,
+,SPFPS,HCS,,,,FieldIntro,NPD,,,,,
+,,,,,,,,,,,,,,SPFPS-AA,,TRUE,SLIM PLATFORM ROTARY PUMP SONDE,,
+,SPDBH,HCS,,,,FieldIntro,NPD,,,,,
+,,,,,,,,,,,,,,SPDBH-AA,,TRUE,SLIM PLATFORM BAILER,,
+,SPDBN,HCS,,,,FieldIntro,NPD,,,,,
+,,,,,,,,,,,,,,SPDBN-AA,,TRUE,SLIM PLATFORM STANDARD CONE BOTTOM NOSE,,
+,,,,,,,,,,,,,,SPDBN-BA,,TRUE,SLIM PLATFORM BALL-PIVOT BOTTOM NOSE,,
+,SPRSB,HCS,,,,FieldIntro,NPD,,,,,
+,,,,,,,,,,,,,,SPRSB-L225,,TRUE,SLIM PLATFORM ROTARY SCALE BIT, 2.25 IN,,
+,,,,,,,,,,,,,,SPRSB-L250,,TRUE,SLIM PLATFORM ROTARY SCALE BIT, 2.50 IN,,
+,,,,,,,,,,,,,,SPRSB-L263,,TRUE,SLIM PLATFORM ROTARY SCALE BIT, 2.625 IN,,
+,,,,,,,,,,,,,,SPRSB-L275,,TRUE,SLIM PLATFORM ROTARY SCALE BIT, 2.75 IN,,
+,,,,,,,,,,,,,,SPRSB-L300,,TRUE,SLIM PLATFORM ROTARY SCALE BIT, 3.00 IN,,
+,,,,,,,,,,,,,,SPRSB-L250,,TRUE,SLIM PLATFORM ROTARY SCALE BIT, 3.50 IN,,
+,SPHYS,HCS,,,,FieldIntro,NPD,,,,,
+,,,,,,,,,,,,,,SPHYS-AA,,TRUE,SLIM PLATFORM HYDRAULIC SONDE,,
+,SPRPS,HCS,,,,FieldIntro,NPD,,,,,
+,,,,,,,,,,,,,,SPRPS-MA,,TRUE,SLIM PLATFORM ROTARY POWER SONDE, MILLING,,
+,,,,,,,,,,,,,,SPRPS-DA,,TRUE,SLIM PLATFORM ROTARY POWER SONDE, DRIVESHAFT, HIGH SPEED,,
+,SPPAC,HCS,,,,FieldIntro,NPD,,,,,
+,,,,,,,,,,,,,,SPPAC-AA,,TRUE,SLIM PLATFORM PSP TRANSLATOR CARTRIDGE,,
+,SPTEC,HCS,,,,FieldIntro,NPD,,,,,
+,,,,,,,,,,,,,,SPTEC-AA,,TRUE,SLIM PLATFORM TELEMETRY CARTRIDGE,,
+,SPEAR,HCS,,,,FieldIntro,NPD,,,,,
+,,,,,,,,,,,,,,SPEAR,,TRUE,SLIM PLATFORM TRACTOR,,
+,SPMILL,HCS,,,,FieldIntro,NPD,,,,,
+,,,,,,,,,,,,,,SPMILL,,TRUE,SLIM PLATFORM Milling,,
+,SPDRM,HCS,,,,FieldIntro,NPD,,,,,
+,,,,,,,,,,,,,,SPDRM,,TRUE,SLIM PLATFORM Debris Removal,,
+,SPSHIFT,HCS,,,,,NPD,,,,,
+,,,,,,,,,,,,,,SPSHIFT,,TRUE,SLIM PLATFORM Shifting,,
+SlimPulse,,SHTC,ApplicationFamily,Kenzo Hara,,Commercial,Sustaining,DnM,,,,HzApplications\SlimPulse
+,,,,,,,,,,,,,Maxwell\Application\SHTC\SlimPulse
+,,,,,,,,,,,,,,SPULSE-GEN,,TRUE,SlimPulse,,
+,,,,,,,,,,,,,,SPULSE-SPSA,,TRUE,SlimPulse,,
+,,,,,,,,,,,,,,SPULSE-SPSRA,,TRUE,SlimPulse,,
+,,,,,,,,,,,,,,SPULSE-SPSRA-K,,TRUE,SlimPulse,,
+SMWD,,SKK,ApplicationFamily,Takahiro Kawate,,,Sustaining,DnM,seismicVISION,,,HzApplications\SMWD
+,,,,,,,,,,,,,Maxwell\Application\SKK\seismicVISION
+,,,,,,,,,,,,,,seismicVISION675,Commercial,TRUE,,,
+,,,,,,,,,,,,,,seismicVISION825,Commercial,TRUE,,,
+,,,,,,,,,,,,,,seismicVISION9,Commercial,TRUE,,,
+Sonic,,SKK,ApplicationFamily,Jiaping Li,,,,,,,,HzApplications\Sonic
+SP,,HFE,ApplicationFamily,Bill Sass,,Commercial,Sustaining,Wireline-ES,SP;Spontaneous Potential;Bridle SP,,,HzApplications\SP
+,,,,,,,,,,,,,Maxwell\Application\HFE\BSP
+,,,,,,,,,,,,,Maxwell\Application\HFE\SPAA
+,,,,,,,,,,,,,Maxwell\Application\HFE\SPE-A
+,,,,,,,,,,,,,,BSP,,TRUE,,,
+,,,,,,,,,,,,,,SPA-A,,TRUE,,,
+,,,,,,,,,,,,,,SPE-A,,TRUE,,,
+,,,,,,,,,,,,,,SBRT,,TRUE,,,
+SRFT,,HFE,ApplicationFamily,Tao Zhang,,Alpha,Conversion,Wireline,,,,HzApplications\SRFT
+,,,,,,,,,,,,,Maxwell\Application\HFE\SRFT
+,SRFTGTest,,,,,,,,,,,
+SRPC_COMMON,,SRFE,Common,,,,,,,,,HzApplications\SRPC_COMMON
+SRT,,SRFE,ApplicationFamily,,,,,Wireline-ES,,,,HzApplications\SRT
+,,,,,,,,,,,,,Maxwell\Application\SRFE\SRT
+,,,,,,,,,,,,,,SRT-C,Commercial,TRUE,,,
+SSLT-ASLT,,SKK,ApplicationFamily,Erhan Deger,,,3RP,Wireline-ES,SSLT;QSLT;ASLT,,,HzApplications\SSLT
+,,,,,,,,,,,,,Maxwell\Application\SKK\SSLT
+,,,,,,,,,,,,,Maxwell\Application\SKK\ASLT
+,,,,,,,,,,,,,,SSLT-B,Commercial,TRUE,,,
+,,,,,,,,,,,,,,SSLT-C,Commercial,TRUE,,,
+,,,,,,,,,,,,,,SSLT-D,PreCommercial,TRUE,,,
+,,,,,,,,,,,,,,QSLT-B,Commercial,TRUE,,,
+,,,,,,,,,,,,,,QSLT-C,PreCommercial,TRUE,,,
+,,,,,,,,,,,,,,ASLT-A,Commercial,TRUE,,,
+,,,,,,,,,,,,,,ASLT-B,Commercial,TRUE,,,
+StethoScope,,HFE,ApplicationFamily,Steven McCluney,,,,DnM,,,,HzApplications\StethoScope
+,,,,,,,,,,,,,Maxwell\Application\HFE\StethoScope
+,Common,,,,,,,,,,,
+,SWFT475,,,,,,3RP,,StethoScope 475,,,
+,,,,,,,,,,,,,,SWFT475,Commercial,TRUE,,,
+,TST675,,,,,,3RP,,StethoScope 675,,,
+,,,,,,,,,,,,,,TST675,Commercial,TRUE,,,
+,TST825,,,,,,3RP,,StethoScope 825,,,
+,,,,,,,,,,,,,,TST825,Commercial,TRUE,,,
+,TSTx675,,,,,,NPD,,,,,
+,,,,,,,,,,,,,,FPWDx675,FieldIntro,TRUE,,,
+,TSTx825,,,,,,NPD,,,,,
+,,,,,,,,,,,,,,FPWDx825,FieldIntro,TRUE,,,
+STGC,,SKK,ApplicationFamily,Naoki Watauchi,,,,Wireline,,,,HzApplications\STGC
+,,,,,,,,,,,,,Maxwell\Application\SKK\STGC
+,,,,,,,,,,,,,,STGC-B,Commercial,TRUE,,,
+,,,,,,,,,,,,,,QTGC-B,Commercial,TRUE,,,
+,,,,,,,,,,,,,,HTGC-B,Commercial,TRUE,,,
+TAIKO,,SKK,ApplicationFamily,Suwen Weng,,,NPD,DnM,,,,HzApplications\TAIKO
+,,,,,,,,,,,,,Maxwell\Application\SKK\TAIKO
+,,,,,,,,,,,,,,TAIKO,Alpha,TRUE,,,
+ThruBit,,BGC,ApplicationFamily,Yu Wendi,,,Conversion,Wireline-ES,,,,HzApplications\ThruBit
+,,,,,,,,,,,,,Maxwell\Application\BGC\ThruBit
+,TMG,,,,,,,,,,,
+,,,,,,,,,,,,,,TMG-A,PreCommercial,TRUE,,,
+,,,,,,,,,,,,,,HTTMG-A,PreCommercial,TRUE,,,
+,TBD,,,,,,,,,,,
+,,,,,,,,,,,,,,TBD-B,PreCommercial,TRUE,,,
+,TBN,,,,,,,,,,,
+,,,,,,,,,,,,,,TBN-A,PreCommercial,TRUE,,,
+,,,,,,,,,,,,,,TBN-B,PreCommercial,TRUE,,,
+,TBI,,,,,,,,,,,
+,,,,,,,,,,,,,,TBIT-A,PreCommercial,TRUE,,,
+,TBS,,,,,,,,,,,
+,,,,,,,,,,,,,,TBS-A,PreCommercial,TRUE,,,
+,,,,,,,,,,,,,,TBS-B,PreCommercial,TRUE,,,
+,TBCC,,,,,,,,,,,
+,,,,,,,,,,,,,,TBCC-A,PreCommercial,TRUE,,,
+,TBCCL,,,,,,,,,,,
+,,,,,,,,,,,,,,TBCCL-A,PreCommercial,TRUE,,,
+,TBSP,,,,,,,,,,,
+,,,,,,,,,,,,,,TBSP-A,PreCommercial,TRUE,,,
+,TBSG,,,,,,,,,,,
+,,,,,,,,,,,,,,TBSG-A,PreCommercial,TRUE,,,
+,TBDS,SKK,,Jiaping Li,,,,,,,,
+,,,,,,,,,,,,,,TBDS-A,PreCommercial,TRUE,,,
+,,,,,,,,,,,,,,TBDS-B,PreAlpha,TRUE,,,
+,TBCR,,,,,,,,,,,
+,,,,,,,,,,,,,,TBCR-A,PreCommercial,TRUE,,,
+,TBSB,,,,,,,,,,,
+,,,,,,,,,,,,,,TBSB-AA,PreCommercial,TRUE,,,
+,,,,,,,,,,,,,,TBSB-BA,PreCommercial,TRUE,,,
+,,,,,,,,,,,,,,TBSB-CA,PreCommercial,TRUE,,,
+,TBMLT,,,,,,,,,,,
+,,,,,,,,,,,,,,TBMLT-A,FieldIntro,TRUE,,,
+,TBLA,,,,,,,,,,,
+,,,,,,,,,,,,,,TBLA-A,PreAlpha,TRUE,,,
+,TBEI,,,,,,,,,,,
+,,,,,,,,,,,,,,TBEI-A,PreAlpha,FALSE,,,
+,Common,,,,,,,,,,,
+,TBTS,,,,,,,,,,,
+Tractors,,HCS,ApplicationFamily,Jianwen Wang,,Commercial,Sustaining,Wireline-PS,,,,HzApplications\Tractors
+,TractorCommon,HCS,Common,,,,,,,,,
+,PSTE,HCS,,,,,Sustaining,,,,,
+,,,,,,,,,,,,,Maxwell\Application\HCS\PSTE-F
+,,,,,,,,,,,,,,PSTE-F,,TRUE,,,
+,,,,,,,,,,,,,,PSTE-H,,TRUE,,,
+,,,,,,,,,,,,,,PSTE-S,,TRUE,,,
+,,,,,,,,,,,,,,PSTE-T,,TRUE,,,
+,,,,,,,,,,,,,,PSTS-Dummy,,TRUE,,,
+,PSTTS,HCS,,,,,Sustaining,,,,,
+,,,,,,,,,,,,,Maxwell\Application\HCS\PSTT-S (MaxTRAC)
+,,,,,,,,,,,,,,PSTS-SB,Commercial,TRUE,MaxTRAC,,
+,,,,,,,,,,,,,,POHS-A,Commercial,TRUE,MaxTRAC,,
+,PSTTS_RR,HCS,,,,,RapidResponse,,,,,
+,,,,,,,,,,,,,Maxwell\Application\HCS\PSTT-S (MaxTRAC)
+,,,,,,,,,,,,,,PSTS-MA,FieldIntro,TRUE,MaxTRAC,,
+,,,,,,,,,,,,,,POHS-BA,FieldIntro,TRUE,MaxTRAC,,
+,,,,,,,,,,,,,,POHS-UST,FieldIntro,TRUE,MaxTRAC,,
+,XTRA-A,HCS,,,,,Sustaining,,,,,
+,,,,,,,,,,,,,Maxwell\Application\HCS\XTRA-A (TuffTRAC)
+,,,,,,,,,,,,,,XTRA-A,,TRUE,TuffTRAC,,
+,,,,,,,,,,,,,,XTRA-C,,TRUE,UltraTRAC,,
+,,,,,,,,,,,,,,XCCL-A,,TRUE,,,
+,XTRA-B,HCS,,,,,Sustaining,,,,,
+,,,,,,,,,,,,,Maxwell\Application\HCS\XTRA-B (TuffTRAC Mono)
+,,,,,,,,,,,,,,XTRA-B,,TRUE,TuffTRAC Mono,,
+,,,,,,,,,,,,,,XTRA-D,,TRUE,UltraTRAC,,
+USIT,,SRFE,ApplicationFamily,,,,,Wireline,,,,HzApplications\Ultrasonics
+,,,,,,,,,,,,,Maxwell\Application\SRFE\USIT IBC
+,,,,,,,,,,,,,,USIT-D,Commercial,TRUE,,,
+,,,,,,,,,,,,,,USIT-E,Commercial,TRUE,,,
+,IBC,,,,,,,,,,,
+,,,,,,,,,,,,,Maxwell\Application\SRFE\USIT IBC
+,UBI,,,,,,,,,,,
+,,,,,,,,,,,,,Maxwell\Application\SRFE\UBI
+,UCI,,,,,,,,,,,
+,,,,,,,,,,,,,Maxwell\Application\SRFE\UCI
+,USI,,,,,,,,,,,
+,,,,,,,,,,,,,Maxwell\Application\SRFE\USI
+VPWD,,HFE,ApplicationFamily,Steven McCluney,,Commercial,Sustaining,DnM,VPWD,,,HzApplications\VPWD
+,,,,,,,,,,,,,Maxwell\Application\HFE\VPWD
+,,,,,,,,,,,,,,VPWD,Commercial,TRUE,,,
+WDIS,,SHTC,ApplicationFamily,Kenzo Hara,,PreAlpha,Orphaned,DnM,,,,HzApplications\WDIS
+,,,,,,,,,,,,,Maxwell\Application\SHTC\WDIS
+,,,,,,,,,,,,,,WDIS475,,TRUE,Wired Drill Pipe Interface Sub,,
+WIReD,,HCS,ApplicationFamily,Kevin Wu,,,NPD,Wireline,WIReD,,,HzApplications\WIReD
+,,,,,,,,,,,,,Maxwell\Application\HCS\WIReD
+,,,,,,,,,,,,,,WIReD-AA,PreCommercial,TRUE,,,
+,,,,,,,,,,,,,,WIReD-HB,PreCommercial,TRUE,,,
+,,,,,,,,,,,,,,WIReD-SAA,Alpha,TRUE,,,
+,WIReD_GTest,,Test,,,,,,,,,
+WPGRT,,HFE,ApplicationFamily,Bill Sass,,Commercial,Sustaining,Wireline-ES,WPGRT;Wireline Perforating Gamma Ray Tool,,,HzApplications\WPGRT
+,,,,,,,,,,,,,Maxwell\Application\HFE\WPGRT
+,,,,,,,,,,,,,,WPGRT-A,,TRUE,,,
+,,,,,,,,,,,,,,MSGR-A,,TRUE,,,
+WXT,,HFE,ApplicationFamily,Bill Sass,,Commercial,Sustaining,Wireline-ES,WXT;Wireline Crossover Tool,,,HzApplications\WXT
+,,,,,,,,,,,,,Maxwell\Application\HFE\WXT
+,,,,,,,,,,,,,,WXT-A,,TRUE,,,
+XPT,,SRFE,ApplicationFamily,,,,,Wireline-ES,,,,HzApplications\XPT
+,,,,,,,,,,,,,Maxwell\Application\SRFE\XPT - HXPT
+,,,,,,,,,,,,,,XPT-BA,Commercial,TRUE,,,
+,,,,,,,,,,,,,,XPT-C,Commercial,TRUE,,,
+,,,,,,,,,,,,,,HXPT-A,Commercial,TRUE,,,
+,FPT,,,,,FieldIntro,,,,,TRUE,
+,,,,,,,,,,,,,,FPT-A,FieldIntro,TRUE,,,
+Merlin,,SRFE,ApplicationFamily,,,Alpha,NPD,Wireline-ES,,,,HzApplications\XPT
+,,,,,,,,,,,,,Maxwell\Application\SRFE\Merlin
+,,,,,,,,,,,,,,MRLN-A,,TRUE,,,
+ZINC,,HFE,ApplicationFamily,Steven McCluney,,Commercial,Sustaining,DnM,ZINC,,,HzApplications\ZINC
+,,,,,,,,,,,,,Maxwell\Application\HFE\ZINC
+,,,,,,,,,,,,,,ZINC475,Commercial,TRUE,,,
+,,,,,,,,,,,,,,ZINC675,Commercial,TRUE,,,
+DigitalDeliverableTestFramework,,Digital Deliverable,,Jiang ZHAO,,,,,,,,HzAutoTest\DigitalDeliverablesTestFramework
+,DigitalDeliverableTestFramework,,,,true,,,,,,,
+TestTool,,Workflow,,Xu Dawei,,,,,,,,HzAutoTest\TestTools
+,,,,,,,,,,,,,HzAutoTest\TestTools
+Test Tools,,Workflow,,Felix Rao,true,Obsolete,,,,,,HzAutoTest\TestTools\DnMAKT
+,,,,,,,,,,,,,HzAutoTest\TestTools\DnMAKT
+DSClients,,T-Primer,,LI Ziming,false,,,,,,,HzFramework
+,,,,,,,,,,,,,HzFramework\Common
+,,,,,,,,,,,,,HzFramework\Common\DataAccess
+,,,,,,,,,,,,,HzFramework\DataStore
+,,,,,,,,,,,,,HzFramework\Include
+,,,,,,,,,,,,,HzFramework\Mock\DsClients
+,,,,,,,,,,,,,HzFramework\Utilities
+FwkRepository,,T-Primer,,LI Ziming,true,,,,,,,HzFramework
+,,,,,,,,,,,,,HzFramework\Common\FwkRepository
+,,,,,,,,,,,,,HzFramework\Mock\FwkRepository
+ComputationService,,T-Primer,,ZHANG Yanhua,false,,,,,,,HzFramework
+,,,,,,,,,,,,,HzFramework\ComputationService
+,,,,,,,,,,,,,HzFramework\Execution\TaskRunManagers
+Cursor,,T-Primer,,ZHANG Yanhua,true,,,,,,,HzFramework\Common\Cursors
+,,,,,,,,,,,,,HzFramework\Common\Cursors
+FrameworkInterfaces,,Display,,Zhang Hui,true,,,,,,,HzFramework\Common\FrameworkInterfaces
+,,,,,,,,,,,,,HzFramework\Common\FrameworkInterfaces
+HzMedic,,T-Primer,,ZHANG Peng,false,,,,,,,HzFramework\Common\Medic
+,,,,,,,,,,,,,HzFramework\Common\Medic
+Bulk Data,,T-Primer,,LI Ziming,false,,,,,,,HzFramework\DataStore\Clients\BulkData
+,,,,,,,,,,,,,HzFramework\DataStore\Clients\BulkData
+LAS,,Digital Deliverable,,Jixi SHAN,,,,,,,,HzFramework\Dex
+,AsciiReader,,,,true,,,,,,,
+,Import,,,,true,,,,,,,
+,DexLasWriter,,,,false,,,,,,,
+,StaticData,,,,true,,,,,,,
+,MicroTest,,,,true,,,,,,,
+,AutoTest,,,,true,,,,,,,
+DLIS,,Digital Deliverable,,Jiang ZHAO,,,,,,,,HzFramework\Dex
+,DLISAutoTest,,,,true,,,,,,,
+,DLISMicroTest,,,,true,,,,,,,
+,DscGuidService,,,,true,Obsolete,,,,,,
+,TieringFilter,,,,true,,,,,,,
+,ConvertDLIS,,,,false,,,,,,,
+,DexParameterDlisReader,,,,true,,,,,,,
+,DexWriter,,,,false,,,,,,,
+,DexReader,,,,true,,,,,,,
+,DlisReader,,,,false,,,,,,,
+,DlisWriter,,,,false,,,,,,,
+,DlisCommon,,,,false,,,,,,,
+,DLISCustomCnvModule,,,,false,,,,,,,
+DexCommon,,Digital Deliverable,,Jixi SHAN,,,,,,,,HzFramework\Dex
+,ChannelDataProvider,,,,,,,,,,,
+,DexCommon,,,,false,,,,,,,
+WITS,,Digital Deliverable,,Jixi SHAN,true,,,,,,,HzFramework\Dex
+,WITSWriter,,,,,,,,,,,
+WITSML,,Digital Deliverable,,Jixi SHAN,,,,,,,,HzFramework\Dex
+,WITSMLWriter,,,,false,,,,,,,
+,MicroTest,,,,true,,,,,,,
+,AutoTest,,,,true,,,,,,,
+Import,,Digital Deliverable,,ChenQuan LI,,,,,,,,HzFramework\Dex\DBWriter
+,DBWriter,,,,true,Obsolete,,,,,,
+ExecutionManager,,Display,,Zhang Hui,true,,,,,,,HzFramework\Execution\ExecutionManager
+,,,,,,,,,,,,,HzFramework\Execution\ExecutionManager
+JobManager,,Display,,Zhang Hui,false,,,,,,,HzFramework\Execution\JobManager
+,,,,,,,,,,,,,HzFramework\Execution\JobManager
+Other,,Display,,Zhang Hui,false,,,,,,,HzFramework\Utilities\Forms
+,,,,,,,,,,,,,HzFramework\Utilities\Forms
+Startup Manager,,T-Primer,,ZHANG Yanhua,false,,,,,,,HzFramework\Utilities\HzStartupManager
+,,,,,,,,,,,,,HzFramework\Utilities\HzStartupManager
+Message MMF Writer,,T-Primer,,ZHANG Yanhua,false,,,,,,,HzFramework\Utilities\MessageMMFWriter
+,,,,,,,,,,,,,HzFramework\Utilities\MessageMMFWriter
+AcqPerformance,,Workflow,,Zhang Jie,,,,,,,,HzFwkUtils
+,,,,,,,,,,,,,HzFwkUtils\Performance\PerformanceAnalyzer
+WL_Utility,,Workflow,,,,,,,,,,HzFwkUtils
+,,,,,,,,,,,,,HzFwkUtils
+,AcqFrameShark,,,Wang Qing,true,,,,,,,
+FESUtil_Thrift,,ThirdParty,,,,,,,,,,HzFwkUtils\FrontEndServiceUtil
+,,,,,,,,,,,,,\HzFwkUtils\FrontEndServiceUtil
+Instrumentation Log,,T-Primer,,ZHANG Peng,false,,,,,,,HzFwkUtils\Instrumentation
+,,,,,,,,,,,,,HzFwkUtils\Instrumentation
+SimWCP2,,Workflow,,Xu Dawei,true,Obsolete,,,,,,HzFwkUtils\SimWCP2
+,,,,,,,,,,,,,HzFwkUtils\SimWCP2
+WAFETG,,ThirdParty,ApplicationFamily,,,Commercial,,Wireline,,,,HzFwkUtils\WAFETroubleshootingGuide
+,,,,,,,,,,,,,Maxwell\Environment\Dev
+LogGraphics,,Display,,Zhang Hui,false,Obsolete,,,,,,HzGraphics\DataBindingBrokers
+,,,,,,,,,,,,,HzGraphics\DataBindingBrokers
+WaveformViewer,,Display,,CUI Xu Guang,false,,,,,,,HzGraphics\WaveformViewer
+,,,,,,,,,,,,,HzGraphics\WaveformViewer
+XYZPlot,,Display,,Zhang Hui,false,Obsolete,,,,,,HzGraphics\XYZPlot
+,,,,,,,,,,,,,HzGraphics\XYZPlot
+DataImport,,Digital Deliverable,,ChenQuan LI,,,,,,,,HzProducts
+,SlbDataImportControl,,,,false,,,,,,,
+,DataImportRoutines,,,,false,,,,,,,
+,JobSpecViewer,,,,false,,,,,,,
+,JobSpecManager,,,,true,,,,,,,
+JobArchiveV3,,Digital Deliverable,,Jixi SHAN,,,,,,,,HzProducts
+,BulkPacker,,,,false,,,,,,,
+,AutoTest,,,,false,,,,,,,
+,DataModel,,,,false,,,,,,,
+,EFlibrary,,,,false,,,,,,,
+Data Mask,,T-Primer,,ZHANG Yanhua,true,,,,,,,HzProducts
+,,,,,,,,,,,,,HzProducts\Editors\AutoTest\DataMaskAutoTest
+,,,,,,,,,,,,,HzProducts\Editors\DataMask
+,,,,,,,,,,,,,HzProducts\GenericComponents\TabularListing
+Alarms,,Display,,Yujun Chen,false,,,,,,,HzProducts
+,,,,,,,,,,,,,HzProducts\UIServers
+,,,,,,,,,,,,,HzProducts\GenericComponents\DataBasedAlarms
+,,,,,,,,,,,,,HzProducts\GenericComponents\GraphicalAlarmsEditor
+DigitalDeliverableUI,,Digital Deliverable,,ChenQuan LI,,,,,,,,HzProducts
+,CommonUI,,,,false,,,,,,,
+,DigitalDeliverableWriter,,,,false,,,,,,,
+,Publisher,,,,false,,,,,,,
+,DLISEditor,,,,false,,,,,,,
+,LASEditor,,,,false,,,,,,,
+,WitsEditor,,,,false,,,,,,,
+,WitsmlEditor,,,,false,,,,,,,
+,DLISWriter,,,,false,,,,,,,
+,LASWriter,,,,false,Obsolete,,,,,,
+,WitsWriter,,,,true,Obsolete,,,,,,
+,WitsmlWriter,,,,false,,,,,,,
+,DexWriterConfigHelper,,,,false,,,,,,,
+,DigitalDeliverableTemplateDataModel,,,,false,,,,,,,
+,DigitalDeliverableTemplatePropertyAutoTest,,,,false,,,,,,,
+SeparateProcess,,Digital Deliverable,,Jiang ZHAO,,,,,,,,HzProducts
+,JobArchiveProcess,,,,false,,,,,,,
+,WCFFramework,,,,true,,,,,,,
+Graphical Pass Manager,,T-Primer,,ZHANG Peng,false,,,,,,,HzProducts\Editors
+,,,,,,,,,,,,,HzProducts\Editors\AutoTest\EditorsAutoTest\GraphicPassManager
+,,,,,,,,,,,,,HzProducts\Editors\GraphicPassManager
+Time Shift,,T-Primer,,ZHANG Peng,false,,,,,,,HzProducts\Editors
+,,,,,,,,,,,,,HzProducts\Editors\AutoTest\EditorsAutoTest\TimeDepth
+,,,,,,,,,,,,,HzProducts\Editors\AutoTest\EditorsAutoTest\TimeLapsePassGeneration
+,,,,,,,,,,,,,HzProducts\Editors\TimeShift
+Merge,,T-Primer,,ZHANG Yanhua,false,,,,,,,HzProducts\Editors
+,,,,,,,,,,,,,HzProducts\Editors\DataCentral\Merge
+,,,,,,,,,,,,,HzProducts\Editors\Merge
+Data Central,,T-Primer,,ZHANG Yanhua,false,,,,,,,HzProducts\Editors\DataCentral
+,,,,,,,,,,,,,HzProducts\Editors\DataCentral
+Composer,,T-Primer,,ZHANG Peng,false,,,,,,,HzProducts\Editors\DataCentral\Composer
+,,,,,,,,,,,,,HzProducts\Editors\DataCentral\Composer
+Time Lapse Processing,,Workflow,,Li Rao,,,,,,,,HzProducts\Editors\MsTest\Editors_MsTest\TimeLapsePassGeneration
+,,,,,,,,,,,,,HzProducts\Editors\MsTest\Editors_MsTest\TimeLapsePassGeneration
+Splice,,T-Primer,,ZHANG Peng,false,,,,,,,HzProducts\Editors\Splice
+,,,,,,,,,,,,,HzProducts\Editors\Splice
+Time Depth,,T-Primer,,ZHANG Peng,false,,,,,,,HzProducts\Editors\TimeDepth
+,,,,,,,,,,,,,HzProducts\Editors\TimeDepth
+User Defined Composite,,T-Primer,,ZHANG Yanhua,false,,,,,,,HzProducts\Editors\UserDefinedComposite
+,,,,,,,,,,,,,HzProducts\Editors\UserDefinedComposite
+WirelineEnsemble,,Workflow,,Zhang Jie,,,,,,,,HzProducts\Ensembles\WirelineSession
+,,,,,,,,,,,,,HzProducts\Ensembles\WirelineSession
+CalibrationReport,,Display,,Zhang Hui,true,,,,,,,HzProducts\GenericComponents\CalibrationUtilities
+,,,,,,,,,,,,,HzProducts\GenericComponents\CalibrationUtilities
+Custom Report,,Display,,Zhang Hui,,,,,,,,HzProducts\GenericComponents\CustomReport
+,,,,,,,,,,,,,HzProducts\GenericComponents\CustomReport
+CustomUI,,Display,,Zhang Hui,false,,,,,,,HzProducts\GenericComponents\CustomUIBase
+,,,,,,,,,,,,,HzProducts\GenericComponents\CustomUIBase
+DataGauges,,Display,,CUI Xu Guang,false,,,,,,,HzProducts\GenericComponents\Gauges
+,,,,,,,,,,,,,HzProducts\GenericComponents\Gauges
+,,,,,,,,,,,,,HzProducts\GenericComponents\SlbNonScalarOsddDisplayXmlParser
+RemoteConsole,,Display,,Zhang Hui,false,Obsolete,,,,,,HzProducts\GenericComponents\RemoteConsole
+,,,,,,,,,,,,,HzProducts\GenericComponents\RemoteConsole
+ToolSelection,,Display,,Zhang Hui,,,,,,,,HzProducts\GenericComponents\ToolSelection
+,,,,,,,,,,,,,HzProducts\GenericComponents\ToolSelection
+DCLogProxy,,Display,,CUI Xu Guang,true,Obsolete,,,,,,HzProducts\Managers\Deliverables\DCLogProxy
+,,,,,,,,,,,,,HzProducts\Managers\Deliverables\DCLogProxy
+DCManager,,Display,,Zhang Hui,false,,,,,,,HzProducts\Managers\Deliverables\DCManager
+,,,,,,,,,,,,,HzProducts\Managers\Deliverables\DCManager
+PHM Data Writer,,Digital Deliverable,,Jiang ZHAO,,,,,,,,HzProducts\Managers\Deliverables\PHMDataWriter
+,PHMDataWriterCOM,,,,false,,,,,,,
+,PHMDataWriterConsole,,,,false,,,,,,,
+,PHMDataWriterDaemon,,,,false,,,,,,,
+,PHMDataWriter_gTest,,,,false,,,,,,,
+,PHMDataWriter_MsTest,,,,false,,,,,,,
+,PHMXmlConfigGenerator,,,,false,,,,,,,
+,Utilities,,,,false,,,,,,,
+FTL,,Workflow,,Xuemei Yang,,,,,,,,HzProducts\Managers\FTLImportExportManager
+,,,,,,,,,,,,,HzProducts\Managers\FTLImportExportManager
+PDSStreaming,,Display,,Cui Xu Guang,false,Obsolete,,,,,,HzProducts\Managers\PDSDeliverableWriter
+,,,,,,,,,,,,,HzProducts\Managers\PDSDeliverableWriter
+PlanckIntegration,,DnM,ApplicationFamily,CZhang17,,,,DnM,,,,HzProducts\Planck
+,,,,,,,,,,,,,HzProducts\Planck
+Backup Restore,,T-Primer,,ZHANG Peng,false,,,,,,,HzProducts\utilities\backup
+,,,,,,,,,,,,,HzProducts\utilities\backup
+CoverPage,,Display,,Jia GUO,,,,,,,,HzProducts\Viewers\Deliverables\Samples\CoverPage
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\Samples\CoverPage
+Tiering,,Display,,Zhang Hui,true,,,,,,,HzProducts\Viewers\Deliverables\Tiering
+,,,,,,,,,,,,,HzProducts\Viewers\Deliverables\Tiering
+UIFramework,,Display,,Zhang Hui,false,,,,,,,HzProducts\Viewers\GraphicalComposition
+,,,,,,,,,,,,,HzProducts\Viewers\GraphicalComposition
+RigFloor,,Display,,Cui Xu Guang,false,,,,,,,HzProducts\Viewers\RigFloorConsole
+,,,,,,,,,,,,,HzProducts\Viewers\RigFloorConsole
+WebUX,,Workflow,,Li Rao,,Obsolete,,,,,,HzProducts\WebUX
+,,,,,,,,,,,,,HzProducts\WebUX
+GCFramework,,Display,,CUI Xu Guang,false,,,,,,,HzProductsAPI\GCFramework
+,,,,,,,,,,,,,HzProductsAPI\GCFramework
+ComplexComponent,,Display,,Zhang Hui,false,,,,,,,HzProductsAPI\GCFramework\ComplexComponentUtility
+,,,,,,,,,,,,,HzProducts\Managers\Deliverables\ComplexComponentUtility
+Data Explorer,,T-Primer,,ZHANG Peng,true,,,,,,,HzProductsAPI\GCFramework\DataBrowser
+,,,,,,,,,,,,,HzProductsAPI\GCFramework\DataBrowser
+Localization,,Display,,Zhang Hui,true,Obsolete,,,,,,HzProductsAPI\GCFramework\GraphicalLocalization
+,,,,,,,,,,,,,HzProducts\GenericComponents\GraphicalLocalization
+WorkflowConfigManager,,Workflow,,Xu Dawei,,,,,,,,HzProductsAPI\WorkflowConfigManager
+,,,,,,,,,,,,,HzProductsAPI\WorkflowConfigManager
+DTA,,SKK,ApplicationFamily,Naoki Watauchi,,,Sustaining,Wireline-ES,,,,HzSysApps\Digital\DTA
+,,,,,,,,,,,,,Maxwell\Application\SKK\DTA
+,,,,,,,,,,,,,,DTA-A,Commercial,TRUE,,,
+SYS APP MTS 3rd,,ThirdParty,,,,,,,,,,HzSysApps\Digital\MTS
+,,,,,,,,,,,,,HzSysApps\Digital\MTS
+Borehole,,HFE,ApplicationFamily,Steven McCluney,,,,,,,,HzSysApps\Ensembles\Borehole
+DepthCorrection,,SRFE,ApplicationFamily,,,,,,,,,HzSysApps\Ensembles\DepthCorrection
+,,,,,,,,,,,,,Maxwell\Application\SRFE\ABCD Speed Correction
+EquipmentApp,,Workflow,,Felix Rao,true,Obsolete,,,,,,HzSysApps\Ensembles\DnMSurface
+,,,,,,,,,,,,,HzSysApps\Ensembles\DnMSurface
+PlaceHolder,,BGC,ApplicationFamily,Zhang Jie,,Alpha,NPD,Wireline,,Secret,,HzSysApps\Ensembles\PlaceHolder
+,SelfIdentification,,,,,,,,,,,
+WL Recorder,,Workflow,,Chen Yinghua,,,,,,,,HzSysApps\Ensembles\UIs\WirelineRM
+,,,,,,,,,,,,,HzSysApps\Ensembles\UIs\WirelineRM
+Flow Chart,,T-Primer,,ZHANG Peng,true,,,,,,,HzTestTools\Tools\FlowChart
+,,,,,,,,,,,,,HzTestTools\Tools\FlowChart
+ParallelEngine,,T-Primer,,HUANG Xin,,,,,,,,HzTestTools\Tools\ParallelRecomputationSwitch
+,,,,,,,,,,,,,HzTestTools\Tools\ParallelRecomputationSwitch
+MaxStudio,,Display,,Zhang Hui,true,Obsolete,,,,,,MaxStudio
+,,,,,,,,,,,,,MaxStudio
+3rdParty_armadillo,,SRFE,ThirdParty,,,,,,,,,ThirdParty\armadillo
+3rdParty_boost,,Workflow,ThirdParty,,true,Obsolete,,,,,,ThirdParty\boost
+3rdParty_Foxit,,Display,ThirdParty,,,,,,,,,ThirdParty\Foxit
+3rdParty_Fortran,,Workflow,ThirdParty,,,,,,,,,ThirdParty\Intel\Fortran
+3rdParty_MKL,,SKK,ThirdParty,,,,,,,,,ThirdParty\Intel\MKL
+3rdParty_LogDataToolbox,,Environment,ThirdParty,,,,,,,,,ThirdParty\LogDataToolbox
+3rdParty_matio,,SRFE,ThirdParty,,,,,,,,,ThirdParty\matio
+3rdParty_Matlib,,SRFE,ThirdParty,,,,,,,,,ThirdParty\Matlib
+3rdParty_AltServer,,Display,ThirdParty,,true,,,,,,,ThirdParty\Microsoft\ATLServer
+3rdParty_Office,,Display,ThirdParty,,,,,,,,,ThirdParty\Microsoft\Office
+3rdParty_OmniORB,,SKK,ThirdParty,,,,,,,,,ThirdParty\OmniORB
+3rdParty_EntityFramework,,Display,ThirdParty,,,,,,,,,ThirdParty\Packages\EntityFramework.6.1.3
+3rdParty_Planck,,Workflow,ThirdParty,,,,,,,,,ThirdParty\Planck
+3rdParty_PrebuiltBinaries,,Environment,ThirdParty,,,,,,,,,ThirdParty\PrebuiltBinaries
+THM,,Environment,ApplicationFamily,Chenghua YAN,,Commercial,,Wireline,,,,ThirdParty\PrebuiltBinaries\THM\ThmAcquisition
+,,,,,,,,,,,,,Maxwell\Environment\Dev
+3rdParty_PSK,,Display,ThirdParty,,,,,,,,,ThirdParty\PSK
+3rdParty_SALT,,ApplicationsIE,ThirdParty,,,,,,,,,ThirdParty\SALT
+3rdParty_SlbSecureDll,,Environment,ThirdParty,,,,,,,,,ThirdParty\SLB\SlbSecureDll
+3rdParty_Syncfusion,,Display,ThirdParty,,,,,,,,,ThirdParty\Syncfusion
+3rdParty_thrift,,Workflow,ThirdParty,,true,Obsolete,,,,,,ThirdParty\thrift
+3rdParty_ValueCAN,,BGC,ThirdParty,,,,,,,,,ThirdParty\ValueCAN
+3rdParty_WinIO,,Environment,ThirdParty,,,,,,,,,ThirdParty\WinIO

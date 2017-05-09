@@ -1,0 +1,26 @@
+T:\MetricsSystem\Maxwell\Main\HzAPI\BaseImpl\AcqModuleImpl.cpp,3386#,sessionType != SESSION_WELLSERVICES )
+T:\MetricsSystem\Maxwell\Main\HzFramework\Common\ToolString\ToolStringHandler\SlbToolStringHandler.cpp,283#,if ( newVal == SESSION_WIRELINE )
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\WorkflowUIP\SlbHzWorkflowUI\WorkflowUI.cs,1719#,( m_SessionType == Interface.SessionType_t.SESSION_WIRELINE_PERFOEXPRESS ) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\WorkflowUIP\SlbHzWorkflowUI\WorkflowUI.cs,1720#,( m_SessionType == Interface.SessionType_t.SESSION_WELLSERVICES )
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\WellboreEditor\Casing.cs,558#,if ( WellObjectModel.Environment.SessionType == SessionType_t.SESSION_WIRELINE )
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\DataBasedAlarms\AlarmsManagerUI\AlarmsManagerUIMgr.cs,95#,SType == Interface.SessionType_t.SESSION_WIRELINE_PERFOEXPRESS )
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,573#,else if ( ( SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS ) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,574#,( SessionType == SessionType_t.SESSION_WELLSERVICES ) )
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentCatalog.cs,465#,( SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS ) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentCatalog.cs,466#,( SessionType == SessionType_t.SESSION_WELLSERVICES )
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,986#,( SessionType == SessionType_t.SESSION_WELLSERVICES ) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,987#,( SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS )
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\RunManager.cs,745#,if ( workflow == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS )
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,1302#,(m_SessionType == SESSION_WIRELINE_RECORDEDMODE ) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,1303#,(m_SessionType == SESSION_WELLSERVICES ) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,1518#,( m_SessionType != SESSION_WIRELINE_PERFOEXPRESS ) &&
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,1519#,( m_SessionType != SESSION_WELLSERVICES )
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,2097#,m_SessionType == SESSION_WIRELINE_PERFOEXPRESS  )
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_DfModuleDiameter.cpp,108#,(sessionType == SESSION_WIRELINE_RECORDEDMODE ) ||
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_DfModuleDiameter.cpp,109#,(sessionType == SESSION_WELLSERVICES ) ||
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_DfModuleGTEM.cpp,120#,(sessionType == SESSION_WIRELINE_RECORDEDMODE ) ||
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_DfModuleGTEM.cpp,121#,(sessionType == SESSION_WELLSERVICES ) ||
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_DfModulePressure.cpp,121#,(sessionType == SESSION_WIRELINE_RECORDEDMODE ) ||
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_DfModulePressure.cpp,122#,(sessionType == SESSION_WELLSERVICES ) ||
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_EnsApplication.cpp,442#,currentWorkflow == SESSION_WIRELINE_PERFOEXPRESS )
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\WSD\WSDRun_EnsAppl.cpp,49#,m_currentWorkflow == SESSION_WIRELINE_PERFOEXPRESS )

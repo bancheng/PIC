@@ -1,0 +1,138 @@
+_out\include\gmock\gmock-more-actions.h,3
+appcore\aul\aul_absent.cpp,1
+appcore\aul\aul_teldumputil.cpp,2
+appcore\aul\aul_teldumputil2.cpp,1
+appcore\aul\ber\aulber_simplewirelineutil.cpp,1
+appcore\hzdecisionxpress\common\hgns_cnt_environ.c,1
+appcore\interpolation\spline3d\source\bspline3dtoolbox.cpp,2
+appcore\interpolation\spline3d\source\bsplineutils.cpp,4
+appcore\interpolation\spline3d\source\wm5bsplinebasis.cpp,2
+hzapplications\ait\ait\calibration\ait_tc_rottestenable.cpp,1
+hzapplications\cmrtb\unittest\cmrt_gtest\cmrt_acqchanneloutputmgr_unittest.cpp,1
+hzapplications\common\shareduicomp\aplmodel\aplchannel.cs,1
+hzapplications\common\shareduicomp\datagaugeex\common\datagaugeex.cs,1
+hzapplications\common\shareduicomp\datagaugeex\common\digitalgaugeex.cs,1
+hzapplications\common\systemtestutil\datacentral.cs,2
+hzapplications\dnm_common\arc\arcwizard\arcwzatpsconvmoduleimpl.h,1
+hzapplications\dvdxt200\dvdxt200integrationgtestautotest\dvdxt200_toolunittestbase.cpp,1
+hzapplications\eco\eco_common\eco_spectroscopy_module_rmfilterredistribute_impl.h,1
+hzapplications\esda\acquisition\esda_acqmodule.cpp,1
+hzapplications\esda\equipment\esdaa_tool.cpp,2
+hzapplications\esda\equipment\esdab_tool.cpp,2
+hzapplications\flcn\common\coreimpl\flcnsetflowlinetype.cpp,1
+hzapplications\flcn\fnms\gtest\fnmstoolcontrolsampling_unittests.cpp,1
+hzapplications\flcn\fnms_ui\mstest\fnmssamplecontrolcustomuitest.cs,1
+hzapplications\flcn\fnms_ui\viewmodels\fnmssamplecontrolviewmodel.cs,1
+hzapplications\flcn\fnpa\gtest\fnpaseqmodulecleanuppumping_unittest.cpp,2
+hzapplications\flcn\fnpa\toolcontrol\fnpaseqmodulecleanuppumping.cpp,1
+hzapplications\flcn\fnpa_ui\viewmodels\fnpacleanupcontrolviewmodel.cs,2
+hzapplications\flcn\fnpa_ui\viewmodels\fnpaflowmgrutil.cs,1
+hzapplications\flcn\fnpo\toolcontrol\fnposeqmoduleflowlinetype.cpp,2
+hzapplications\mdt\mdcc\simulation\mdccsolenoids.cpp,1
+hzapplications\mrx\mrx_customtables\stationsummarytabledataprovider.cs,1
+hzapplications\ngi\graphicsmodule_gtest\tests\ngi_imagetransformationmoduleunittest.cpp,2
+hzapplications\ngi\ngi_calibrationcheck\runcalibrationcheck.c,1
+hzapplications\pnx\ui\diagmonitor\pnx_diagmonitormainform.cs,1
+hzapplications\psp_pl\emit\emitcomputationcpp\arma_v5_fn_conv.h,2
+hzapplications\psp_pl\emit\emitcomputationcpp\emit_comp.cpp,1
+hzapplications\psp_pl\emit\emitcomputationcpp\emit_init_dclfcalibration.cpp,1
+hzapplications\psp_pl\emit\emitcomputationcpp\emit_init_output.cpp,1
+hzapplications\psp_pl\emit\emitcomputationcpp\emit_init_padshfcalibration.cpp,1
+hzapplications\psp_pl\emit\emitcomputationcpp\emit_init_padslfcalibration.cpp,1
+hzapplications\psp_pl\emit\emitcomputationcpp\emit_input_struct.h,1
+hzapplications\psp_pl\emit\emitcomputationcpp\emit_proc_mandrel_lftaucorrection.cpp,1
+hzapplications\psp_pl\emit\emitcomputationcpp\emit_proc_pads_despiking.cpp,1
+hzapplications\psp_pl\emit\emitcomputationcpp\emit_proc_pads_lftaucorrection.cpp,1
+hzapplications\psp_pl\emit\emitcomputationcpp\emit_proc_pads_main.cpp,1
+hzapplications\psp_pl\emit\emitcomputationcpp\emit_proc_zsystem_eccentricitycorrection.cpp,1
+hzapplications\psp_pl\emit\emitcomputationcpp\emitcomputationcppunittest_gtest\sqp_impl_unittest.cpp,1
+hzapplications\psp_pl\emit\emitcomputationcpp\sqp_impl.h,3
+hzapplications\psp_pl\emit\emitcomputationcpp\sqp_impl_util.cpp,2
+hzapplications\psp_pl\emit\emitcomputationcpp\util.h,1
+hzapplications\psp_pl\emit\emitcomputationcpp_autotest\emit_output_check.cpp,1
+hzapplications\psp_pl\emit\emitcomputationcpp_autotest\emit_output_check.h,1
+hzapplications\psp_pl\emit\emitcomputationcpp_autotest\emita_playback.cpp,1
+hzapplications\psp_pl\prmc\frontend\psp_prmc_dataport.cpp,1
+hzapplications\pti\acquisition\zencus_cracker.cpp,1
+hzapplications\pti\acquisition\zencus_dataport.cpp,2
+hzapplications\pti\acquisition\zencusserialport.cpp,1
+hzapplications\rab\microscope_common\resistivity\microscope_cmpwfbtimg_dmodrmimpl.h,1
+hzapplications\rab\microscope_common\resistivity\microscope_cmpwfmfimg_dmodrmimpl.h,1
+hzapplications\seismic\vsi\ui\applicationui\deliverables\surveyselectusercontrol.cs,1
+hzapplications\sldt\task_ui\qldt_calibrationhistory.cs,1
+hzapplications\srpc_common\matlabutility\matlabrand.cpp,1
+hzapplications\srpc_common\matlabutility\matlabrandn.cpp,1
+hzapplications\taln\common\coreimpl\talnacqmodule.cpp,1
+hzapplications\taln\common\coreimpl\talnseqmodule_firmwareupgrade.cpp,2
+hzapplications\taln\common\coreimpl\talntoolelement.cpp,1
+hzapplications\taln\ftpo\computation\ftpodfmodulebase.h,1
+hzapplications\taln\ftpo\computation\ftpologannotatordfmodule.cpp,1
+hzapplications\taln\ftpo\ftpo_gtest\stubtestftpo.h,1
+hzapplications\taln\ftpo\simulation\ftpocartridgesimmodules.cpp,3
+hzapplications\taln\ftpo\simulation\ftposimengine.h,2
+hzapplications\taln\ftpo\toolcontrol\ftposeqmodulebase.cpp,1
+hzapplications\taln\ftpo\toolcontrol\ftposeqmodulemonitor.cpp,1
+hzapplications\taln\ftqp\computation\ftqpdfmodule_dynamiccompensation_cqg.cpp,1
+hzapplications\taln\ftqp\toolcontrol\ftfspsyncpumping.cpp,2
+hzapplications\taln\ftwt\equipment\fttctool.h,2
+hzapplications\taln\ftwt\equipment\tntatoolbase.cpp,1
+hzapplications\taln\mastercontroller\acquisition\mastercontrollerbusmasterbase.cpp,1
+hzapplications\taln\mastercontroller\simulation\mastercontrollersimbusmasterbase.cpp,1
+hzapplications\taln\mastercontroller\toolcontrol\mastercontrollerseqmodule.cpp,1
+hzapplications\taln\mastercontroller\toolcontrol\mastercontrollerseqmodule_initialization.cpp,1
+hzapplications\taln\mastercontroller\toolcontrol\mastercontrollerseqmodule_monitor.cpp,1
+hzapplications\taln\sixfiftyvmtrctrl\toolcontrol\sixfiftyvmtrctrlseqmodule.cpp,1
+hzapplications\taln\sixfiftyvmtrctrl\toolcontrol\sixfiftyvmtrctrlseqmodule_rslvroffsetcalc.cpp,1
+hzapplications\taln\solsensor\acquisition\solsensoracqmodulebase.cpp,1
+hzapplications\taln\solsensor\computation\solsensordfmodule_bitspeedbase.cpp,1
+hzapplications\taln\solsensor\computation\solsensordfmodule_pressurebase.cpp,1
+hzapplications\taln\solsensor\simulation\solsensorsimmodulebase.cpp,1
+hzapplications\taln\solsensor\toolcontrol\solsensorseqmodule_energize.cpp,2
+hzapplications\taln\talnui\650vmotor\sixfiftyvmotor_controlui.cs,2
+hzapplications\taln\talnui\650vmotor\sixfiftyvmotor_resolvercalcustomui.cs,1
+hzapplications\taln\talnui\ftpo\ftpo_customui_pumpcontrol.cs,2
+hzapplications\taln\talnui\mastercontroller\mastercontroller_controlui.cs,2
+hzapplications\taln\talnui\sharedui\taln_firmwareupgrade.cs,1
+hzapplications\taln\talnui\sharedui\talnwidget_tempmeter.cs,2
+hzapplications\taln\talnui\solsensor\acquisition\solsensorcontrolui.cs,1
+hzapplications\taln\tnpc\simulation\tnpcsimmodulebase.cpp,1
+hzapplications\taln\tnpc\tnpc_gtest\stubtesttnpc.h,1
+hzapplications\taln\tnpc\toolcontrol\tnpcseqmodulebase.cpp,3
+hzapplications\taln\tnpc\toolcontrol\tnpcseqmodulebase.h,1
+hzautotest\simulator\wlsimulatorhelper.cs,2
+hzframework\dex\dlis\dexdliswriter\singleindexwriter.cpp,1
+hzframework\utilities\autotestlibrary\reflecthelper.cs,3
+hzframework\utilities\servicelauncher\servicetray.cs,1
+hzfwkutils\longpathsupport\longpathsupport_mstest\pathtests.cs,1
+hzfwkutils\xsltheaderremover\xsltheaderremover.cs,1
+hzproducts\editors\mstest\editors_mstest\timedepth\timedepth_mstest.cs,1
+hzproducts\managers\deliverables\phmdiagnoseutility\diagnosemodelselector\modelselector.cs,1
+hzproducts\managers\deliverables\phmdiagnoseutility\phmdiagnoseutility_mstest\phmdiagnoseutility_mstest.cs,1
+hzproducts\planck\margaret\eventsubscriber\bharunsubscriber.cs,1
+hzproducts\planck\margaret\eventsubscriber\wellmodificationsubscriber.cs,1
+hzproducts\planck\margaret\main.cs,2
+ \program files (x86)\microsoft visual studio 12.0\vc\atlmfc\include\afxanimationcontroller.h,1
+ \program files (x86)\microsoft visual studio 12.0\vc\atlmfc\include\atlbase.h,6
+ \program files (x86)\microsoft visual studio 12.0\vc\atlmfc\include\atlcom.h,2
+ \program files (x86)\microsoft visual studio 12.0\vc\atlmfc\include\atlcomcli.h,2
+ \program files (x86)\microsoft visual studio 12.0\vc\atlmfc\include\atlcomtime.h,1
+ \program files (x86)\microsoft visual studio 12.0\vc\atlmfc\include\atltrace.h,3
+ \program files (x86)\microsoft visual studio 12.0\vc\atlmfc\include\cstringt.h,2
+ \program files (x86)\microsoft visual studio 12.0\vc\atlmfc\include\statreg.h,8
+ \program files (x86)\microsoft visual studio 12.0\vc\include\comip.h,1
+ \program files (x86)\microsoft visual studio 12.0\vc\include\condition_variable,1
+ \program files (x86)\microsoft visual studio 12.0\vc\include\filesystem,1
+ \program files (x86)\microsoft visual studio 12.0\vc\include\future,1
+ \program files (x86)\microsoft visual studio 12.0\vc\include\istream,1
+ \program files (x86)\microsoft visual studio 12.0\vc\include\mutex,1
+ \program files (x86)\microsoft visual studio 12.0\vc\include\pplcancellation_token.h,1
+ \program files (x86)\microsoft visual studio 12.0\vc\include\ppltasks.h,2
+ \program files (x86)\microsoft visual studio 12.0\vc\include\regex,1
+ \program files (x86)\microsoft visual studio 12.0\vc\include\streambuf,1
+ \program files (x86)\microsoft visual studio 12.0\vc\include\string,2
+ \program files (x86)\microsoft visual studio 12.0\vc\include\thread,3
+ \program files (x86)\microsoft visual studio 12.0\vc\include\tuple,1
+ \program files (x86)\microsoft visual studio 12.0\vc\include\vector,4
+ \program files (x86)\microsoft visual studio 12.0\vc\include\xmemory,2
+ \program files (x86)\microsoft visual studio 12.0\vc\include\xmemory0,1
+ \program files (x86)\microsoft visual studio 12.0\vc\include\xutility,2

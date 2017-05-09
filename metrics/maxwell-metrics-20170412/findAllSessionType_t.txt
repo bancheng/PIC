@@ -1,0 +1,882 @@
+T:\MetricsSystem\Maxwell\Main\HzAPI\BaseImpl\AcqModuleImpl.cpp,3383#,SessionType_t sessionType = Utility::GetSessionType();
+T:\MetricsSystem\Maxwell\Main\HzAPI\BaseImpl\AcqModuleImpl.cpp,3384#,if ( (  sessionType != SESSION_WIRELINE &&
+T:\MetricsSystem\Maxwell\Main\HzAPI\BaseImpl\AcqModuleImpl.cpp,3385#,sessionType != SESSION_WIRELINE_PERFOEXPRESS &&
+T:\MetricsSystem\Maxwell\Main\HzAPI\BaseImpl\AcqModuleImpl.cpp,3386#,sessionType != SESSION_WELLSERVICES )
+T:\MetricsSystem\Maxwell\Main\HzAPI\BaseImpl\AssetMemoryTaskImpl.cpp,93#,case SESSION_WIRELINE:
+T:\MetricsSystem\Maxwell\Main\HzAPI\BaseImpl\AssetMemoryTaskImpl.cpp,94#,case SESSION_WIRELINE_PERFOEXPRESS:
+T:\MetricsSystem\Maxwell\Main\HzAPI\BaseImpl\AssetMemoryTaskImpl.cpp,95#,case SESSION_WELLSERVICES:
+T:\MetricsSystem\Maxwell\Main\HzAPI\BaseImpl\AssetMemoryTaskImpl.cpp,103#,case SESSION_WIRELINE_RECORDEDMODE:
+T:\MetricsSystem\Maxwell\Main\HzAPI\BaseImpl\EnsembleImpl.cpp,726#,if (SessionType == SESSION_UNKNOWN)
+T:\MetricsSystem\Maxwell\Main\HzAPI\BaseImpl\EnsembleImpl.cpp,728#,CComBSTR Msg = L"Invalid session type 'SESSION_UNKNOWN' specified for stand-alone shared ensemble.\nSession type for Stand-alone could be SESSION_DRILLING or SESSION_WIRELINE or \nSESSION_BOTH.";
+T:\MetricsSystem\Maxwell\Main\HzAPI\BaseImpl\TaskDefImpl.cpp,175#,m_SessionType = SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzAPI\BaseImpl\ToolImpl.cpp,415#,if (SESSION_DRILLING == SessionType)
+T:\MetricsSystem\Maxwell\Main\HzAPI\BaseImpl\UtilityImpl.cpp,1087#,SessionType_t Answer = (SessionType_t)m_SessionTypeMap.Lookup(text);
+T:\MetricsSystem\Maxwell\Main\HzAPI\Interface\Ensemble.h,247#,SESSION_UNKNOWN = 0x0000,                               // Catch all for unknown Session Types
+T:\MetricsSystem\Maxwell\Main\HzAPI\Interface\Ensemble.h,248#,SESSION_DRILLING = 0x0001,                              // Session for standard Drilling Tools
+T:\MetricsSystem\Maxwell\Main\HzAPI\Interface\Ensemble.h,249#,SESSION_WIRELINE = SESSION_DRILLING << 1,               // Session for standard Wireline Tools
+T:\MetricsSystem\Maxwell\Main\HzAPI\Interface\Ensemble.h,250#,SESSION_WIRELINE_RECORDEDMODE = SESSION_WIRELINE << 1,  // Session for Wireline Recorded-Mode Tools (e.g. PSP Recorder)
+T:\MetricsSystem\Maxwell\Main\HzAPI\Interface\Ensemble.h,251#,SESSION_WIRELINE_RT_RM = SESSION_WIRELINE | SESSION_WIRELINE_RECORDEDMODE, //Session for standard Wireline Tools and Wireline Recorded-Mode Tools
+T:\MetricsSystem\Maxwell\Main\HzAPI\Interface\Ensemble.h,252#,SESSION_WIRELINE_PERFOEXPRESS = SESSION_WIRELINE_RECORDEDMODE << 1, //Session for PerfoExpress workflow
+T:\MetricsSystem\Maxwell\Main\HzAPI\Interface\Ensemble.h,253#,SESSION_WELLSERVICES = SESSION_WIRELINE_PERFOEXPRESS << 1, //Session for Well Services workflow
+T:\MetricsSystem\Maxwell\Main\HzAPI\Interface\Ensemble.h,254#,SESSION_WIRELINE_ALL = SESSION_WIRELINE | SESSION_WIRELINE_RECORDEDMODE | SESSION_WIRELINE_PERFOEXPRESS | SESSION_WELLSERVICES, // Session for All Wireline Modes (e.g. SESSION_WIRELINE, SESSION_WIRELINE_RECORDEDMODE, SESSION_WIRELINE_PERFOEXPRESS and SESSION_WELLSERVICES)
+T:\MetricsSystem\Maxwell\Main\HzAPI\Interface\Ensemble.h,255#,SESSION_BOTH = SESSION_DRILLING | SESSION_WIRELINE,     // Means SESSION_DRILLING and SESSION_WIRELINE
+T:\MetricsSystem\Maxwell\Main\HzAPI\Interface\Ensemble.h,256#,SESSION_ALL = SESSION_DRILLING | SESSION_WIRELINE_ALL  // Means any type of session that has been defined.
+T:\MetricsSystem\Maxwell\Main\HzFramework\Acquisition\DataPump\DttAcqModule.cpp,188#,m_sessionClientMap[SESSION_WIRELINE] = new ClientMap();
+T:\MetricsSystem\Maxwell\Main\HzFramework\Acquisition\DataPump\DttAcqModule.cpp,189#,(*m_sessionClientMap[SESSION_WIRELINE])[PowerChannelsAcqNodeID] = L"AcqWlDataPump.PowerChannelsAcqModule";
+T:\MetricsSystem\Maxwell\Main\HzFramework\Acquisition\DataPump\DttAcqModule.cpp,190#,(*m_sessionClientMap[SESSION_WIRELINE])[SecReportAcqNodeID] = L"AcqWlDataPump.SecReportAcqModule";
+T:\MetricsSystem\Maxwell\Main\HzFramework\Acquisition\DataPump\DttAcqModule.cpp,191#,(*m_sessionClientMap[SESSION_WIRELINE])[WDL_FileManagementAcqNodeID] = L"AcqWlDataPump.WDLFileManageAcqMod";
+T:\MetricsSystem\Maxwell\Main\HzFramework\Acquisition\DataPump\DttAcqModule.cpp,193#,m_sessionClientMap[SESSION_WIRELINE_PERFOEXPRESS] = new ClientMap;
+T:\MetricsSystem\Maxwell\Main\HzFramework\Acquisition\DataPump\DttAcqModule.cpp,194#,(*m_sessionClientMap[SESSION_WIRELINE_PERFOEXPRESS])[PowerChannelsAcqNodeID] = L"AcqWlDataPump.PowerChannelsAcqModule";
+T:\MetricsSystem\Maxwell\Main\HzFramework\Acquisition\DataPump\DttAcqModule.cpp,195#,(*m_sessionClientMap[SESSION_WIRELINE_PERFOEXPRESS])[SecReportAcqNodeID] = L"AcqWlDataPump.SecReportAcqModule";
+T:\MetricsSystem\Maxwell\Main\HzFramework\Acquisition\DataPump\DttAcqModule.cpp,196#,(*m_sessionClientMap[SESSION_WIRELINE_PERFOEXPRESS])[WDL_FileManagementAcqNodeID] = L"AcqWlDataPump.WDLFileManageAcqMod";
+T:\MetricsSystem\Maxwell\Main\HzFramework\Acquisition\DataPump\DttAcqModule.cpp,198#,m_sessionClientMap[SESSION_WIRELINE_RECORDEDMODE] = new ClientMap;
+T:\MetricsSystem\Maxwell\Main\HzFramework\Acquisition\DataPump\DttAcqModule.cpp,199#,(*m_sessionClientMap[SESSION_WIRELINE_RECORDEDMODE])[PowerChannelsAcqNodeID] = L"AcqWlDataPump.PowerChannelsAcqModule";
+T:\MetricsSystem\Maxwell\Main\HzFramework\Acquisition\DataPump\DttAcqModule.cpp,200#,(*m_sessionClientMap[SESSION_WIRELINE_RECORDEDMODE])[SecReportAcqNodeID] = L"AcqWlDataPump.SecReportAcqModule";
+T:\MetricsSystem\Maxwell\Main\HzFramework\Acquisition\DataPump\DttAcqModule.cpp,201#,(*m_sessionClientMap[SESSION_WIRELINE_RECORDEDMODE])[WDL_FileManagementAcqNodeID] = L"AcqWlDataPump.WDLFileManageAcqMod";
+T:\MetricsSystem\Maxwell\Main\HzFramework\Acquisition\DataPump\DttAcqModule.cpp,203#,m_sessionClientMap[SESSION_WELLSERVICES] = new ClientMap;
+T:\MetricsSystem\Maxwell\Main\HzFramework\Acquisition\DataPump\DttAcqModule.cpp,204#,(*m_sessionClientMap[SESSION_WELLSERVICES])[PowerChannelsAcqNodeID] = L"AcqWlDataPump.PowerChannelsAcqModule";
+T:\MetricsSystem\Maxwell\Main\HzFramework\Acquisition\DataPump\DttAcqModule.cpp,205#,(*m_sessionClientMap[SESSION_WELLSERVICES])[SecReportAcqNodeID] = L"AcqWlDataPump.SecReportAcqModule";
+T:\MetricsSystem\Maxwell\Main\HzFramework\Acquisition\DataPump\WLDataPump.cpp,217#,if (m_SessionType != SESSION_WIRELINE_RECORDEDMODE && SLBDATAPORT_E_DISCONNECTED == hr)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Acquisition\DataPump\WLDataPump.cpp,470#,if (m_IsWafeNeeded && m_SessionType != SESSION_WIRELINE_RECORDEDMODE)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Acquisition\DataPump\WLDataPump.cpp,619#,if (m_SessionType != SESSION_WIRELINE_RECORDEDMODE)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Acquisition\DataPump\WLDataPump.cpp,3234#,(m_SessionType != SESSION_WIRELINE_RECORDEDMODE))
+T:\MetricsSystem\Maxwell\Main\HzFramework\Acquisition\DataPump\WLDataPump.cpp,3297#,bool needCreateCaliCollectors = m_SessionType == SESSION_WIRELINE_RECORDEDMODE && DataPortProgID != WL_RM_DEPTH_DATA_PORT_PROGID;
+T:\MetricsSystem\Maxwell\Main\HzFramework\Acquisition\DataPump\WLDataPump.cpp,5295#,m_oError = pDscCollection->get_ItemByIndex(0, DSC_SESSION_SESSIONTYPE, &vSessionType);
+T:\MetricsSystem\Maxwell\Main\HzFramework\Common\FwkRepository\FrameworkRepository.cpp,101#,map<SessionType_t, CComPtr<ISlbDscDocument> >::iterator Itr4 = m_pEnsembleCatalogBySession.begin();
+T:\MetricsSystem\Maxwell\Main\HzFramework\Common\RigTimeZone\RigTimeZoneCore\TimeZoneDscAccessor.cpp,173#,m_Error = m_pDscQuery->PutItem(DSC_SESSION_JOBGUID, -1, DSC_QUERY_EQUALTO, CComVariant(m_sJobGuid));
+T:\MetricsSystem\Maxwell\Main\HzFramework\Common\RigTimeZone\RigTimeZoneCore\TimeZoneDscAccessor.cpp,290#,m_Error = m_pSessionCollection->get_Item(strSessionGuid, DSC_SESSION_SESSIONTYPE, &vSessionType);
+T:\MetricsSystem\Maxwell\Main\HzFramework\Common\ToolString\ToolStringHandler\ConnectedEquipments.cpp,1492#,if (m_pToolString->m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Common\ToolString\ToolStringHandler\InlineElementContainer.cpp,390#,if (m_pToolString->m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Common\ToolString\ToolStringHandler\PathComposer.cpp,308#,if(m_pToolString->m_SessionType == SESSION_DRILLING && lSpliceGNIndex > 1)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Common\ToolString\ToolStringHandler\SlbToolStringHandler.cpp,80#,m_SessionType = SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzFramework\Common\ToolString\ToolStringHandler\SlbToolStringHandler.cpp,283#,if ( newVal == SESSION_WIRELINE )
+T:\MetricsSystem\Maxwell\Main\HzFramework\Common\ToolString\ToolStringHandler\SlbToolStringHandler.cpp,374#,if (m_SessionType != SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Common\ToolString\ToolStringHandler\SlbToolStringHandler.cpp,729#,if (SESSION_DRILLING == m_SessionType)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Common\ToolString\ToolStringHandler\SlbToolStringHandler.cpp,892#,if (SESSION_DRILLING == m_SessionType)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Common\ToolString\ToolStringHandler\SurfaceEquipmentContainer.cpp,635#,if (m_pToolString->m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Common\ToolString\ToolStringHandler\SurfaceEquipmentContainer.cpp,1666#,if (m_pToolString->m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Common\ToolString\ToolStringHandler\ToolContainer.cpp,209#,if (m_pToolString->m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Common\ToolString\ToolStringHandler\XMLHandler.cpp,18#,if ( m_pToolString->m_SessionType == SESSION_DRILLING )
+T:\MetricsSystem\Maxwell\Main\HzFramework\Common\ToolString\ToolStringHandler\XMLHandler.cpp,19#,m_bstrSessionTC = L"SESSION_DRILLING";
+T:\MetricsSystem\Maxwell\Main\HzFramework\Common\ToolString\ToolStringHandler\XMLHandler.cpp,21#,m_bstrSessionTC = L"SESSION_WIRELINE";
+T:\MetricsSystem\Maxwell\Main\HzFramework\Computation\Domain\Domain.cpp,1524#,SessionType_t tSessionType = SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzFramework\Computation\Domain\Domain.cpp,1527#,if(tSessionType != SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Computation\Test\ComputationContextManager.cs,406#,if (mSessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\DataModel\SlbLAP.cpp,95#,SessionType_t sessionType = Utility::StringToSessionType(bstrSessionType);
+T:\MetricsSystem\Maxwell\Main\HzFramework\DataModel\SlbLAP.cpp,97#,if (sessionType & SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\DataModel\SlbLAP.cpp,107#,else if (sessionType & SESSION_WIRELINE_ALL)
+T:\MetricsSystem\Maxwell\Main\HzFramework\DataModel\SlbLAP.cpp,127#,m_Error = pSessionCollection->get_Item(bstrSessionGuid, DSC_SESSION_SESSIONTYPE, &vSessionType);
+T:\MetricsSystem\Maxwell\Main\HzFramework\DataStore\Clients\BulkData\Test\BulkDataStoreContextManager.cpp,189#,if(mSessionType == SessionType_t::SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\DataStore\Clients\DataStoreServices\DscRTWorkspaceService.cpp,67#,m_Error = pSessionCollection->get_ItemByIndex(lSessionIndex, DSC_SESSION_WELLGUID, &vWellGUID);
+T:\MetricsSystem\Maxwell\Main\HzFramework\DataStore\Clients\DataStoreServices\DscRTWorkspaceService.cpp,68#,m_Error = pSessionCollection->get_ItemByIndex(lSessionIndex, DSC_SESSION_BOREHOLEGUID, &vBoreholeGUID);
+T:\MetricsSystem\Maxwell\Main\HzFramework\DataStore\Clients\DataStoreServices\DscRTWorkspaceService.cpp,69#,m_Error = pSessionCollection->get_ItemByIndex(lSessionIndex, DSC_SESSION_JOBGUID, &vJobGUID);
+T:\MetricsSystem\Maxwell\Main\HzFramework\DataStore\Clients\DataStoreServices\DscRTWorkspaceService.cpp,70#,m_Error = pSessionCollection->get_ItemByIndex(lSessionIndex, DSC_SESSION_SESSIONTYPE, &vSessionType);
+T:\MetricsSystem\Maxwell\Main\HzFramework\DataStore\Clients\DataStoreServices\DscRTWorkspaceService.cpp,182#,m_Error = pSessionCollection->put_ItemByIndex(lSessionIndex, DSC_SESSION_RTWORKSPACEGUID, vWSGUID);
+T:\MetricsSystem\Maxwell\Main\HzFramework\DataStore\Clients\DataStoreServices\DscRTWorkspaceService.cpp,528#,m_Error = pSessionCollection->put_ItemByIndex(lSessionIndex, DSC_SESSION_RTWORKSPACEGUID, CComVariant(""));
+T:\MetricsSystem\Maxwell\Main\HzFramework\DataStore\Clients\DataStoreServices\DscRTWorkspaceService.cpp,852#,m_Error = pSessionCollection->put_ItemByIndex(lSessionIndex, DSC_SESSION_RTWORKSPACEGUID, CComVariant(strWorkspaceGuid));
+T:\MetricsSystem\Maxwell\Main\HzFramework\DataStore\Clients\DataStoreServices\DscRTWorkspaceService.cpp,911#,m_Error = pSessionCollection->get_ItemByIndex(lSessionIndex, DSC_SESSION_WELLGUID, &vWellGUID);
+T:\MetricsSystem\Maxwell\Main\HzFramework\DataStore\Clients\DataStoreServices\DscRTWorkspaceService.cpp,912#,m_Error = pSessionCollection->get_ItemByIndex(lSessionIndex, DSC_SESSION_BOREHOLEGUID, &vBoreholeGUID);
+T:\MetricsSystem\Maxwell\Main\HzFramework\DataStore\Clients\DataStoreServices\DscRTWorkspaceService.cpp,913#,m_Error = pSessionCollection->get_ItemByIndex(lSessionIndex, DSC_SESSION_JOBGUID, &vJobGUID);
+T:\MetricsSystem\Maxwell\Main\HzFramework\DataStore\Clients\DataStoreServices\DscRTWorkspaceService.cpp,914#,m_Error = pSessionCollection->get_ItemByIndex(lSessionIndex, DSC_SESSION_SESSIONTYPE, &vSessionType);
+T:\MetricsSystem\Maxwell\Main\HzFramework\DataStore\Clients\DataStoreServices\DscTransactionService.cpp,683#,m_Error = m_spQuery->PutItem(DSC_SESSION_JOBGUID, -1, DSC_QUERY_EQUALTO, vJobGuid);
+T:\MetricsSystem\Maxwell\Main\HzFramework\DataStore\Clients\DataStoreServices\DscTransactionService.cpp,694#,m_Error = spSessionCol->get_Item(saSessionGuids.GetAt(0), DSC_SESSION_WELLGUID, &vWellGuid);
+T:\MetricsSystem\Maxwell\Main\HzFramework\DataStore\Clients\DataStoreServices\DscTSDocumentService.cpp,2092#,if (strValue != L"SESSION_DRILLING")
+T:\MetricsSystem\Maxwell\Main\HzFramework\DataStore\Clients\SessionPackage\DscSessionCollection.cpp,15#,m_Error = put_ItemByIndex(*pNewRowIndex, DSC_SESSION_TYPE, CComVariant(L"ENSEMBLE_SESSION"));
+T:\MetricsSystem\Maxwell\Main\HzFramework\DataStore\Databases\HzDB\AuxEquipCatalogLoader\CatalogLoader.cs,922#,if (sessionType.Equals("SESSION_DRILLING") && m_DnMUsageLevelContainer.ContainsKey(osddCode))
+T:\MetricsSystem\Maxwell\Main\HzFramework\DataStore\Databases\HzDB\AuxEquipCatalogLoader\CatalogLoader.cs,941#,if (sessionType.Equals("SESSION_DRILLING") && m_DnMReadOnlyContainer.ContainsKey(osddCode))
+T:\MetricsSystem\Maxwell\Main\HzFramework\DataStore\Databases\HzDB\AuxEquipCatalogLoader\CatalogLoader.cs,1286#,if (SessionType == "SESSION_DRILLING" && m_DnMUsageLevelContainer.ContainsKey(OSDDCode))
+T:\MetricsSystem\Maxwell\Main\HzFramework\DataStore\Databases\HzDB\AuxEquipCatalogLoader\CatalogLoader.cs,1292#,if (SessionType == "SESSION_DRILLING" && m_DnMReadOnlyContainer.ContainsKey(OSDDCode))
+T:\MetricsSystem\Maxwell\Main\HzFramework\Dex\Common\DexOriginDscReader.cpp,56#,m_errHandle = pDscColl->get_ItemByIndex( 0, DSC_SESSION_HZVERSION, &vValue );
+T:\MetricsSystem\Maxwell\Main\HzFramework\Dex\Common\JobSpecDscReader.cpp,94#,m_pConfig->SessionGuid = DscRoutines::DscSearchUnique(m_pQuery, pSessionColl, DSC_SESSION_JOBGUID, CComVariant(m_pConfig->JobGuid));
+T:\MetricsSystem\Maxwell\Main\HzFramework\Dex\Common\MaxWellDscReader.cpp,76#,m_pConfig->SessionGuid = DscRoutines::DscSearchUnique(m_pQuery, pSessionColl, DSC_SESSION_JOBGUID, CComVariant(m_pConfig->JobGuid));
+T:\MetricsSystem\Maxwell\Main\HzFramework\Dex\WITSML\WitsmlWriter2\LogProperties.cs,70#,return Workflow == SessionType_t.SESSION_DRILLING;
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\EnsembleMgr.cpp,943#,case SESSION_DRILLING:
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\EnsembleMgr.cpp,968#,case SESSION_WIRELINE:
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\EnsembleMgr.cpp,969#,case SESSION_WIRELINE_PERFOEXPRESS:
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\EnsembleMgr.cpp,970#,case SESSION_WELLSERVICES:
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\EnsembleMgr.cpp,978#,case SESSION_WIRELINE_RECORDEDMODE:
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\EnsembleMgr.cpp,2278#,if (SESSION_DRILLING == m_SessionType)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\EnsembleMgr.cpp,2346#,if (SESSION_DRILLING == m_SessionType)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\EnsembleMgr.cpp,2431#,if (true == bIsRealTime && SESSION_WIRELINE == m_SessionType)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\EnsembleMgr.cpp,2435#,else if (false == bIsRealTime && SESSION_WIRELINE == m_SessionType)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\EnsembleMgr.cpp,3448#,bstrSessionType = Utility::SessionTypeToString(SESSION_BOTH);
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\EnsembleMgr.cpp,3456#,bstrSessionType = Utility::SessionTypeToString(SESSION_ALL);
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\EnsembleMgr.cpp,3465#,if( m_SessionType == SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\EnsembleMgr.cpp,3466#,m_SessionType == SESSION_WIRELINE_RECORDEDMODE ||
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\EnsembleMgr.cpp,3467#,m_SessionType == SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\EnsembleMgr.cpp,3468#,m_SessionType == SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\EnsembleMgr.cpp,3471#,bstrSessionType = Utility::SessionTypeToString(SESSION_WIRELINE_ALL);
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\PassManager.cpp,36#,m_SessionType = SessionType_t(0);
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\PassManager.cpp,665#,if(m_SessionType== SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\PassManager.cpp,740#,if((m_SessionType | SESSION_WIRELINE_RT_RM) == SESSION_WIRELINE_RT_RM)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\PassManager.cpp,885#,if(m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\PassManager.cpp,1238#,if(m_SessionType != SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\PassManager.cpp,1243#,CComBSTR sChannelCode = (SESSION_DRILLING == m_SessionType) ? L"BIT_DEPTH" : L"IDWD";
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\PassManager.cpp,1372#,if(!((m_SessionType == SESSION_DRILLING)&&(CComBSTR(vDomainType.bstrVal) == Utility::DomainTypeToString(DOMAIN_STATION))))
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\PassManager.cpp,1470#,if(m_SessionType != SESSION_WIRELINE && m_SessionType != SESSION_WIRELINE_RECORDEDMODE)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\PassManager.cpp,1570#,if(m_SessionType!= SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\PassManager.cpp,1646#,if(((m_SessionType == SESSION_DRILLING)&&(CComBSTR(vDomianType.bstrVal) == Utility::DomainTypeToString(DOMAIN_STATION)))||
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\PassManager.cpp,1647#,m_SessionType != SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\PassManager.cpp,1669#,if(((m_SessionType == SESSION_DRILLING)&&(CComBSTR(vDomianType.bstrVal) == Utility::DomainTypeToString(DOMAIN_DEPTH)))||
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\PassManager.cpp,1670#,m_SessionType != SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\PassManager.cpp,1732#,if(m_SessionType != SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\PassManager.cpp,1765#,if(m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\PassManager.cpp,1798#,if(m_SessionType != SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\PassManager.cpp,1812#,if(m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\PassManager.cpp,1966#,if((m_SessionType | SESSION_WIRELINE_RT_RM) == SESSION_WIRELINE_RT_RM)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\PassManager.cpp,1981#,if(m_SessionType != SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\PassManager.cpp,1990#,if(m_SessionType != SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\PassManager.cpp,2117#,if(m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\PassManagerHelper.cpp,14#,if(SESSION_DRILLING == sessionType)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\PassManagerHelper.cpp,41#,if(sessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\PassManagerHelper.cpp,57#,if(sessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\PassManagerHelper.cpp,66#,if(sessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\RunningActivitiesValidationHelper.cpp,701#,return !bHasInsertNewIndex && m_SessionType == SESSION_DRILLING;
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\RunningActivitiesValidationHelper.cpp,738#,if(m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\RunningActivitiesValidationHelper.cpp,752#,if(m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\RunningActivitiesValidationHelper.cpp,816#,if(m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\RunningActivitiesValidationHelper.cpp,836#,if(m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\RunningActivitiesValidationHelper.cpp,916#,if(m_SessionType == SESSION_WIRELINE_RECORDEDMODE)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\TaskMgr.cpp,369#,m_SessionType = SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\TaskMgr.cpp,2525#,case SESSION_WIRELINE:
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\TaskMgr.cpp,2526#,case SESSION_WIRELINE_PERFOEXPRESS:
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\TaskMgr.cpp,2527#,case SESSION_WELLSERVICES:
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\TaskMgr.cpp,2556#,case SESSION_WIRELINE:
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\TaskMgr.cpp,2557#,case SESSION_WIRELINE_PERFOEXPRESS:
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\TaskMgr.cpp,2558#,case SESSION_WELLSERVICES:
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\TaskMgr.cpp,2559#,case SESSION_DRILLING:
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\TaskMgr.cpp,2585#,case SESSION_WIRELINE:
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\TaskMgr.cpp,2586#,case SESSION_WIRELINE_PERFOEXPRESS:
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\TaskMgr.cpp,2587#,case SESSION_WELLSERVICES:
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\TaskMgr.cpp,2588#,case SESSION_DRILLING:
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\TaskRunManagerDef.cpp,205#,m_SessionType = SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\TaskRunManagerDef.cpp,434#,STDMETHODIMP ISlbTaskRunManagerDef::Setup(BSTR TaskProgID, TaskCategory_t TaskCategory, BSTR TRMProgID, BSTR ParentEnsembleGuid, LONG AssignedByApplicationWorkflowIdentifiers, WorkflowPosition_t WorkflowPosition, BSTR Scope, BSTR SessionGUID, BSTR WorkspaceGUID, BSTR DARGUID, DataAcquisitionRunType_t DARType, SessionType_t SessionType, ISlbExeEnsembleWarehouse* pEnsembleWarehouse, ISlbUnits* pUnits, ISlbDscCollection* pTaskRunCol, ISlbDscCollection* pTaskCol, ISlbFwkRepository* pFwkRepository, ISlbFwkRepositoryCollection* pFwkRepositoryCollection, ISlbExeTaskResourceManager* pTaskResourceManager, ISlbExeParameterManager* pParamManager, BSTR TaskID, LONG TaskCookie, WorkflowTargetConsole_t ConsoleType)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\EnsembleManager\UIResourceMgr.h,55#,m_SessionType		= SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\ExecutionManager\ExecutionMgr.cpp,400#,m_Error = pSessionCollection->get_Item(strSessionGuid, DSC_SESSION_ENSEMBLEPROGID, &vSessionProgId);
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\ExecutionManager\ExecutionMgr.cpp,408#,m_Error = pSessionCollection->get_Item(strSessionGuid, DSC_SESSION_JOBNAME, &vJobName);
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\ExecutionManager\ExecutionMgr.cpp,415#,m_Error = pSessionCollection->get_Item(strSessionGuid, DSC_SESSION_JOBGUID, &vJobGuid);
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\ExecutionManager\ExecutionMgr.cpp,423#,m_Error = pSessionCollection->get_Item(strSessionGuid, DSC_SESSION_WELLNAME, &vWellName);
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\ExecutionManager\ExecutionMgr.cpp,430#,m_Error = pSessionCollection->get_Item(strSessionGuid, DSC_SESSION_WELLGUID, &vWellGuid);
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\ExecutionManager\ExecutionMgr.cpp,438#,m_Error = pSessionCollection->get_Item(strSessionGuid, DSC_SESSION_BOREHOLENAME, &vBoreholeName);
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\ExecutionManager\ExecutionMgr.cpp,445#,m_Error = pSessionCollection->get_Item(strSessionGuid, DSC_SESSION_BOREHOLEGUID, &vBoreholeGuid);
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\ExecutionManager\ExecutionMgr.cpp,451#,m_Error = pSessionCollection->get_Item(strSessionGuid, DSC_SESSION_SESSIONTYPE, &vSessionType);
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\FrameworkTasks\AcqTasks\StartStationTask.cpp,170#,case SESSION_WIRELINE:
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\FrameworkTasks\AcqTasks\StartStationTask.cpp,171#,case SESSION_WIRELINE_PERFOEXPRESS:
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\FrameworkTasks\AcqTasks\StartStationTask.cpp,172#,case SESSION_WELLSERVICES:
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\FrameworkTasks\AcqTasks\StartStationTask.cpp,180#,case SESSION_WIRELINE_RECORDEDMODE:
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\TaskRunManagers\AccumTaskRunManager.cpp,414#,if (m_SessionType == SESSION_WIRELINE_RECORDEDMODE)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\TaskRunManagers\RecomputationAnalyst.cpp,73#,ATLASSERT(  m_eSessionType == SESSION_DRILLING ||
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\TaskRunManagers\RecomputationAnalyst.cpp,74#,m_eSessionType == SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\TaskRunManagers\RecomputationAnalyst.cpp,75#,m_eSessionType == SESSION_WIRELINE_RECORDEDMODE ||
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\TaskRunManagers\RecomputationAnalyst.cpp,76#,m_eSessionType == SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\TaskRunManagers\RecomputationAnalyst.cpp,77#,m_eSessionType == SESSION_WIRELINE_PERFOEXPRESS);
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\TaskRunManagers\RecomputationAnalyst.cpp,78#,if (m_eSessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzFramework\Execution\TaskRunManagers\RecomputeRun.cpp,303#,m_eSessionType = SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\EquipmentPictureControl\EquipmentPictureControl.cs,382#,if (m_SessionType == Interface.SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\EquipmentPictureControl\EquipmentPictureControl.cs,486#,Interface.SessionType_t sessionType = Interface.SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\EquipmentPictureControl\EquipmentPictureControl.cs,491#,case Interface.SessionType_t.SESSION_DRILLING:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\EquipmentPictureControl\EquipmentPictureControl.cs,492#,sessionType = Interface.SessionType_t.SESSION_DRILLING;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\EquipmentPictureControl\EquipmentPictureControl.cs,494#,case Interface.SessionType_t.SESSION_WIRELINE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\EquipmentPictureControl\EquipmentPictureControl.cs,495#,case Interface.SessionType_t.SESSION_WIRELINE_RECORDEDMODE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\EquipmentPictureControl\EquipmentPictureControl.cs,496#,case Interface.SessionType_t.SESSION_WIRELINE_PERFOEXPRESS:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\EquipmentPictureControl\EquipmentPictureControl.cs,497#,case Interface.SessionType_t.SESSION_WELLSERVICES:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\EquipmentPictureControl\EquipmentPictureControl.cs,498#,sessionType = Interface.SessionType_t.SESSION_WIRELINE_ALL;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\EquipmentPictureControl\EquipmentPictureControl.cs,872#,if (m_SessionType == Interface.SessionType_t.SESSION_WIRELINE_ALL)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\EquipmentPictureControl\EquipmentPictureControl.cs,884#,else if (m_SessionType == Interface.SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\EquipmentPictureControl\EquipmentPictureControl.cs,896#,if (m_SessionType == Interface.SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\EquipmentPictureControl\EquipmentPictureControl.cs,901#,if (m_SessionType == Interface.SessionType_t.SESSION_WIRELINE_ALL)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\EquipmentPictureControl\EquipmentPictureControl.cs,994#,if (m_bIsMyEquipment && m_SessionType == Interface.SessionType_t.SESSION_WIRELINE_ALL)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\EquipmentPictureControl\EquipmentPictureControl.cs,1039#,if (m_SessionType == Interface.SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\EquipmentPictureControl\EquipmentPictureControl.cs,2091#,if (m_SessionType == Interface.SessionType_t.SESSION_WIRELINE_ALL)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\EquipmentPictureControl\EquipmentPictureControl.cs,2103#,else if (m_SessionType == Interface.SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\EquipmentPictureControl\EquipmentPictureControl.cs,2122#,if (m_SessionType == Interface.SessionType_t.SESSION_WIRELINE_ALL)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\EquipmentPictureControl\EquipmentPictureControl.cs,2353#,if (m_SessionType == Interface.SessionType_t.SESSION_WIRELINE_ALL)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\EquipmentPictureControl\EquipmentPictureControl.cs,2359#,else if (m_SessionType == Interface.SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\GenericTaskUIP\GenericTaskUI.cs,978#,SessionType_t sessionType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\GenericTaskUIP\GenericTaskUI.cs,982#,sessionType = (Interface.SessionType_t)Int32.Parse(WFType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\GenericTaskUIP\GenericTaskUI.cs,984#,if (sessionType == SessionType_t.SESSION_WIRELINE_RECORDEDMODE)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\SetupUtilityUIManager\SetupUtilityUIManager.cs,32#,private SessionType_t m_Workflow = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\SetupUtilityUIManager\SetupUtilityUIManager.cs,60#,m_Workflow = (SessionType_t)Int32.Parse(WFType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\SetupUtilityUIManager\SetupUtilityUIManager.cs,67#,if (m_Workflow == SessionType_t.SESSION_WIRELINE)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\SetupUtilityUIManager\SetupUtilityUIManager.cs,72#,else if (m_Workflow == SessionType_t.SESSION_WELLSERVICES)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\AcquisitionToolbarModel.cs,196#,SessionType = (SessionType_t) int.Parse(WFType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\AcquisitionToolbarModel.cs,198#,SessionType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\AcquisitionToolbarModel.cs,207#,(SessionType == SessionType_t.SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\AcquisitionToolbarModel.cs,208#,SessionType == SessionType_t.SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\AcquisitionToolbarModel.cs,209#,SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\AcquisitionToolbarModel.cs,219#,if (SessionType == SessionType_t.SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\AcquisitionToolbarModel.cs,220#,SessionType == SessionType_t.SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\AcquisitionToolbarModel.cs,221#,SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\AcquisitionToolbarModel.cs,230#,else if (SessionType == SessionType_t.SESSION_WIRELINE_RECORDEDMODE)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\AcquisitionToolbarModel.cs,413#,if (SessionType == SessionType_t.SESSION_WIRELINE_RECORDEDMODE)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\AcquisitionToolbarModel.cs,429#,if ((SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\AcquisitionToolbarModel.cs,430#,(SessionType == SessionType_t.SESSION_WELLSERVICES))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\AcquisitionToolbarUIP.cs,187#,if (m_Model.SessionType  == SessionType_t.SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\AcquisitionToolbarUIP.cs,188#,m_Model.SessionType  == SessionType_t.SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\AcquisitionToolbarUIP.cs,189#,m_Model.SessionType  == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\AcquisitionToolbarUIP.cs,227#,if ((m_Model.SessionType  == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\AcquisitionToolbarUIP.cs,228#,|| (m_Model.SessionType  == SessionType_t.SESSION_WELLSERVICES))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\AcquisitionToolbarUIP.cs,743#,if (m_Model.SessionType == SessionType_t.SESSION_WIRELINE)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\AcquisitionToolbarUIP.cs,750#,if (m_Model.SessionType  == SessionType_t.SESSION_WIRELINE_RECORDEDMODE)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\AcquisitionToolbarUIP.cs,757#,if ((m_Model.SessionType  == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\AcquisitionToolbarUIP.cs,758#,(m_Model.SessionType  == SessionType_t.SESSION_WELLSERVICES))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\LoggingService.cs,125#,var sType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\LoggingService.cs,126#,var nResult = (int)SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\LoggingService.cs,128#,sType = (SessionType_t)nResult;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\LoggingService.cs,129#,m_UIPModel.IsSupportAutoPass = (sType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\LogUIP.cs,535#,SessionType_t SType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\LogUIP.cs,536#,int nResult = (int)SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\LogUIP.cs,538#,SType = (SessionType_t)nResult;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\LogUIP.cs,540#,if ((SType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS) &&
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\LogUIP.cs,546#,m_model.IsSupportAutoPass = (SType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\LogUIP.cs,547#,SType == SessionType_t.SESSION_WELLSERVICES) &&
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\LogView.cs,782#,SType = (Interface.SessionType_t)Int32.Parse(WFType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\LogView.cs,784#,SType = Interface.SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\TnDParametersUI.cs,227#,SType = (Interface.SessionType_t)Int32.Parse(WFType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\Wafe\UI\TnDParametersUI.cs,229#,SType = Interface.SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\WorkflowUIP\SlbHzWorkflowUI\WorkflowUI.cs,66#,private Interface.SessionType_t m_SessionType = Interface.SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\WorkflowUIP\SlbHzWorkflowUI\WorkflowUI.cs,347#,m_SessionType = (Interface.SessionType_t)Int32.Parse(WFType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\WorkflowUIP\SlbHzWorkflowUI\WorkflowUI.cs,356#,if (m_SessionType == Interface.SessionType_t.SESSION_WIRELINE_RECORDEDMODE)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\WorkflowUIP\SlbHzWorkflowUI\WorkflowUI.cs,408#,if (    m_SessionType == Interface.SessionType_t.SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\WorkflowUIP\SlbHzWorkflowUI\WorkflowUI.cs,409#,m_SessionType == Interface.SessionType_t.SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\WorkflowUIP\SlbHzWorkflowUI\WorkflowUI.cs,410#,m_SessionType == Interface.SessionType_t.SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\WorkflowUIP\SlbHzWorkflowUI\WorkflowUI.cs,688#,if (this.m_SessionType == Interface.SessionType_t.SESSION_WIRELINE_RECORDEDMODE
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\WorkflowUIP\SlbHzWorkflowUI\WorkflowUI.cs,729#,if (m_SessionType == Interface.SessionType_t.SESSION_WIRELINE_RECORDEDMODE)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\WorkflowUIP\SlbHzWorkflowUI\WorkflowUI.cs,1719#,( m_SessionType == Interface.SessionType_t.SESSION_WIRELINE_PERFOEXPRESS ) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\WorkflowUIP\SlbHzWorkflowUI\WorkflowUI.cs,1720#,( m_SessionType == Interface.SessionType_t.SESSION_WELLSERVICES )
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\WorkflowUIP\SlbHzWorkflowUI\WorkflowUI.cs,1749#,if (Interface.SessionType_t.SESSION_DRILLING != m_SessionType)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\WorkflowUIP\SlbHzWorkflowUI\WorkflowUI.cs,1858#,if (Interface.SessionType_t.SESSION_WIRELINE_RECORDEDMODE == m_SessionType)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Controls\WorkflowUIP\SlbHzWorkflowUI\WorkflowUI.cs,1883#,if (Interface.SessionType_t.SESSION_WIRELINE_RECORDEDMODE == m_SessionType)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\DataCentral\Composer\ComposerImpl.cpp,1506#,if(SESSION_DRILLING == m_SessionType)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\DataCentral\Composer\DataRepository.cpp,346#,tSessionType = SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\DataCentral\Composer\DataRepository.cpp,365#,if(tSessionType != SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\DataCentral\Composer\WellComposer.cpp,236#,m_Error = CComposerImpl::put_SessionType(SESSION_DRILLING);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\DataCentral\Merge\MergeComposer\MergeComposerImpl.cpp,595#,m_Error = m_Query->PutItem(DSC_SESSION_JOBGUID, -1, DSC_QUERY_EQUALTO, CComVariant(JobGuid));
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\DataCentral\Merge\MergeComposer\MergeComposerImpl.cpp,597#,m_Error = m_SessionCollection->get_Item(sSessionGuid, DSC_SESSION_BOREHOLEGUID, &vBoreholeGuid);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\GraphicPassManager\AutoPassDetectParameterUIP.cs,199#,this.m_GEditor = new SlbPALGenericEditor(m_EqpUIS, m_RunMgrUIS, m_WLD, m_UnitServer, SessionType_t.SESSION_WIRELINE_RECORDEDMODE, ConsoleName);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\GraphicPassManager\PassDefinePlugIn.cs,459#,if (m_OwnerUI.SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\GraphicPassManager\PassDefinePlugIn.cs,468#,if (m_OwnerUI.SessionType == SessionType_t.SESSION_WIRELINE_RECORDEDMODE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\GraphicPassManager\PassDefinePlugIn.cs,469#,(m_OwnerUI.SessionType == SessionType_t.SESSION_WIRELINE &&
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\Recomputation\FullRecomputeHelperUI.cs,34#,private SessionType_t m_SessionType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\Recomputation\FullRecomputeHelperUI.cs,82#,m_SessionType = (SessionType_t)Int32.Parse(WFType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\Recomputation\FullRecomputeHelperUI.cs,180#,if (m_SessionType.Equals(SessionType_t.SESSION_WIRELINE))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\Recomputation\FullRecomputeHelperUI.cs,190#,else if (m_SessionType.Equals(SessionType_t.SESSION_DRILLING))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\Recomputation\FullRecomputeHelperUI.cs,261#,if (m_SessionType.Equals(SessionType_t.SESSION_WIRELINE) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\Recomputation\FullRecomputeHelperUI.cs,268#,else if (m_SessionType.Equals(SessionType_t.SESSION_DRILLING))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\Recomputation\FullRecomputeHelperUI.cs,304#,if (m_SessionType.Equals(SessionType_t.SESSION_WIRELINE) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\Recomputation\FullRecomputeHelperUI.cs,309#,else if (m_SessionType.Equals(SessionType_t.SESSION_DRILLING))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\Recomputation\FullRecomputeHelperUI.cs,377#,if (m_SessionType.Equals(SessionType_t.SESSION_DRILLING))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\Recomputation\FullRecomputeHelperUI.cs,382#,if (m_SessionType.Equals(SessionType_t.SESSION_WIRELINE)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\Recomputation\FullRecomputeHelperUI.cs,394#,if (m_SessionType.Equals(SessionType_t.SESSION_DRILLING))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\Recomputation\FullRecomputeHelperUI.cs,396#,else if (m_SessionType.Equals(SessionType_t.SESSION_WIRELINE)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\Recomputation\RecomputationUI.cs,159#,m_Workflow = (Interface.SessionType_t)Int32.Parse(WFType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\Recomputation\RecomputationUI.cs,161#,m_Workflow = Interface.SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\Recomputation\RecomputationUI.cs,205#,if (m_Workflow.Equals(SessionType_t.SESSION_DRILLING))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\Recomputation\RecomputeControlUIP.cs,77#,private SessionType_t m_SessionType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\Recomputation\RecomputeControlUIP.cs,233#,m_SessionType = (SessionType_t)Int32.Parse(WFType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\Recomputation\RecomputeControlUIP.cs,234#,IsWirelineWorkflow = !m_SessionType.Equals(SessionType_t.SESSION_DRILLING);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\Recomputation\RecomputeControlUIP.cs,1031#,if (m_SessionType.Equals(SessionType_t.SESSION_WIRELINE))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\Recomputation\RecomputeControlUIP.cs,1041#,else if (m_SessionType.Equals(SessionType_t.SESSION_DRILLING))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\RecordedMode\RecModeCalibrationReportHost.cs,61#,private SessionType_t m_Workflow = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\RecordedMode\RecModeCalibrationUI.cs,293#,private SessionType_t m_Workflow = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\RecordedMode\RecModeCalibrationUI.cs,419#,m_Workflow = (Interface.SessionType_t)Int32.Parse(WFType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\RecordedMode\SlbTimeDepthFileUI.cs,169#,m_Workflow = (Interface.SessionType_t)Int32.Parse(WFType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\RecordedMode\SlbTimeDepthFileUI.cs,171#,m_Workflow = Interface.SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\RecordedMode\SlbTimeDepthFileUI.cs,173#,if (m_Workflow == Interface.SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\RecordedMode\SlbTimeDepthFileUI.cs,248#,if (m_Workflow == Interface.SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\DnMAcqConsoleTDP.cs,319#,SessionType_t sessionType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\DnMAcqConsoleTDP.cs,321#,sessionType = (SessionType_t)Int32.Parse(strT);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\ImportPipeTallyUI.cs,39#,private SessionType_t m_SessionType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\ImportPipeTallyUI.cs,381#,m_SessionType = (SessionType_t) Int32.Parse(strT);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\SelectDisplayOptionsUIP.cs,22#,private SessionType_t m_SessionType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\SelectDisplayOptionsUIP.cs,179#,m_SessionType = (SessionType_t) Int32.Parse(strT);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\SelectDisplayOptionsUIP.cs,276#,if (m_SessionType == SessionType_t.SESSION_WIRELINE)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\SelectRunUIP.cs,179#,SessionType_t eSessionType = SessionType_t.SESSION_UNKNOWN;;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\SelectRunUIP.cs,182#,eSessionType = (SessionType_t) Int32.Parse(strT);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\SelectStartPointUIP.cs,17#,private SessionType_t m_SessionType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\SelectStartPointUIP.cs,102#,m_SessionType = (SessionType_t) Int32.Parse(strT);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\SelectStartPointUIP.cs,120#,m_oPointSelector.ShowFlags = (m_SessionType != SessionType_t.SESSION_WIRELINE);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\SelectStopPointUIP.cs,17#,private SessionType_t m_SessionType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\SelectStopPointUIP.cs,110#,m_SessionType = (SessionType_t) Int32.Parse(strT);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\SelectStopPointUIP.cs,127#,m_oPointSelector.ShowFlags = (m_SessionType != SessionType_t.SESSION_WIRELINE);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\SetLimitsUIP.cs,381#,m_eSessionType = (Interface.SessionType_t)Int32.Parse(sWorkflowType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\SetLimitsUIP.cs,383#,m_eSessionType = Interface.SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\SetLimitsUIP.cs,388#,SessionType_t eSessionType = SessionType_t.SESSION_UNKNOWN;;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\SetLimitsUIP.cs,391#,eSessionType = (SessionType_t) Int32.Parse(strT);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\SetLimitsUIP.cs,794#,if (0 != (m_eSessionType & SessionType_t.SESSION_WIRELINE_ALL))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\TimeDepthCurveUIP.cs,62#,private SessionType_t m_SessionType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\TimeDepthCurveUIP.cs,573#,m_SessionType = (SessionType_t) Int32.Parse(strT);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\TimeDepthCurveUIP.cs,609#,if (m_SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\TimeDepthCurveUIP.cs,983#,sTemplateFile = (m_SessionType == SessionType_t.SESSION_WIRELINE) ? "TimeDepthProfileWirelineFormat.xml": "TimeDepthProfileDnMFormat.xml";
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\TimeDepthCurveUIP.cs,1061#,if (m_SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\TimeDepthCurveUIP.cs,1779#,if (m_SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\TimeDepthCurveUIP.cs,1787#,if (m_SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\TimeDepthCurveUIP.cs,1999#,if ((tdOperation == TDOperationMode.DELETE_TIME_DATA) && (m_SessionType == SessionType_t.SESSION_DRILLING))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\TimeDepthProfiler.cs,32#,private SessionType_t m_SessionType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\TimeDepthUIController.cs,110#,private SessionType_t m_eSessionType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\TimeDepthUIController.cs,128#,private SessionType_t m_SessionType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\TimeDepthUIController.cs,391#,if (!m_eSessionType.Equals(SessionType_t.SESSION_DRILLING))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\TimeDepthUIController.cs,864#,if (m_SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\TimeDepthUIController.cs,1358#,if (m_SessionType != SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\TimeDepth\TimeDepthUIController.cs,1384#,if (m_SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\UserDefinedComposite\UserDefinedCompositeGraphicalDisplay.cs,78#,private SessionType_t m_eWorkflowType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\UserDefinedComposite\UserDefinedCompositeGraphicalDisplay.cs,184#,m_eWorkflowType = (SessionType_t)Int32.Parse(workflowType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\UserDefinedComposite\UserDefinedCompositeGraphicalDisplay.cs,257#,case SessionType_t.SESSION_WIRELINE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\UserDefinedComposite\UserDefinedCompositeGraphicalDisplay.cs,258#,case SessionType_t.SESSION_WIRELINE_RECORDEDMODE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\WellboreEditor\BoreholeSegment.cs,33#,if ( WellObjectModel.Environment.SessionType == SessionType_t.SESSION_DRILLING )
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\WellboreEditor\BoreholeSegment.cs,615#,if (WellObjectModel.Environment.SessionType != SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\WellboreEditor\BoreholeSegment.cs,745#,if (WellObjectModel.Environment.SessionType == SessionType_t.SESSION_DRILLING
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\WellboreEditor\BoreholeSegment.cs,762#,if(WellObjectModel.Environment.SessionType.Equals(SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\WellboreEditor\BoreholeSegmentModel.cs,163#,if (!Environment.SessionType.Equals(SessionType_t.SESSION_DRILLING))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\WellboreEditor\BoreholeSegmentModel.cs,239#,if (Environment.SessionType != SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\WellboreEditor\Casing.cs,77#,if(WellObjectModel.Environment.SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\WellboreEditor\Casing.cs,273#,if (WellObjectModel.Environment.SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\WellboreEditor\Casing.cs,558#,if ( WellObjectModel.Environment.SessionType == SessionType_t.SESSION_WIRELINE )
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\WellboreEditor\Casing.cs,787#,bool isDnM = SessionType_t.SESSION_DRILLING == WellObjectModel.Environment.SessionType;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\WellboreEditor\Casing.cs,1038#,if(WellObjectModel.Environment.SessionType == SessionType_t.SESSION_DRILLING
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\WellboreEditor\CasingModel.cs,239#,if (WellObjectModel.Environment.SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\WellboreEditor\CasingModel.cs,321#,if (WellObjectModel.Environment.SessionType == SessionType_t.SESSION_WIRELINE)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\WellboreEditor\WellSketchEditor.cs,88#,if (m_Model.IsInSession(SessionType_t.SESSION_DRILLING))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\WellboreEditor\WellSketchModel.cs,204#,workFlow = (SessionType_t) int.Parse(workFlowType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\WellboreEditor\WellSketchModel.cs,206#,workFlow = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\WellboreSketch\SketchHost.cs,115#,workFlow = (SessionType_t)Int32.Parse(workFlowType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Editors\WellboreSketch\SketchHost.cs,117#,workFlow = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ConsoleMgr\LauncherUI\LauncherUI.cs,1204#,private Dictionary<string, SessionType_t> dictionaryWirelineworkflow = new Dictionary<string, SessionType_t>()
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\DataBasedAlarms\AlarmsManagerUI\AlarmsManagerUIMgr.cs,88#,SType = (Interface.SessionType_t)Int32.Parse(WFType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\DataBasedAlarms\AlarmsManagerUI\AlarmsManagerUIMgr.cs,90#,SType = Interface.SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\DataBasedAlarms\AlarmsManagerUI\AlarmsManagerUIMgr.cs,92#,if( SType == Interface.SessionType_t.SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\DataBasedAlarms\AlarmsManagerUI\AlarmsManagerUIMgr.cs,93#,SType == Interface.SessionType_t.SESSION_WIRELINE_RECORDEDMODE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\DataBasedAlarms\AlarmsManagerUI\AlarmsManagerUIMgr.cs,94#,SType == Interface.SessionType_t.SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\DataBasedAlarms\AlarmsManagerUI\AlarmsManagerUIMgr.cs,95#,SType == Interface.SessionType_t.SESSION_WIRELINE_PERFOEXPRESS )
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\EquipmentNamingComponent\EquipmentNameBuilder.cs,80#,if( m_sessionType == SessionType_t.SESSION_DRILLING )
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\EquipmentNamingComponent\EquipmentNameBuilder.cs,199#,if( m_sessionType == SessionType_t.SESSION_DRILLING )
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\JobSpecComponents\JobSpecViewer\Helper\JobSpecXmlHelper.cs,65#,return toolElementGuid == null || toolElementCollection == null || sourceJobWorkflow == SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\LogComponents\LGRoutines\IndexScale\ScaleHelper.cs,175#,if (sessionType.Equals("SESSION_DRILLING"))
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\GenericEditor.cs,927#,(m_Workflow == SessionType_t.SESSION_DRILLING));
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\GenericEditor.cs,1289#,if (m_Workflow == SessionType_t.SESSION_WELLSERVICES)
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\GenericEditor.cs,3657#,if ((SessionType_t.SESSION_WIRELINE == m_Workflow) && !Parameter.CheckSNCalibrationChange(oldTextValue))
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\GenericEditorUIP.cs,62#,private Interface.SessionType_t m_WorkflowType = Interface.SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\GenericEditorUIP.cs,182#,m_WorkflowType = (Interface.SessionType_t)Int32.Parse(WFType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\GenericEditorUIP.cs,184#,m_WorkflowType = Interface.SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\GenericEditorUIP.cs,1216#,return m_WorkflowType == Interface.SessionType_t.SESSION_WIRELINE_PERFOEXPRESS ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\GenericEditorUIP.cs,1217#,m_WorkflowType == SessionType_t.SESSION_WELLSERVICES;
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\ParameterView.cs,52#,if (sessionType.Equals(Interface.SessionType_t.SESSION_DRILLING))
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\ParameterView.cs,71#,if (!sessionType.Equals(Interface.SessionType_t.SESSION_DRILLING)) return;
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\SlbPALEquipmentParameterLoader.cs,135#,if ((m_ParameterManager.cWorkFlow & Interface.SessionType_t.SESSION_WIRELINE_ALL) > 0)
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\SlbPALInfoClasses.cs,39#,if (sessionType != SessionType_t.SESSION_DRILLING &&
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\SlbPALInfoClasses.cs,40#,sessionType != SessionType_t.SESSION_ALL)
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\SlbPALParameterCODEC.cs,256#,if (m_ParameterManager.cWorkFlow.Equals(Interface.SessionType_t.SESSION_DRILLING))
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\SlbPALParameterCODEC.cs,309#,if ((m_ParameterManager.cWorkFlow.Equals(Interface.SessionType_t.SESSION_WIRELINE)
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\SlbPALValue.cs,38#,private SessionType_t m_SessionType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\SlbToolFilterControl.cs,358#,if(m_WorkFlow.Equals(Interface.SessionType_t.SESSION_DRILLING)||
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\ZoneEditor.cs,79#,private Interface.SessionType_t m_SessionType = Interface.SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\ZoneEditor.cs,335#,if(this.m_SessionType.Equals(Interface.SessionType_t.SESSION_WIRELINE) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\ZoneEditorControl.cs,363#,private Interface.SessionType_t m_SessionType = Interface.SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\ZoneEditorControl.cs,1193#,else if ((rootParam.ZonedValues.IndexType == IndexType_t.Time) && (m_SessionType != Interface.SessionType_t.SESSION_DRILLING) &&
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\ZoneEditorControl.cs,1200#,else if (m_SessionType == Interface.SessionType_t.SESSION_DRILLING && rootParam.ZonedValues.IndexType == IndexType_t.Time)
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\ZoneEditorControl.cs,1364#,if ((!m_ParameterManager.IsRecModeUI && !m_ParameterManager.IsRecomputationUI) || m_ParameterManager.WorkFlow != SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\ZoningLayout.cs,52#,private Interface.SessionType_t m_SessionType = Interface.SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\ZoningLayout.cs,411#,m_SessionType = Interface.SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\ZoningLayout.cs,1193#,if (TestParam != null && !workFlow.Equals(SessionType_t.SESSION_DRILLING))
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\ParameterAccessLayer\ZoningLayout.cs,1773#,(m_ParameterManager.WorkFlow == SessionType_t.SESSION_DRILLING)));
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\PassPlanSupport\StationPassPlanClass.cs,87#,m_WorkflowType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\PassPlanSupport\StationPassPlanClass.cs,171#,if (m_WorkflowType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\PassPlanSupport\StationPassPlanClass.cs,180#,if (m_WorkflowType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\PassPlanSupport\StationPassPlanClass.cs,322#,if (m_WorkflowType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\PassPlanSupport\StationPassPlanClass.cs,619#,if (m_WorkflowType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\PassPlanSupport\StationPassPlanClass.cs,800#,if (m_WorkflowType != SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\PassPlanSupport\StationPassPlanClass.cs,845#,if (m_WorkflowType != SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\PassPlanSupport\StationPassPlanClass.cs,1072#,if (m_WorkflowType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\PassPlanSupport\StationPassPlanClass.cs,1092#,if (m_WorkflowType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\PassPlanSupport\StationPassPlanClass.cs,1139#,if (m_WorkflowType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\PassPlanSupport\StationPassPlanClass.cs,1159#,if (m_WorkflowType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\WellSketchControl\WellSketch.cs,95#,SessionType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\GenericComponents\XYZComponents\XYZCompactAE\Controllers\CurveOperationController.cs,626#,SessionType_t sessionType = (SessionType_t)Enum.Parse(typeof(SessionType_t), sessionTypeString);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\CalibrationManager\UIP\CalibrationDataAccess.cs,2135#,if (SessionType_t.SESSION_WIRELINE_RECORDEDMODE == m_SessionType)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\CalibrationManager\UIP\CalibrationMgrUI.cs,295#,m_SessionType = (Interface.SessionType_t)Int32.Parse(WFType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\CalibrationManager\UIP\CalibrationMgrUI.cs,2768#,if (Interface.SessionType_t.SESSION_WIRELINE_RECORDEDMODE == m_SessionType)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\CalibrationManager\UIP\CalibrationMgrUI.cs,2815#,if (Interface.SessionType_t.SESSION_WIRELINE_RECORDEDMODE == m_SessionType)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\CalibrationManager\UIP\CalibrationMgrUI.cs,3647#,if (m_SessionType == SessionType_t.SESSION_WIRELINE_RECORDEDMODE && Type.Equals("UISWLAcquisition.AcquisitionState:" + m_SessionId))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\DigitalDeliverableWriter\DigitalDeliverableWriter.cs,85#,protected WorkflowConfig m_workflowConfig = new WorkflowConfig(SessionType_t.SESSION_UNKNOWN);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\DnIInits\Helper\WorkflowHelper.cs,7#,return workflow == Interface.SessionType_t.SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\DnIInits\Helper\WorkflowHelper.cs,8#,workflow == Interface.SessionType_t.SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\DnIInits\Helper\WorkflowHelper.cs,9#,workflow == Interface.SessionType_t.SESSION_WIRELINE_PERFOEXPRESS;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\DnIInits\Model\DnIInitsDataHelper.cs,172#,workflow = (SessionType_t)Int32.Parse(workflowString);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\DnIInits\Model\DnIInitsDataHelper.cs,174#,workflow = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\DnIInits\Model\DnIInitsDataHelper.cs,188#,if (WorkflowType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\DnIInits\Model\DnIInitsDataHelper.cs,214#,if (WorkflowType != SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\DnIInits\Model\DnIInitsDataHelper.cs,448#,if (WorkflowType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\DnIInits\Model\DnIInitsDataHelper.cs,965#,if (!WorkflowType.Equals(SessionType_t.SESSION_DRILLING))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\DnIInits\Model\DnIInitsDataHelper.cs,1317#,if (WorkflowType.Equals(Interface.SessionType_t.SESSION_DRILLING))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\DnIInits\Model\DnIInitsDataSource.cs,51#,get { return _workflow == SessionType_t.SESSION_DRILLING; }
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\DnIInits\View\Dni.cs,357#,if (m_helper.WorkflowType != SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\DnIInits\View\Dni.cs,750#,if (m_helper.WorkflowType != SessionType_t.SESSION_DRILLING || context == runGUID)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\DnIInits\View\Dni.cs,993#,if (m_helper.WorkflowType != Interface.SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\DnIInits\View\Dni.cs,1200#,if (m_helper.WorkflowType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\DnIInits\View\DnIInitsUIP.cs,142#,if (m_WorkFlow == Interface.SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\DnIInits\View\DnIInitsUIP.UI.cs,1916#,if (m_WorkFlow != Interface.SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\DnIInits\View\DnIInitsUIP.UI.cs,1941#,if (m_WorkFlow != Interface.SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,162#,private SessionType_t m_SessionType = Interface.SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,400#,if (SessionType == SessionType_t.SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,401#,SessionType == SessionType_t.SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,402#,SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,407#,else if (SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,547#,if (SessionType == SessionType_t.SESSION_WIRELINE)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,573#,else if ( ( SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS ) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,574#,( SessionType == SessionType_t.SESSION_WELLSERVICES ) )
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,761#,else if (SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,768#,return SessionType == SessionType_t.SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,769#,SessionType == SessionType_t.SESSION_WIRELINE_RECORDEDMODE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,770#,SessionType == SessionType_t.SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,771#,SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,961#,else if (SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,1046#,else if (SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,1075#,else if (SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,1658#,if (SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,1853#,&& !( (m_SessionType == SessionType_t.SESSION_DRILLING) && (nodeType == SlbEMEquipType_t.SLB_EM_AUXILIARY) ))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,2524#,if (0 == (SessionType & SessionType_t.SESSION_WIRELINE_ALL))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,2878#,if ( (SessionType == SessionType_t.SESSION_DRILLING) && (nodeType == SlbEMEquipType_t.SLB_EM_AUXILIARY) )
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,2886#,else if  ( (SessionType == SessionType_t.SESSION_DRILLING) && (nodeType == SlbEMEquipType_t.SLB_EM_TOOL) )
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,3011#,if (SessionType == SessionType_t.SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,3012#,SessionType == SessionType_t.SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,3013#,SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,3021#,else if (SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,3114#,if (SessionType == SessionType_t.SESSION_WIRELINE)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,3121#,(SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,3122#,(SessionType == SessionType_t.SESSION_WELLSERVICES)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommon.cs,3128#,else if (SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommonStatic.cs,183#,if (sessionType != SessionType_t.SESSION_DRILLING) return;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommonStatic.cs,216#,if (sessionType != SessionType_t.SESSION_DRILLING) return;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommonStatic.cs,283#,if (sessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ECMCommonStatic.cs,299#,if (sessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentCatalog.cs,465#,( SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS ) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentCatalog.cs,466#,( SessionType == SessionType_t.SESSION_WELLSERVICES )
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentCatalog.cs,474#,if (SessionType == SessionType_t.SESSION_WIRELINE_RECORDEDMODE)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentCatalog.cs,504#,(SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentCatalog.cs,505#,(SessionType == SessionType_t.SESSION_WELLSERVICES)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentCatalog.cs,532#,if (SessionType == SessionType_t.SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentCatalog.cs,533#,SessionType == SessionType_t.SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentCatalog.cs,534#,SessionType == SessionType_t.SESSION_WIRELINE_RECORDEDMODE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentCatalog.cs,535#,SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentCatalog.cs,546#,else if (SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,69#,private	Interface.SessionType_t	m_SessionType =	SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,623#,m_SessionType =	(SessionType_t)Int32.Parse(WFType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,625#,m_SessionType =	SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,783#,case SessionType_t.SESSION_WIRELINE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,784#,case SessionType_t.SESSION_WIRELINE_PERFOEXPRESS:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,785#,case SessionType_t.SESSION_WELLSERVICES:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,799#,case SessionType_t.SESSION_WIRELINE_RECORDEDMODE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,813#,case SessionType_t.SESSION_DRILLING:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,837#,if (m_SessionType.Equals(SessionType_t.SESSION_DRILLING))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,2033#,if (m_SessionType.Equals(Interface.SessionType_t.SESSION_WIRELINE) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,2045#,else if	(m_SessionType.Equals(Interface.SessionType_t.SESSION_WIRELINE_RECORDEDMODE))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,2049#,else if	(m_SessionType.Equals(Interface.SessionType_t.SESSION_DRILLING))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,2102#,if (m_SessionType.Equals(Interface.SessionType_t.SESSION_WIRELINE) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,2110#,else if	(m_SessionType.Equals(Interface.SessionType_t.SESSION_WIRELINE_RECORDEDMODE))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,2114#,else if	(m_SessionType.Equals(Interface.SessionType_t.SESSION_DRILLING))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,2607#,canActivate	= ((m_SessionType == SessionType_t.SESSION_WIRELINE	||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,2608#,m_SessionType == SessionType_t.SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,2609#,m_SessionType == SessionType_t.SESSION_WIRELINE_RECORDEDMODE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,2610#,m_SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,2618#,&& (m_SessionType == SessionType_t.SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,2619#,m_SessionType == SessionType_t.SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,2620#,m_SessionType == SessionType_t.SESSION_WIRELINE_RECORDEDMODE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,2621#,m_SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,2659#,if (m_SessionType == SessionType_t.SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,2660#,m_SessionType == SessionType_t.SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,2661#,m_SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,2663#,else if (m_SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,2690#,if (m_SessionType == SessionType_t.SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,2691#,m_SessionType == SessionType_t.SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,2692#,m_SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,2694#,else if	(m_SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\EquipmentManager.cs,3408#,if ((sessionType == SessionType_t.SESSION_DRILLING)&&(equipNode.Parent != null))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,292#,if (SessionType == SessionType_t.SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,293#,SessionType == SessionType_t.SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,294#,SessionType == SessionType_t.SESSION_WIRELINE_RECORDEDMODE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,295#,SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,298#,else if (SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,341#,if (SessionType == SessionType_t.SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,342#,SessionType == SessionType_t.SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,343#,SessionType == SessionType_t.SESSION_WIRELINE_RECORDEDMODE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,344#,SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,347#,else if (SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,366#,if (SessionType == SessionType_t.SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,367#,SessionType == SessionType_t.SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,368#,SessionType == SessionType_t.SESSION_WIRELINE_RECORDEDMODE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,369#,SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,388#,else if (SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,986#,( SessionType == SessionType_t.SESSION_WELLSERVICES ) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,987#,( SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS )
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,997#,if (SessionType == SessionType_t.SESSION_WIRELINE_RECORDEDMODE)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,1016#,if (SessionType == SessionType_t.SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,1017#,SessionType == SessionType_t.SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,1018#,SessionType == SessionType_t.SESSION_WIRELINE_RECORDEDMODE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,1019#,SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,1023#,if (SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,1093#,if (SessionType == SessionType_t.SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,1094#,SessionType == SessionType_t.SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,1095#,SessionType == SessionType_t.SESSION_WIRELINE_RECORDEDMODE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,1096#,SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,1141#,else if (SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,1290#,if (SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,1370#,if (SessionType == SessionType_t.SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,1371#,SessionType == SessionType_t.SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,1372#,SessionType == SessionType_t.SESSION_WIRELINE_RECORDEDMODE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,1373#,SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,1387#,else if (SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,1910#,if (SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\MyEquipment.cs,1956#,if (SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ToolStringList.cs,1023#,|| ((SessionType == SessionType_t.SESSION_DRILLING) && (sourceType == SlbEMEquipType_t.SLB_EM_AUXILIARY) && (equipNodeType == SlbEMEquipType_t.SLB_EM_SEGMENT)))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ToolStringList.cs,1600#,if (!((SessionType == SessionType_t.SESSION_DRILLING) && (nodeType == SlbEMEquipType_t.SLB_EM_AUXILIARY)))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ToolStringList.cs,1774#,if ((SessionType == SessionType_t.SESSION_WIRELINE_RECORDEDMODE) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ToolStringList.cs,1775#,(SessionType == SessionType_t.SESSION_WELLSERVICES))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ToolStringList.cs,2984#,if (!EquipNameBuilder.SessionType.Equals(SessionType_t.SESSION_DRILLING))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ToolStringList.cs,3718#,mnuTSMultipleCopy.Visible = SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ToolStringList.cs,3733#,if (SessionType == SessionType_t.SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ToolStringList.cs,3734#,SessionType == SessionType_t.SESSION_WIRELINE_RECORDEDMODE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ToolStringList.cs,3735#,SessionType == SessionType_t.SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ToolStringList.cs,3736#,SessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\EquipmentManagerUI\ToolStringList.cs,3738#,else if (SessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\ToolStringValidationUIP\CableValidationController.cs,14#,if ((inSessionType == SessionType_t.SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\ToolStringValidationUIP\CableValidationController.cs,15#,inSessionType == SessionType_t.SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\EquipmentMgr\ToolStringValidationUIP\CableValidationController.cs,16#,inSessionType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS) &&
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\PassManager\PassManagerUI\PassManagerConfigWorkflowTypes.cs,13#,case SessionType_t.SESSION_WIRELINE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\PassManager\PassManagerUI\PassManagerConfigWorkflowTypes.cs,14#,case SessionType_t.SESSION_WIRELINE_PERFOEXPRESS:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\PassManager\PassManagerUI\PassManagerConfigWorkflowTypes.cs,15#,case SessionType_t.SESSION_WELLSERVICES:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\PassManager\PassManagerUI\PassManagerConfigWorkflowTypes.cs,18#,case SessionType_t.SESSION_WIRELINE_RECORDEDMODE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\PassManager\PassManagerUI\PassManagerConfigWorkflowTypes.cs,21#,case SessionType_t.SESSION_DRILLING:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\PassManager\PassManagerUI\PassManagerFactory.cs,134#,protected abstract IPassManagerUIWorkflow TypeSpecificPassManagerWorkflow(SessionType_t iWorkflowType,
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\PassManager\PassManagerUI\PassManagerFactory.cs,142#,protected abstract PassGridColumns TypeSpecificPassGridColumns (SessionType_t iWorkflowType,
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\PassManager\PassManagerUI\PassManagerFactory.cs,202#,protected override IPassManagerUIWorkflow TypeSpecificPassManagerWorkflow(SessionType_t iWorkflowType, IPassManagerInitializer iPassManagerInitializer, IUIImpl iIUIImpl)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\PassManager\PassManagerUI\PassManagerFactory.cs,207#,protected override PassGridColumns TypeSpecificPassGridColumns(SessionType_t iWorkflowType, UIPosition_t iUIPosition, IUIImpl iIUIImpl)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\PassManager\PassManagerUI\PassManagerFactory.cs,233#,protected override IPassManagerUIWorkflow TypeSpecificPassManagerWorkflow(SessionType_t iWorkflowType, IPassManagerInitializer iPassManagerInitializer, IUIImpl iIUIImpl)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\PassManager\PassManagerUI\PassManagerFactory.cs,238#,protected override PassGridColumns TypeSpecificPassGridColumns(SessionType_t iWorkflowType, UIPosition_t iUIPosition, IUIImpl iIUIImpl)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\PassManager\PassManagerUI\PassManagerInitializer.cs,79#,protected Interface.SessionType_t m_WorkflowType = Interface.SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\RunManager.cs,92#,public SessionType_t m_WorkflowType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\RunManager.cs,243#,else if (m_WorkflowType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\RunManager.cs,311#,if (m_WorkflowType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\RunManager.cs,318#,if (m_WorkflowType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\RunManager.cs,402#,if (m_WorkflowType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\RunManager.cs,448#,if (m_WorkflowType == SessionType_t.SESSION_DRILLING && !m_bSmartDepth)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\RunManager.cs,706#,if (m_WorkflowType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\RunManager.cs,744#,SessionType_t workflow = m_Controller.GetWorkflow();
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\RunManager.cs,745#,if ( workflow == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS )
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\RunManager.cs,782#,if (m_WorkflowType == SessionType_t.SESSION_WIRELINE && !bIsImportedRun)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\RunManager.cs,1234#,if (m_WorkflowType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\RunManager.cs,1247#,if (m_WorkflowType != SessionType_t.SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\RunManager.cs,1266#,if (m_WorkflowType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS || dgResult == DialogResult.OK)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\RunManager.cs,1301#,if (m_WorkflowType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\RunManager.cs,1712#,if (m_WorkflowType != SessionType_t.SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\RunManager.cs,1735#,if (m_WorkflowType == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS && stateToolPower.Equals("ACQUISITION_STATE_TOOL_POWER_UP"))
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\RunManager.cs,1905#,if (workflow == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS && m_bReadyToNextRun && m_bAcquisitionTaskStopped && m_bRunClosed)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\RunManagerController.cs,18#,m_Workflow = (SessionType_t)Int32.Parse(WFType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\RunManagerController.cs,20#,m_Workflow = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\RunManagerDataGrid.cs,273#,if (workflow == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\RunManagerDataGrid.cs,309#,if (workflow == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\RunManagerDataGrid.cs,773#,if (m_WorkflowType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\RunManagerDataGrid.cs,1572#,if (workflowType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\RunManagerDataGrid.cs,3386#,if (m_WorkflowType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\Utils.cs,121#,return 0 != (workflow & SessionType_t.SESSION_WIRELINE_ALL);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\RunManager\RunManagerUI\Utils.cs,288#,if (workflow == SessionType_t.SESSION_WIRELINE_PERFOEXPRESS && !acqStarting)
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\SurveyMgr\SurveyManagerUI\Connector.cs,52#,m_SessionType = (Interface.SessionType_t)Int32.Parse(WFType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\SurveyMgr\SurveyManagerUI\Connector.cs,54#,m_SessionType = Interface.SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\SurveyMgr\SurveyManagerUI\Msh.cs,73#,private Interface.SessionType_t m_SessionType = Interface.SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\SurveyMgr\SurveyManagerUI\Msh.cs,421#,m_SessionType = (Interface.SessionType_t)Int32.Parse(WFType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\SurveyMgr\SurveyManagerUI\Msh.cs,423#,m_SessionType = Interface.SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\SurveyMgr\SurveyManagerUI\Msh.cs,425#,if (m_SessionType.Equals(Interface.SessionType_t.SESSION_DRILLING) )
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\SurveyMgr\SurveyManagerUI\SM.cs,288#,private Interface.SessionType_t m_SessionType = Interface.SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\SurveyMgr\SurveyManagerUI\SM.cs,660#,m_SessionType = (Interface.SessionType_t)Int32.Parse(WFType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\SurveyMgr\SurveyManagerUI\SM.cs,662#,m_SessionType = Interface.SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\SurveyMgr\SurveyManagerUI\SurveyAcceptedUI.cs,182#,private Interface.SessionType_t m_SessionType = Interface.SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\SurveyMgr\SurveyManagerUI\SurveyAcceptedUI.cs,1169#,if (m_SessionType.Equals(Interface.SessionType_t.SESSION_WIRELINE) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\SurveyMgr\SurveyManagerUI\SurveyAcceptedUI.cs,1698#,if (m_SessionType.Equals(Interface.SessionType_t.SESSION_WIRELINE) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\SurveyMgr\SurveyManagerUI\SurveyImportUIP.cs,159#,private Interface.SessionType_t m_SessionType = Interface.SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\SurveyMgr\SurveyManagerUI\SurveyImportUIP.cs,293#,if( m_SessionType.Equals(Interface.SessionType_t.SESSION_WIRELINE) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\SurveyMgr\SurveyManagerUI\SurveyImportUIP.cs,1537#,if (m_SessionType.Equals(Interface.SessionType_t.SESSION_DRILLING) )
+T:\MetricsSystem\Maxwell\Main\HzProducts\Managers\SurveyMgr\SurveyManagerUI\SurveyImportUIP.cs,1544#,if (!m_SessionType.Equals(Interface.SessionType_t.SESSION_DRILLING))
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\ContextManagerHelper.cs,445#,mSessionType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\ContextManagerHelper.cs,620#,if (mSessionType == SessionType_t.SESSION_UNKNOWN)
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,103#,if (mSessionType != SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,114#,if (mSessionType != SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,591#,case (SessionType_t.SESSION_WIRELINE):
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,595#,case (SessionType_t.SESSION_WIRELINE_RECORDEDMODE):
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,597#,case (SessionType_t.SESSION_DRILLING):
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,610#,case SessionType_t.SESSION_WIRELINE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,611#,case SessionType_t.SESSION_WELLSERVICES:
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,612#,case SessionType_t.SESSION_WIRELINE_PERFOEXPRESS:
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,630#,case (SessionType_t.SESSION_WIRELINE_RECORDEDMODE):
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,633#,case (SessionType_t.SESSION_DRILLING):
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,654#,if (mSessionType != SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,668#,case (SessionType_t.SESSION_WIRELINE):
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,694#,case (SessionType_t.SESSION_WIRELINE_RECORDEDMODE):
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,697#,case (SessionType_t.SESSION_DRILLING):
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,710#,if (mSessionType != SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,717#,if (mSessionType != SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,725#,if (mSessionType != SessionType_t.SESSION_WIRELINE)
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,741#,case (SessionType_t.SESSION_WIRELINE):
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,787#,case (SessionType_t.SESSION_WIRELINE):
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,793#,case (SessionType_t.SESSION_WIRELINE_RECORDEDMODE):
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,795#,case (SessionType_t.SESSION_DRILLING):
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,993#,private SessionType_t mSessionType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,1252#,if (mSessionType == Interface.SessionType_t.SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,1253#,mSessionType == Interface.SessionType_t.SESSION_WIRELINE_RECORDEDMODE)
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,1268#,if (this.mSessionType == SessionType_t.SESSION_WIRELINE
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,1269#,|| this.mSessionType == SessionType_t.SESSION_WIRELINE_RECORDEDMODE)
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\RunManagerHelper.cs,1277#,else if (this.mSessionType == SessionType_t.SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\SessionInfo.cs,28#,SessionType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\SessionInfo.cs,38#,SessionType = Interface.SessionType_t.SESSION_WIRELINE;
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\SessionInfo.cs,52#,SessionType = Interface.SessionType_t.SESSION_WIRELINE_RECORDEDMODE;
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\SessionInfo.cs,59#,SessionType = Interface.SessionType_t.SESSION_DRILLING;
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\SessionInfo.cs,66#,SessionType = Interface.SessionType_t.SESSION_WELLSERVICES;
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\SessionInfo.cs,75#,SessionType = Interface.SessionType_t.SESSION_WIRELINE_PERFOEXPRESS;
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\SessionInfo.cs,95#,sessionType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\SessionInfo.cs,100#,sessionType = Interface.SessionType_t.SESSION_WIRELINE;
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\SessionInfo.cs,103#,sessionType = Interface.SessionType_t.SESSION_WIRELINE_RECORDEDMODE;
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\SessionInfo.cs,106#,sessionType = Interface.SessionType_t.SESSION_DRILLING;
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\SessionInfo.cs,109#,sessionType = SessionType_t.SESSION_WIRELINE_PERFOEXPRESS;
+T:\MetricsSystem\Maxwell\Main\HzProducts\MaxShell\Util\SessionInfo.cs,112#,sessionType = SessionType_t.SESSION_WELLSERVICES;
+T:\MetricsSystem\Maxwell\Main\HzProducts\Tasks\CmdHandlerViewerTask.h,43#,case SESSION_WIRELINE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Tasks\CmdHandlerViewerTask.h,44#,case SESSION_WIRELINE_PERFOEXPRESS:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Tasks\CmdHandlerViewerTask.h,45#,case SESSION_WELLSERVICES:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Tasks\CmdHandlerViewerTask.h,53#,case SESSION_WIRELINE_RECORDEDMODE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Tasks\DepthLogTask.h,48#,case SESSION_WIRELINE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Tasks\DepthLogTask.h,49#,case SESSION_WELLSERVICES:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Tasks\DepthLogTask.h,57#,case SESSION_WIRELINE_PERFOEXPRESS:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Tasks\DepthLogTask.h,70#,case SESSION_WIRELINE_RECORDEDMODE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Tasks\SlbPassManagerTask.h,46#,case SESSION_WIRELINE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Tasks\SlbPassManagerTask.h,47#,case SESSION_WIRELINE_PERFOEXPRESS:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Tasks\SlbPassManagerTask.h,48#,case SESSION_WELLSERVICES:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Tasks\SlbPassManagerTask.h,56#,case SESSION_WIRELINE_RECORDEDMODE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Tasks\SlbPassManagerTask.h,106#,case SESSION_WIRELINE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Tasks\SlbPassManagerTask.h,107#,case SESSION_WIRELINE_PERFOEXPRESS:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Tasks\SlbPassManagerTask.h,108#,case SESSION_WELLSERVICES:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Tasks\SlbPassManagerTask.h,116#,case SESSION_WIRELINE_RECORDEDMODE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Tasks\SlbStationManagerTask.h,46#,case SESSION_WIRELINE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Tasks\SlbStationManagerTask.h,47#,case SESSION_WIRELINE_PERFOEXPRESS:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Tasks\SlbStationManagerTask.h,48#,case SESSION_WELLSERVICES:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Tasks\SlbStationManagerTask.h,56#,case SESSION_WIRELINE_RECORDEDMODE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Tasks\TimeShiftEditorTask.h,48#,case SESSION_WIRELINE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Tasks\TimeShiftEditorTask.h,49#,case SESSION_WIRELINE_PERFOEXPRESS:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Tasks\TimeShiftEditorTask.h,50#,case SESSION_WELLSERVICES:
+T:\MetricsSystem\Maxwell\Main\HzProducts\Tasks\TimeShiftEditorTask.h,54#,case SESSION_WIRELINE_RECORDEDMODE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\Test\PrdUIServersContextManager.cpp,617#,if(mSessionType == SessionType_t::SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\AcqCalibUIServer.cpp,738#,if(this->m_SessionType == SESSION_WIRELINE_RECORDEDMODE)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\AcqCalibUIServer.cpp,2632#,m_Error = m_pSessionColl->get_ItemByIndex( 0, DSC_SESSION_HZVERSION, vVersion );
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\CalibrationUIServerImpl.cpp,770#,case SESSION_WIRELINE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\CalibrationUIServerImpl.cpp,771#,case SESSION_WIRELINE_PERFOEXPRESS:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\CalibrationUIServerImpl.cpp,772#,case SESSION_WELLSERVICES:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\CalibrationUIServerImpl.cpp,776#,case SESSION_WIRELINE_RECORDEDMODE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\CalibrationUIServerImpl.cpp,780#,case SESSION_DRILLING:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\CalibrationUIServerImpl.cpp,1087#,case SESSION_WIRELINE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\CalibrationUIServerImpl.cpp,1088#,case SESSION_WIRELINE_RECORDEDMODE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\CalibrationUIServerImpl.cpp,1148#,case SESSION_DRILLING:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\CalibrationUIServerImpl.cpp,1725#,if (m_SessionType == SESSION_WIRELINE_RECORDEDMODE)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentBuilder.cpp,178#,map<SessionType_t, SlbEquipmentShare::SessionEquipment_t>::iterator it = m_pEquipmentShare->m_SessionEquipmentMap.find(m_SessionType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentBuilder.cpp,1007#,if (m_SessionType == SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentBuilder.cpp,1008#,m_SessionType == SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentBuilder.cpp,1009#,m_SessionType == SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentBuilder.cpp,1137#,map<SessionType_t, SlbEquipmentShare::SessionEquipment_t>::iterator it = m_pEquipmentShare->m_SessionEquipmentMap.find(m_SessionType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentBuilder.cpp,1167#,map<SessionType_t, SlbEquipmentShare::SessionEquipment_t>::iterator it = m_pEquipmentShare->m_SessionEquipmentMap.find(m_SessionType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentBuilder.cpp,1183#,if (m_SessionType == SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentBuilder.cpp,1184#,m_SessionType == SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentBuilder.cpp,1185#,m_SessionType == SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentBuilder.cpp,1196#,if (m_SessionType == SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentBuilder.cpp,1197#,m_SessionType == SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentBuilder.cpp,1198#,m_SessionType == SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentBuilder.cpp,1227#,if (m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentBuilder.cpp,1698#,bstrSessionType = Utility::SessionTypeToString(SESSION_BOTH);
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentBuilder.cpp,1703#,bstrSessionType = Utility::SessionTypeToString(SESSION_ALL);
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentBuilder.cpp,1711#,if (m_SessionType == SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentBuilder.cpp,1712#,m_SessionType == SESSION_WIRELINE_RECORDEDMODE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentBuilder.cpp,1713#,m_SessionType == SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentBuilder.cpp,1714#,m_SessionType == SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentBuilder.cpp,1718#,m_Error = m_pDscQuery->PutItem(DSC_CATENSEMBLE_SESSIONTYPE, -1, DSC_QUERY_EQUALTO, CComVariant(Utility::SessionTypeToString(SESSION_WIRELINE_ALL)));
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentBuilder.cpp,3970#,if (m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentCalibration.cpp,202#,if(m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentComputation.cpp,129#,if(eSessionType == SESSION_DRILLING )
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentProperty.cpp,1269#,else if (ensType == ENSEMBLE_ALL_EQUIPMENTS && m_SessionType == SESSION_DRILLING) // D&M Aux Equipment
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentProperty.cpp,1276#,if (ensType == ENSEMBLE_ALL_EQUIPMENTS && m_SessionType == SESSION_DRILLING) // D&M Aux Equipment
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentProperty.cpp,1331#,if(m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentProperty.cpp,2061#,if (m_SessionType == SESSION_WIRELINE
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentProperty.cpp,2062#,|| m_SessionType == SESSION_WIRELINE_ALL
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentProperty.cpp,2063#,|| m_SessionType == SESSION_WIRELINE_RECORDEDMODE)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentProperty.cpp,2083#,else if (m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentProperty.cpp,2129#,if (m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentProperty.cpp,3340#,&& m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentProperty.cpp,3740#,&& m_SessionType != SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentProperty.cpp,6503#,map<SessionType_t, SlbEquipmentShare::SessionEquipment_t>::iterator it = m_pEquipmentShare->m_SessionEquipmentMap.find(m_SessionType);
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentSetup.h,463#,virtual HRESULT SetToolStringSessionType(SessionType_t sessionType) = 0;
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentSetup.h,683#,virtual HRESULT put_SessionType(SessionType_t SessType) = 0;
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentShare.cpp,37#,m_SessionEquipmentMap[SESSION_DRILLING].bstrBitSizeErrorMessage = L"Bit Size is not set. Please make sure Bit Size is set correctly in Wellbore Editor in Run Manager. The default value is the Bit OD.";
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentShare.cpp,38#,m_SessionEquipmentMap[SESSION_DRILLING].bstrTotalCorrectionErrorMessage = L"Total Correction has not been computed. Please make sure that the values in the DnI Initializations Panel (above) have been set correctly.";
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentShare.cpp,45#,m_SessionEquipmentMap[SESSION_WIRELINE].bstrBitSizeErrorMessage = L"Bit Size is not set. Please make sure Bit Size is set correctly in Wellbore Editor in Run Manager. The default value is 8.5 inch.";
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentShare.cpp,46#,m_SessionEquipmentMap[SESSION_WIRELINE].bstrTotalCorrectionErrorMessage = L"Total Correction has not been computed. Please make sure that the values in the DnI Initializations Panel (above) have been set correctly.";
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentShare.cpp,53#,m_SessionEquipmentMap[SESSION_WIRELINE_PERFOEXPRESS].bstrBitSizeErrorMessage = L"Bit Size is not set. Please make sure Bit Size is set correctly in Wellbore Editor in Run Manager. The default value is 8.5 inch.";
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentShare.cpp,54#,m_SessionEquipmentMap[SESSION_WIRELINE_PERFOEXPRESS].bstrTotalCorrectionErrorMessage = L"Total Correction has not been computed. Please make sure that the values in the DnI Initializations Panel (above) have been set correctly.";
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentShare.cpp,57#,m_SessionEquipmentMap[SESSION_WELLSERVICES].bstrBitSizeErrorMessage = L"";
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentShare.cpp,58#,m_SessionEquipmentMap[SESSION_WELLSERVICES].bstrTotalCorrectionErrorMessage = L"";
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentShare.cpp,60#,m_SessionEquipmentMap[SESSION_WIRELINE_RECORDEDMODE].bstrBitSizeErrorMessage = L"Bit Size is not set. Please make sure Bit Size is set correctly in Wellbore Editor in Run Manager. The default value is 8.5 inch.";
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentShare.cpp,61#,m_SessionEquipmentMap[SESSION_WIRELINE_RECORDEDMODE].bstrTotalCorrectionErrorMessage = L"Total Correction has not been computed. Please make sure that the values in the DnI Initializations Panel (above) have been set correctly.";
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentShare.cpp,318#,if (m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentShare.cpp,320#,else if (m_SessionType == SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentShare.cpp,321#,m_SessionType == SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentShare.cpp,322#,m_SessionType == SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentShare.cpp,1620#,if (m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipmentShare.cpp,1676#,if (m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,146#,if (m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,281#,if (m_SessionType == SESSION_WELLSERVICES)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,286#,SessionType_t AuxEquipSessionType = Utility::StringToSessionType(vSessionType.bstrVal);
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,288#,if (AuxEquipSessionType != SESSION_WELLSERVICES)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,2344#,if (m_SessionType == SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,4486#,if (m_SessionType != SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,4526#,if (m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,4571#,if (m_SessionType != SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,4626#,if (m_SessionType != SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,4744#,if (m_SessionType != SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,4761#,if (m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,4779#,if (m_SessionType != SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,6023#,bstrSessionType = Utility::SessionTypeToString(SESSION_BOTH);
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,6027#,bstrSessionType = Utility::SessionTypeToString(SESSION_ALL);
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,6031#,if (m_SessionType == SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,6033#,bstrSessionType = Utility::SessionTypeToString(SESSION_WIRELINE);
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,6038#,if (m_SessionType != SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,6040#,bstrSessionType = Utility::SessionTypeToString(SESSION_WIRELINE_ALL);
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,6045#,if (m_SessionType == SESSION_WELLSERVICES)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,6085#,if (m_SessionType == SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,6086#,m_SessionType == SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,6087#,m_SessionType == SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,6109#,else if (m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,6309#,if (m_SessionType == SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,6310#,m_SessionType == SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,6311#,m_SessionType == SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,6328#,else if (m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,6643#,if (m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,6991#,if (m_SessionType == SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,6992#,m_SessionType == SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,6993#,m_SessionType == SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,7008#,else if (m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,7750#,if (m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbEquipMgrUIServer.cpp,7763#,if (m_SessionType == SESSION_WIRELINE_PERFOEXPRESS && toolStringValidationState == "VALID" && !isAutomatic)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,153#,case SESSION_WIRELINE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,158#,case SESSION_DRILLING:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,163#,case SESSION_WIRELINE_RECORDEDMODE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,167#,case SESSION_WIRELINE_PERFOEXPRESS:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,172#,case SESSION_WELLSERVICES:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,265#,ULONG ulSize = (m_SessionType == SESSION_DRILLING) ? 4 : 2;
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,272#,if ( m_SessionType == SESSION_DRILLING )
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,568#,case SESSION_WIRELINE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,569#,case SESSION_WIRELINE_PERFOEXPRESS:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,570#,case SESSION_WELLSERVICES:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,573#,case SESSION_DRILLING:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,1301#,RunTypeEnum = (	(m_SessionType == SESSION_WIRELINE) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,1302#,(m_SessionType == SESSION_WIRELINE_RECORDEDMODE ) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,1303#,(m_SessionType == SESSION_WELLSERVICES ) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,1304#,(m_SessionType == SESSION_WIRELINE_PERFOEXPRESS)) ? DATA_ACQUISTION_RUN_DESCENT: DATA_ACQUISTION_RUN_BITRUN;
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,1336#,if( m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,1518#,( m_SessionType != SESSION_WIRELINE_PERFOEXPRESS ) &&
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,1519#,( m_SessionType != SESSION_WELLSERVICES )
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,1592#,if ( m_SessionType == SESSION_DRILLING )
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,2087#,if( m_SessionType == SESSION_DRILLING )
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,2094#,else if(	m_SessionType == SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,2095#,m_SessionType == SESSION_WIRELINE_RECORDEDMODE ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,2096#,m_SessionType == SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,2097#,m_SessionType == SESSION_WIRELINE_PERFOEXPRESS  )
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,3721#,if (SESSION_DRILLING == m_SessionType)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,3922#,if (m_SessionType == SESSION_WIRELINE && !bIsImportedRun) //condition1
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,4061#,if (SESSION_DRILLING == m_SessionType)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbRunManagerUIServer.cpp,5089#,if(m_SessionType != SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbStableIntervalUITask.h,55#,case SESSION_WIRELINE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbStableIntervalUITask.h,56#,case SESSION_WIRELINE_PERFOEXPRESS:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbStableIntervalUITask.h,57#,case SESSION_WELLSERVICES:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbStableIntervalUITask.h,65#,case SESSION_WIRELINE_RECORDEDMODE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SlbUnitSystemEditorUIServer.cpp,3293#,if (m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\SpliceMgrUIS.cpp,164#,if (m_SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\WLAcqusitionUIServer.cpp,721#,if (m_SessionType == SESSION_WIRELINE)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\WLAcqusitionUIServer.cpp,1070#,if ((m_SessionType == SESSION_WIRELINE) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\WLAcqusitionUIServer.cpp,1071#,(m_SessionType == SESSION_WELLSERVICES) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\WLAcqusitionUIServer.cpp,1072#,(m_SessionType == SESSION_WIRELINE_PERFOEXPRESS))
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\WLAcqusitionUIServer.cpp,1111#,|| m_SessionType == SESSION_WELLSERVICES
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\WLAcqusitionUIServer.cpp,1112#,|| m_SessionType == SESSION_WIRELINE_PERFOEXPRESS;
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\WLAcqusitionUIServer.cpp,1470#,if (m_SessionType == SESSION_WIRELINE_PERFOEXPRESS || m_SessionType == SESSION_WELLSERVICES || bRecovery)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\WLAcqusitionUIServer.cpp,1556#,if (m_SessionType == SESSION_WIRELINE_PERFOEXPRESS || m_SessionType == SESSION_WELLSERVICES || bRecovery)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\WLAcqusitionUIServer.cpp,2143#,(m_SessionType == SESSION_WIRELINE_PERFOEXPRESS) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\WLAcqusitionUIServer.cpp,2144#,(m_SessionType == SESSION_WELLSERVICES)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\WLAcqusitionUIServer.cpp,3049#,(m_SessionType == SESSION_WIRELINE) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\WLAcqusitionUIServer.cpp,3050#,(m_SessionType == SESSION_WELLSERVICES) ||
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\WLAcqusitionUIServer.cpp,3051#,(m_SessionType == SESSION_WIRELINE_PERFOEXPRESS)
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\WorkflowUIServer.cpp,328#,case SESSION_WIRELINE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\WorkflowUIServer.cpp,329#,case SESSION_WIRELINE_PERFOEXPRESS:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\WorkflowUIServer.cpp,330#,case SESSION_WELLSERVICES:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\WorkflowUIServer.cpp,333#,case SESSION_WIRELINE_RECORDEDMODE:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\WorkflowUIServer.cpp,336#,case SESSION_DRILLING:
+T:\MetricsSystem\Maxwell\Main\HzProducts\UIServers\WorkflowUIServer.cpp,941#,if ( m_SessionType == SESSION_DRILLING )
+T:\MetricsSystem\Maxwell\Main\HzProducts\Viewers\Deliverables\CalibrationRpt\SLBCalibrationListing\CalibrationDataManager.cs,99#,public SessionType_t WorkFlow { set { m_workflowConfig.SessionType = value; } }
+T:\MetricsSystem\Maxwell\Main\HzProducts\Viewers\Deliverables\EditorDLIS\DigitalDlisTemplateProperty.cs,34#,public bool IsDnM() { return (WorkFlow == SessionType_t.SESSION_DRILLING); }
+T:\MetricsSystem\Maxwell\Main\HzProducts\Viewers\Deliverables\EditorLAS\DigitalLasTemplateProperty.cs,367#,if (WorkFlow == SessionType_t.SESSION_DRILLING && savedOutputType.Contains("Canadian"))
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\BaseImpl\UIServerImpl.cpp,21#,m_SessionType = SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\BaseImpl\UIServerImpl.cpp,41#,m_SessionType = SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\GCFramework\DataBrowser\Helpers\DataExpUtility.cs,293#,if (objWorkflowType == null || objWorkflowType.Equals("SESSION_WIRELINE"))
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\GCFramework\DataBrowser\Helpers\DataExpUtility.cs,295#,else if (objWorkflowType.Equals("SESSION_DRILLING"))
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\GCFramework\DataBrowser\TestDataBrowser\CallingUI.cs,1828#,SessionType_t sessionType = SessionType_t.SESSION_ALL;
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\GCFramework\DataBrowser\TestDataBrowser\CallingUI.cs,1835#,sessionType = SessionType_t.SESSION_DRILLING;
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\GCFramework\DataBrowser\TestDataBrowser\CallingUI.cs,1837#,sessionType = SessionType_t.SESSION_WIRELINE;
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\GCFramework\DataBrowser\TestDataBrowser\CallingUI.cs,1839#,sessionType = SessionType_t.SESSION_WIRELINE_RECORDEDMODE;
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\WorkflowConfigManager\SessionDrilling.cs,87#,workflowType = SessionType_t.SESSION_DRILLING.ToString("D");
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\WorkflowConfigManager\SessionDrilling.cs,88#,sessionType = SessionType_t.SESSION_DRILLING.ToString();
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\WorkflowConfigManager\SessionWellServices.cs,86#,workflowType = SessionType_t.SESSION_WELLSERVICES.ToString("D");
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\WorkflowConfigManager\SessionWellServices.cs,87#,sessionType = SessionType_t.SESSION_WELLSERVICES.ToString();
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\WorkflowConfigManager\SessionWireline.cs,87#,workflowType = SessionType_t.SESSION_WIRELINE.ToString("D");
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\WorkflowConfigManager\SessionWireline.cs,88#,sessionType = SessionType_t.SESSION_WIRELINE.ToString();
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\WorkflowConfigManager\SessionWirelinePerfoExpress.cs,86#,workflowType = SessionType_t.SESSION_WIRELINE_PERFOEXPRESS.ToString("D");
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\WorkflowConfigManager\SessionWirelinePerfoExpress.cs,87#,sessionType = SessionType_t.SESSION_WIRELINE_PERFOEXPRESS.ToString();
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\WorkflowConfigManager\SessionWirelineRecordedMode.cs,91#,workflowType = SessionType_t.SESSION_WIRELINE_RECORDEDMODE.ToString("D");
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\WorkflowConfigManager\SessionWirelineRecordedMode.cs,92#,sessionType = SessionType_t.SESSION_WIRELINE_RECORDEDMODE.ToString();
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\WorkflowConfigManager\WorkflowConfig.cs,35#,SessionType_t sessionType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\WorkflowConfigManager\WorkflowConfig.cs,46#,private SessionType_t _sessionType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\WorkflowConfigManager\WorkflowConfig.cs,59#,SessionType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\WorkflowConfigManager\WorkflowConfig.cs,81#,case SessionType_t.SESSION_UNKNOWN:
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\WorkflowConfigManager\WorkflowConfig.cs,83#,case SessionType_t.SESSION_DRILLING:
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\WorkflowConfigManager\WorkflowConfig.cs,85#,case SessionType_t.SESSION_WIRELINE:
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\WorkflowConfigManager\WorkflowConfig.cs,88#,case SessionType_t.SESSION_WIRELINE_RECORDEDMODE:
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\WorkflowConfigManager\WorkflowConfig.cs,91#,case SessionType_t.SESSION_WIRELINE_PERFOEXPRESS:
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\WorkflowConfigManager\WorkflowConfig.cs,93#,case SessionType_t.SESSION_WELLSERVICES:
+T:\MetricsSystem\Maxwell\Main\HzProductsAPI\WorkflowConfigManager\WorkflowConfig.cs,95#,case SessionType_t.SESSION_WIRELINE_ALL:
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\AuxiliaryEquipment\AuxEquipmentImpl.h,39#,if (SessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\AuxiliaryEquipment\AuxEquipmentImpl.h,152#,if(vSessionValue == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\AuxiliaryEquipment\AuxEquipmentImpl.h,171#,if(vSessionValue == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\AuxiliaryEquipment\AuxEquipmentImpl.h,347#,if ( ssType == SESSION_DRILLING )
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\AuxiliaryEquipment\GenericAux.cpp,11#,*pSessionType = SESSION_BOTH;
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_DfModuleBHRM.cpp,89#,if ( sessionType == SESSION_DRILLING )
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_DfModuleDiameter.cpp,107#,if ((sessionType == SESSION_WIRELINE) ||
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_DfModuleDiameter.cpp,108#,(sessionType == SESSION_WIRELINE_RECORDEDMODE ) ||
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_DfModuleDiameter.cpp,109#,(sessionType == SESSION_WELLSERVICES ) ||
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_DfModuleDiameter.cpp,110#,(sessionType == SESSION_WIRELINE_PERFOEXPRESS))
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_DfModuleGTEM.cpp,119#,if ((sessionType == SESSION_WIRELINE) ||
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_DfModuleGTEM.cpp,120#,(sessionType == SESSION_WIRELINE_RECORDEDMODE ) ||
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_DfModuleGTEM.cpp,121#,(sessionType == SESSION_WELLSERVICES ) ||
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_DfModuleGTEM.cpp,122#,(sessionType == SESSION_WIRELINE_PERFOEXPRESS))
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_DfModulePressure.cpp,120#,if ((sessionType == SESSION_WIRELINE) ||
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_DfModulePressure.cpp,121#,(sessionType == SESSION_WIRELINE_RECORDEDMODE ) ||
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_DfModulePressure.cpp,122#,(sessionType == SESSION_WELLSERVICES ) ||
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_DfModulePressure.cpp,123#,(sessionType == SESSION_WIRELINE_PERFOEXPRESS))
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_DfModuleTemperature.cpp,175#,if (sessionType == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_EnsApplication.cpp,363#,SessionType_t currentWorkflow = GetCurrentWorkflow();
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_EnsApplication.cpp,365#,if (currentWorkflow == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_EnsApplication.cpp,439#,else if (currentWorkflow == SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_EnsApplication.cpp,440#,currentWorkflow == SESSION_WIRELINE_RECORDEDMODE ||
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_EnsApplication.cpp,441#,currentWorkflow == SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\Borehole\BH_EnsApplication.cpp,442#,currentWorkflow == SESSION_WIRELINE_PERFOEXPRESS )
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\UIs\DepthCorrection\AdditionalCorrection\AdditionalCorrectView.cs,163#,SessionType_t SessionType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\UIs\DepthCorrection\AdditionalCorrection\AdditionalCorrectView.cs,166#,SessionType = (SessionType_t)Int32.Parse(strT);
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\UIs\DepthCorrection\PipeTallyCorrection\PipeTallyCorrectView.cs,148#,SessionType_t SessionType = SessionType_t.SESSION_UNKNOWN;
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\UIs\DepthCorrection\PipeTallyCorrection\PipeTallyCorrectView.cs,151#,SessionType = (SessionType_t)Int32.Parse(strT);
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\UIs\WirelineRM\DepthMng.cs,737#,m_GEditor = new SlbPALGenericEditor(m_EqpUIS, m_RunMgrUIS, m_WLD, m_UnitServer, SessionType_t.SESSION_WIRELINE_RECORDEDMODE, consoleName);
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\WSD\WSDRun_EnsAppl.cpp,42#,if (m_currentWorkflow == SESSION_DRILLING)
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\WSD\WSDRun_EnsAppl.cpp,46#,else if (	m_currentWorkflow == SESSION_WIRELINE ||
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\WSD\WSDRun_EnsAppl.cpp,47#,m_currentWorkflow == SESSION_WELLSERVICES ||
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\WSD\WSDRun_EnsAppl.cpp,48#,m_currentWorkflow == SESSION_WIRELINE_RECORDEDMODE ||
+T:\MetricsSystem\Maxwell\Main\HzSysApps\Ensembles\WSD\WSDRun_EnsAppl.cpp,49#,m_currentWorkflow == SESSION_WIRELINE_PERFOEXPRESS )
+T:\MetricsSystem\Maxwell\Main\HzTestTools\Tools\EquipmentTester\ToolStringComposer.cs,785#,const string SESSION_PROGID_WIRELINE = "SlbTHSession.THWirelineSession";
+T:\MetricsSystem\Maxwell\Main\HzTestTools\Tools\EquipmentTester\ToolStringComposer.cs,793#,m_sSessionProgID = SESSION_PROGID_WIRELINE + sNumber;
+T:\MetricsSystem\Maxwell\Main\HzTestTools\Tools\EquipmentTester\ToolStringComposer.cs,795#,m_sSessionType = "SESSION_WIRELINE";
